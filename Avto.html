@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<title>Test</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; }
+  .question { margin-bottom: 20px; }
+  .answer { margin-top: 5px; font-weight: bold; }
+  .correct { color: green; }
+  .wrong { color: red; }
+  #timer { font-size: 22px; font-weight: bold; color: green; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+
+<div id="timer">Vaqt: 51:00</div>
+
+<form id="testForm" onsubmit="return false;">
+  <h1><p style="text-align: center; font-weight: 1000;">Авто йўналиши бўйича тайёрланган</p></h1>
+
+  <label>Ismingizni kiriting:</label><br>
+  <input type="text" id="fio" placeholder="FISH"><br><br>
+<!--
+  <label>Guruh</label><br>
+  <input type="text" id="group" placeholder="YUP/BI"><br><br>
+-->
+
+
+ <div class="question" id="q1">
+  <p>1. Декларацияловчи шахс…?</p>
+  <input type="radio" name="1" value="a"> Транзит декларацияси ҳамда тақдим этиладиган ҳужжатларни тайёрлайди<br>
+  <input type="radio" name="1" value="b"> Электрон рақамли имзоси билан тасдиқлайди<br>
+  <input type="radio" name="1" value="c"> «Е-транзит» ААТ орқали божхона органларига юборади<br>
+  <input type="radio" name="1" value="d"> Барча жавоблар тўғри<br>
+</div>
+
+<div class="question" id="q2">
+  <p>2. Давлат назорати органлари ... қанча вақтда?</p>
+  <input type="radio" name="2" value="a"> Чегара божхона постида — уч соат ичида, ички ҳудудда — бир иш кунида<br>
+  <input type="radio" name="2" value="b"> Чегара божхона постида — беш соат ичида, ички ҳудудда — бир иш кунида<br>
+  <input type="radio" name="2" value="c"> Чегара божхона постида — икки соат ичида, ички ҳудудда — бир иш кунида<br>
+  <input type="radio" name="2" value="d"> Чегара божхона постида — бир соат ичида, ички ҳудудда — бир иш кунида
+</div>
+
+<div class="question" id="q3">
+  <p>3. ... қанча йиғим ундирилади?</p>
+  <input type="radio" name="3" value="a"> БҲМнинг 50 фоизи<br>
+  <input type="radio" name="3" value="b"> БҲМнинг 10 фоизи<br>
+  <input type="radio" name="3" value="c"> БҲМнинг 75 фоизи<br>
+  <input type="radio" name="3" value="d"> БҲМнинг 25 фоизи
+</div>
+
+<div class="question" id="q4">
+  <p>4. ... неча соатдан кечиктирмай бошланади?</p>
+  <input type="radio" name="4" value="a"> 6<br>
+  <input type="radio" name="4" value="b"> 3<br>
+  <input type="radio" name="4" value="c"> 5<br>
+  <input type="radio" name="4" value="d"> 1<br>
+  <input type="radio" name="4" value="e"> 7
+</div>
+
+<div class="question" id="q5">
+  <p>5. ... жами неча кунни ташкил қилади?</p>
+  <input type="radio" name="5" value="a"> 90 календарь кун<br>
+  <input type="radio" name="5" value="b"> 90 иш куни<br>
+  <input type="radio" name="5" value="c"> 120 календарь кун<br>
+  <input type="radio" name="5" value="d"> 120 иш куни
+</div>
+
+<div class="question" id="q6">
+  <p>6. Божхона назорати остида ташилаётган товар ... ҳар бир куни учун қанча миқдорда йиғим ундирилади?</p>
+  <input type="radio" name="6" value="a"> БҲМнинг 1 баравари<br>
+  <input type="radio" name="6" value="b"> БҲМнинг 50 фоизи<br>
+  <input type="radio" name="6" value="c"> БҲМнинг 2 баравари<br>
+  <input type="radio" name="6" value="d"> БҲМнинг 25 фоизи
+</div>
+
+<div class="question" id="q7">
+  <p>7. Қандай ҳолларда чет эл товарларини ... кузатувга олинмайди?</p>
+  <input type="radio" name="7" value="a"> Товарлар Халқаро йўлларда ташиш дафтарчасини қўллаган ҳолда ташилганда<br>
+  <input type="radio" name="7" value="b"> Миллий автоташувчилар томонидан ташилганда<br>
+  <input type="radio" name="7" value="c"> Ваколатли иқтисодий операторлар томонидан амалга оширилганда<br>
+  <input type="radio" name="7" value="d"> Барча жавоблар тўғри
+</div>
+
+<div class="question" id="q8">
+  <p>8. Чегара божхона постларида қайси давлат назорати турлари амалга оширилади?</p>
+  <input type="radio" name="8" value="a"> Фитосанитария, божхона<br>
+  <input type="radio" name="8" value="b"> Ветеринария, Чегара, божхона<br>
+  <input type="radio" name="8" value="c"> Санитария-карантин, божхона<br>
+  <input type="radio" name="8" value="d"> Барча жавоблар тўғри
+</div>
+
+<div class="question" id="q9">
+  <p>9. Халқаро йўлларда ташиш (ХЙТ) ... амал қилиш муддати?</p>
+  <input type="radio" name="9" value="a"> 1 йил<br>
+  <input type="radio" name="9" value="b"> 5 йил<br>
+  <input type="radio" name="9" value="c"> 2 йил<br>
+  <input type="radio" name="9" value="d"> Чекланмайди
+</div>
+
+<div class="question" id="q10">
+  <p>10. ... рухсат бериш тўғрисидаги гувоҳноманинг амал қилиш муддати?</p>
+  <input type="radio" name="10" value="a"> 1 йил<br>
+  <input type="radio" name="10" value="b"> 3 йил<br>
+  <input type="radio" name="10" value="c"> 2 йил<br>
+  <input type="radio" name="10" value="d"> Чекланмайди
+</div>
+
+<div class="question" id="q11">
+  <p>11. Ягона божхона тўлови ставкаси?</p>
+  <input type="radio" name="11" value="a"> Товарнинг божхона қийматидан 30 фоиз, лекин ҳар бир килограми учун 3 АҚШ долларидан кам бўлмаган<br>
+  <input type="radio" name="11" value="b"> Ҳар кг учун 3$, лекин 30%дан кам бўлмаган<br>
+  <input type="radio" name="11" value="c"> 10% лекин ҳар кг учун 3$дан кам бўлмаган<br>
+  <input type="radio" name="11" value="d"> 30% лекин ҳар кг учун 2,5$дан кам бўлмаган
+</div>
+
+<div class="question" id="q12">
+  <p>12. ... автойўл чегаралари орқали олиб ўтишда қанчани ташкил қилади?</p>
+  <input type="radio" name="12" value="a"> Ҳар чоракда 300$<br>
+  <input type="radio" name="12" value="b"> Ҳар ойда 300$<br>
+  <input type="radio" name="12" value="c"> Ҳар олти ойда 300$<br>
+  <input type="radio" name="12" value="d"> 300 АҚШ доллари
+</div>
+
+<div class="question" id="q13">
+  <p>13. ... қанча миқдорда олиб кетилиши мумкин?</p>
+  <input type="radio" name="13" value="a"> 50 кг.дан кўп бўлмаган<br>
+  <input type="radio" name="13" value="b"> 40 кг.дан кўп бўлмаган<br>
+  <input type="radio" name="13" value="c"> 10 кг.дан кўп бўлмаган<br>
+  <input type="radio" name="13" value="d"> 20 кг.дан кўп бўлмаган
+</div>
+
+<div class="question" id="q14">
+  <p>14. Жисмоний шахслар ... гуруч олиб кетилиши мумкин?</p>
+  <input type="radio" name="14" value="a"> 3 кг.дан кўп бўлмаган<br>
+  <input type="radio" name="14" value="b"> 5 кг.дан кўп бўлмаган<br>
+  <input type="radio" name="14" value="c"> 2 кг.дан кўп бўлмаган<br>
+  <input type="radio" name="14" value="d"> 10 кг.дан кўп бўлмаган
+</div>
+
+<div class="question" id="q15">
+  <p>15. ... неча йил ичида?</p>
+  <input type="radio" name="15" value="a"> Тўрт йил ичида<br>
+  <input type="radio" name="15" value="b"> Беш йил ичида киради<br>
+  <input type="radio" name="15" value="c"> Бир йил ичида<br>
+  <input type="radio" name="15" value="d"> Уч йил ичида
+</div>
+
+<div class="question" id="q16">
+  <p>16. ... тартиби ким томонидан белгиланади?</p>
+  <input type="radio" name="16" value="a"> Божхона қўмитаси<br>
+  <input type="radio" name="16" value="b"> Президент<br>
+  <input type="radio" name="16" value="c"> Вазирлар Маҳкамаси<br>
+  <input type="radio" name="16" value="d"> Солиқ қўмитаси
+</div>
+
+<div class="question" id="q17">
+  <p>17. Транзит декларациясининг ... неча босқичда амалга оширилади?</p>
+  <input type="radio" name="17" value="a"> Тўрт босқичда<br>
+  <input type="radio" name="17" value="b"> Икки босқичда<br>
+  <input type="radio" name="17" value="c"> Уч босқичда<br>
+  <input type="radio" name="17" value="d"> Беш босқичда
+</div>
+
+<div class="question" id="q18">
+  <p>18. ... неча кун ичида ... автоматик тарзда бекор қилинади?</p>
+  <input type="radio" name="18" value="a"> Ўттиз календарь кун<br>
+  <input type="radio" name="18" value="b"> Ўн беш кун<br>
+  <input type="radio" name="18" value="c"> Ўн календарь кун<br>
+  <input type="radio" name="18" value="d"> Йигирма календарь кун
+</div>
+
+<div class="question" id="q19">
+  <p>19. ... товарлар тўғри кўрсатилган қаторни белгиланг</p>
+  <input type="radio" name="19" value="a"> Ички ёнув двигателлари, офтобда қорайиш солярийлар, дазмол<br>
+  <input type="radio" name="19" value="b"> Шприцлар, игналар, компьютерлар<br>
+  <input type="radio" name="19" value="c"> Сартарошхона креслоси, ички ёнув двигателлари...<br>
+  <input type="radio" name="19" value="d"> Қозонлар, шифохона койкалари
+</div>
+
+<div class="question" id="q20">
+  <p>20. ... қандай ҳужжатларни тақдим этиши шарт?</p>
+  <input type="radio" name="20" value="a"> Транспорт воситаси рўйхатдан ўтганлиги гувоҳномаси<br>
+  <input type="radio" name="20" value="b"> Ўзбекистонга кириш учун рухсатнома<br>
+  <input type="radio" name="20" value="c"> Тез бузиладиган маҳсулотлар учун гувоҳнома<br>
+  <input type="radio" name="20" value="d"> Барча жавоблар тўғри
+</div>
+
+<div class="question" id="q21">
+  <p>21. Автомобиль транспорти учун товар келиб тушадиган божхона органига товарларни етказиб беришнинг энг кўп муддати неча кун муддатдан ошмаслиги керак?</p>
+  <input type="radio" name="21" value="a"> Ўн календарь кундан<br>
+  <input type="radio" name="21" value="b"> Уч календарь кундан<br>
+  <input type="radio" name="21" value="c"> Икки минг километр учун ўттиз календарь кундан<br>
+  <input type="radio" name="21" value="d"> Ўн беш календарь кундан
+</div>
+
+<div class="question" id="q22">
+  <p>22. Божхона назорати остида ташилаётган товарлар ... йиғим миқдори қайси Давлат органи томонидан белгиланади?</p>
+  <input type="radio" name="22" value="a"> Ўзбекистон Республикаси Вазирлар Маҳкамаси<br>
+  <input type="radio" name="22" value="b"> Ўзбекистон Республикаси Адлия вазирлиги<br>
+  <input type="radio" name="22" value="c"> Ўзбекистон Республикаси Президенти<br>
+  <input type="radio" name="22" value="d"> Ўзбекистон Республикаси Олий Мажлиси
+</div>
+
+<div class="question" id="q23">
+  <p>23. Божхона пломбалари ва муҳрлари остида ... қандай талабларга риоя этилган бўлиши керак?</p>
+  <input type="radio" name="23" value="a"> Божхона пломбалари ... оддий ва ишончли усулда қўйиш мумкинлиги<br>
+  <input type="radio" name="23" value="b"> Пломбаланган қисмидан из қолдирмасдан чиқариб ... имконият йўқлиги<br>
+  <input type="radio" name="23" value="c"> Божхона кўздан кечируви учун эркин кириб чиқишни таъминлаш<br>
+  <input type="radio" name="23" value="d"> Барча жавоблар тўғри
+</div>
+
+<div class="question" id="q24">
+  <p>24. ... рухсат бериш тўғрисидаги гувоҳнома олиш учун қандай ҳужжатлар тақдим этилиши керак?</p>
+  <input type="radio" name="24" value="a"> Ариза ва ҳуқуқни тасдиқловчи ҳужжат нусхаси<br>
+  <input type="radio" name="24" value="b"> Женева конвенциясига кўра гувоҳнома бланкаси<br>
+  <input type="radio" name="24" value="c"> Транспорт воситаси фотосуратлари<br>
+  <input type="radio" name="24" value="d"> Барча жавоблар тўғри
+</div>
+
+<div class="question" id="q25">
+  <p>25. Аризани кўриб чиқиш ва гувоҳнома бериш муддатлари қанча?</p>
+  <input type="radio" name="25" value="a"> 3 иш куни / 10 иш куни<br>
+  <input type="radio" name="25" value="b"> 5 иш куни / 10 иш куни<br>
+  <input type="radio" name="25" value="c"> 10 иш куни / 15 иш куни<br>
+  <input type="radio" name="25" value="d"> 10 иш куни / 20 иш куни
+</div>
+
+<div class="question" id="q26">
+  <p>26. ... соддалаштирилган тартиб жорий этилган Қарор?</p>
+  <input type="radio" name="26" value="a"> ПҚ-4848<br>
+  <input type="radio" name="26" value="b"> ПҚ-4508<br>
+  <input type="radio" name="26" value="c"> ПҚ-6313<br>
+  <input type="radio" name="26" value="d"> ПҚ-6312
+</div>
+
+<div class="question" id="q27">
+  <p>27. Жисмоний шахслар ... тартиби келтирилган қарор?</p>
+  <input type="radio" name="27" value="a"> 110-сон қарор<br>
+  <input type="radio" name="27" value="b"> 281-сон қарор<br>
+  <input type="radio" name="27" value="c"> 182-сон қарор<br>
+  <input type="radio" name="27" value="d"> 463-сон қарор
+</div>
+
+<div class="question" id="q28">
+  <p>28. ... қайси мезонда сафарнинг мақсади инобатга олинади?</p>
+  <input type="radio" name="28" value="a"> Сафарнинг ҳолатлари<br>
+  <input type="radio" name="28" value="b"> Олиб ўтиш такрорийлиги<br>
+  <input type="radio" name="28" value="c"> Товар хусусияти<br>
+  <input type="radio" name="28" value="d"> Миқдори
+</div>
+
+<div class="question" id="q29">
+  <p>29. Хавфларни бошқариш тизими қачондан жорий қилинган?</p>
+  <input type="radio" name="29" value="a"> 2020 йил 1 ноябрь<br>
+  <input type="radio" name="29" value="b"> 2021 йил II чорак<br>
+  <input type="radio" name="29" value="c"> 2020 йил 1 декабрь<br>
+  <input type="radio" name="29" value="d"> 2021 йил 1 январь
+</div>
+
+<div class="question" id="q30">
+  <p>30. Транзит декларациясини тақдим этиш ... талаб этилмайди?</p>
+  <input type="radio" name="30" value="a"> Товар олиб чиқишда<br>
+  <input type="radio" name="30" value="b"> Давлат сирлари бўлганда<br>
+  <input type="radio" name="30" value="c"> Юксиз / йўловчи ташишда<br>
+  <input type="radio" name="30" value="d"> Барча жавоблар тўғри
+</div>
+
+<div class="question" id="q31">
+  <p>31. Чегарадан устувор тартибда кимлар ўтказилади?</p>
+  <input type="radio" name="31" value="a"> Имтиёзга эга шахслар ва ҳамроҳлари<br>
+  <input type="radio" name="31" value="b"> Халқаро йўналиш йўловчи транспорти<br>
+  <input type="radio" name="31" value="c"> Инсонпарварлик ёрдами товарлари<br>
+  <input type="radio" name="31" value="d"> Барча жавоблар тўғри
+</div>
+
+<div class="question" id="q32">
+  <p>32. Қайси бири тақиқланмайди?</p>
+  <input type="radio" name="32" value="a"> Рухсатсиз фото-video<br>
+  <input type="radio" name="32" value="b"> Назоратга халақит бериш<br>
+  <input type="radio" name="32" value="c"> Белгиланган тартибни бузиб кириш<br>
+  <input type="radio" name="32" value="d"> Тўғри жавоб йўқ
+</div>
+
+<div class="question" id="q33">
+  <p>33. Енгил авто ... бўлиш вақти неча дақиқа?</p>
+  <input type="radio" name="33" value="a"> 10 дақиқа<br>
+  <input type="radio" name="33" value="b"> 30 дақиқа<br>
+  <input type="radio" name="33" value="c"> 25 дақиқа<br>
+  <input type="radio" name="33" value="d"> 15 дақиқа
+</div>
+
+<div class="question" id="q34">
+  <p>34. Юк авто ... бўлиш вақти неча дақиқа?</p>
+  <input type="radio" name="34" value="a"> 30 дақиқа<br>
+  <input type="radio" name="34" value="b"> 40 дақиқа<br>
+  <input type="radio" name="34" value="c"> 60 дақиқа<br>
+  <input type="radio" name="34" value="d"> 20 дақиқа
+</div>
+
+<div class="question" id="q35">
+  <p>35. Божхона ҳамроҳлигида кузатув ... ким белгилайди?</p>
+  <input type="radio" name="35" value="a"> Божхона қўмитаси<br>
+  <input type="radio" name="35" value="b"> Ҳудудий бошқармалар<br>
+  <input type="radio" name="35" value="c"> Вазирлар Маҳкамаси<br>
+  <input type="radio" name="35" value="d"> Божхона постлари
+</div>
+
+<div class="question" id="q36">
+  <p>36. Қайси ҳолда ҳамроҳликдан озод этилади?</p>
+  <input type="radio" name="36" value="a"> Халқаро йўллар дафтари бўлганда<br>
+  <input type="radio" name="36" value="b"> Ваколатли оператор томонидан<br>
+  <input type="radio" name="36" value="c"> Инсонпарварлик ёрдами бўлганда<br>
+  <input type="radio" name="36" value="d"> Барча жавоблар тўғри
+</div>
+
+<div class="question" id="q37">
+  <p>37. Божхона ҳамроҳлиги соҳасида қайси жавоб тўғри?</p>
+  <input type="radio" name="37" value="a"> Преференциясиз ҳисобланади<br>
+  <input type="radio" name="37" value="b"> Юз минг евро эквивалентидан ошмаслиги керак<br>
+  <input type="radio" name="37" value="c"> ЯИДХП орқали тақдим этилади<br>
+  <input type="radio" name="37" value="d"> Барча жавоблар тўғри
+</div>
+
+<div class="question" id="q38">
+  <p>38. Рухсат этилган масса — хато кўрсатилган қатор?</p>
+  <input type="radio" name="38" value="a"> 4 ўқли: 36 т<br>
+  <input type="radio" name="38" value="b"> 5 ўқли: 40 т<br>
+  <input type="radio" name="38" value="c"> 6 ўқли: 44 т<br>
+  <input type="radio" name="38" value="d"> Барча жавоблар тўғри
+</div>
+
+<div class="question" id="q39">
+  <p>39. Рухсат этилган габарит — хато қатор?</p>
+  <input type="radio" name="39" value="a"> Тиркамали автопоезд: 22 м<br>
+  <input type="radio" name="39" value="b"> Якка авто: 12 м<br>
+  <input type="radio" name="39" value="c"> Кенглик: 2.55 м<br>
+  <input type="radio" name="39" value="d"> Бalandlik: 4 м
+</div>
+
+<div class="question" id="q40">
+  <p>40. Қайси жавоб нотўғри?</p>
+  <input type="radio" name="40" value="a"> Рухсат берилган юк ҳажми 5% дан ортиқ ... махсус рухсатномасиз мумкин<br>
+  <input type="radio" name="40" value="b"> Учинчи мамлакатга ташиш тақиқланади<br>
+  <input type="radio" name="40" value="c"> Йиғимлар сўмда ундирилади<br>
+  <input type="radio" name="40" value="d"> 5% гача бўлса ... рухсатномасиз тўлов ундирилади
+</div>
+
+<div class="question" id="q41">
+  <p>41. Божхона ҳамроҳлигида кузатиб бориш автотранспорт воситаси жўнатувчи божхона органига етиб келган пайтдан эътиборан неча соатдан кечиктирмай бошланади?</p>
+  <input type="radio" name="41" value="a"> 8<br>
+  <input type="radio" name="41" value="b"> 10<br>
+  <input type="radio" name="41" value="c"> 12<br>
+  <input type="radio" name="41" value="d"> 6
+</div>
+
+
+<div class="question" id="q42">
+  <p>42. Божхона назорати остида ташилаётган товар ва транспорт воситалари учун белгиланган етказиб бериш муддати ўтказиб юборилган ҳар бир куни учун қанча миқдорда йиғим ундирилади?</p>
+  <input type="radio" name="42" value="a"> БҲМнинг 3 баравари<br>
+  <input type="radio" name="42" value="b"> БҲМнинг 1 баравари<br>
+  <input type="radio" name="42" value="c"> Транспорт воситасининг ҳар бир от кучидан базавий ҳисоблаш миқдорининг 0,7 % миқдорида<br>
+  <input type="radio" name="42" value="d"> Транспорт воситасининг ҳар бир от кучидан базавий ҳисоблаш миқдорининг 7 % миқдорида
+</div>
+
+<div class="question" id="q43">
+  <p>43. Хавфли юклар транзитига рухсатнома ташиладиган юкларнинг тури ва хусусиятлари ҳисобга олинган ҳолда қайси давлат органлари томонидан рухсатнома берилади?</p>
+  <input type="radio" name="43" value="a"> Ўзбекистон Республикаси Соғлиқни сақлаш вазирлиги, Ички ишлар вазирлиги, Фавқулодда вазиятлар вазирлиги, Давлат хавфсизлик хизмати<br>
+  <input type="radio" name="43" value="b"> Божхона қўмитаси, Экология ва атроф муҳитни муҳофаза қилиш давлат қўмитаси<br>
+  <input type="radio" name="43" value="c"> Барча жавоблар тўғри
+</div>
+
+<div class="question" id="q44">
+  <p>44. Хорижий автотранспорт воситасининг божхона ҳудудида туришининг умумий муддати қанчани ташкил этади?</p>
+  <input type="radio" name="44" value="a"> 90 кун<br>
+  <input type="radio" name="44" value="b"> 90 календарь кун<br>
+  <input type="radio" name="44" value="c"> 90 иш куни<br>
+  <input type="radio" name="44" value="d"> Уч ой
+</div>
+
+<div class="question" id="q45">
+  <p>45. Қуйидагилардан қайси бири тўғри?</p>
+  <input type="radio" name="45" value="a"> Хавфли юкларни транзит қилишга рухсатнома Ўзбекистон Республикаси транспорт вазири томонидан имзоланади.<br>
+  <input type="radio" name="45" value="b"> Қурол-яроғ, ҳарбий техника ва ҳарбий мол-мулк ... Мудофаа вазири ёки унинг биринчи ўринбосари имзолайди<br>
+  <input type="radio" name="45" value="c"> Хавфли юклар — ядро материаллари, ... ва уларнинг чиқиндилари<br>
+  <input type="radio" name="45" value="d"> Барча жавоблар тўғри
+</div>
+
+<div class="question" id="q46">
+  <p>46. Жисмоний шахсларнинг ... 50 кг. оғирликдаги товарларини ... дастлабки 15 календарь кун учун қанча йиғим ундирилади?</p>
+  <input type="radio" name="46" value="a"> БҲМнинг 5 фоизи<br>
+  <input type="radio" name="46" value="b"> БҲМнинг 7 фоизи<br>
+  <input type="radio" name="46" value="c"> БҲМнинг 10 фоизи<br>
+  <input type="radio" name="46" value="d"> БҲМнинг 95 фоизи
+</div>
+
+<div class="question" id="q47">
+  <p>47. ... белгилар аниқланганда, божхона кўриги кимнинг қарори асосида ўтказилади?</p>
+  <input type="radio" name="47" value="a"> Чегара қўшинлари смена бошлиғи<br>
+  <input type="radio" name="47" value="b"> Божхона органи бошлиғи ёки унинг ўрнини босувчи шахснинг<br>
+  <input type="radio" name="47" value="c"> Ҳудудий божхона бошқарма бошлиғи ёки унинг ўрнини босувчи шахснинг<br>
+  <input type="radio" name="47" value="d"> Барча жавоблар тўғри
+</div>
+
+<div class="question" id="q48">
+  <p>48. Товарларни ва (ёки) транспорт воситаларини бевосита божхона чегараси орқали олиб ўтишга қаратилган ҳаракатлар жумласига қуйидагилар киради:</p>
+  <input type="radio" name="48" value="a"> Божхона чегарасини кесиб ўтаётган жисмоний шахснинг ... кириши<br>
+  <input type="radio" name="48" value="b"> Транспорт воситасининг ... кириши<br>
+  <input type="radio" name="48" value="c"> Товарларни транспорт ташкилотларига ... топшириш<br>
+  <input type="radio" name="48" value="d"> Барча жавоблар тўғри
+</div>
+
+<div class="question" id="q49">
+  <p>49. Товар келиб тушадиган божхона органига товарларни етказиб беришнинг энг кўп муддати қанча?</p>
+  <input type="radio" name="49" value="a"> Ҳаво транспорти — 3 календарь кун<br>
+  <input type="radio" name="49" value="b"> Автомобиль ва сув транспорти — 10 календарь кун<br>
+  <input type="radio" name="49" value="c"> Темир йўл транспорти — 30 календарь кун (2000 км учун)<br>
+  <input type="radio" name="49" value="d"> Барча жавоблар тўғри
+</div>
+
+<div class="question" id="q50">
+  <p>50. Товарлар етказиб берилганлиги тўғрисида хабар бериш...</p>
+  <input type="radio" name="50" value="a"> Хабар қилиш — етказилганидан кейин 30 дақиқадан кечиктирмай ...<br>
+  <input type="radio" name="50" value="b"> Хабар қилиш — бир соатдан кечиктирмай ...<br>
+  <input type="radio" name="50" value="c"> Ташиш бошлангандан кейин 3 кун ичида<br>
+  <input type="radio" name="50" value="d"> Ташиш бошлангандан кейин 3 иш куни ичида
+</div>
+
+<div class="question" id="q51">
+  <p>51. Ўтказиш пунктларида божхона органлари ... мувофиқлаштиради, жумладан:</p>
+  <input type="radio" name="51" value="a"> Хизматга келиб-кетишини<br>
+  <input type="radio" name="51" value="b"> Тушунтириш ишлари ташкил этилиши<br>
+  <input type="radio" name="51" value="c"> Назорат-техник воситаларининг сақланиши ва эксплуатация қилиниши<br>
+  <input type="radio" name="51" value="d"> Барча жавоблар тўғри
+</div>
+
+
+
+
+
+  <div class="controls">
+    <button type="button" id="finishBtn" onclick="finishTest()">Tugatish</button>
+    <button type="button" id="saveBtn" onclick="saveResults()">Natijani Saqlash (.txt)</button>
+  </div>
+
+  <h2>Natijalar:</h2>
+  <div id="results"></div>
+</form>
+
+<script>
+
+const correctAnswers = {
+  1: "d",
+  2: "a",
+  3: "b",
+  4: "a",
+  5: "a",
+  6: "a",
+  7: "d",
+  8: "d",
+  9: "d",
+  10: "c",
+  11: "a",
+  12: "d",
+  13: "b",
+  14: "a",
+  15: "d",
+  16: "a",
+  17: "b",
+  18: "a",
+  19: "c",
+  20: "d",
+  21: "a",
+  22: "a",
+  23: "d",
+  24: "d",
+  25: "d",
+  26: "b",
+  27: "b",
+  28: "a",
+  29: "a",
+  30: "d",
+  31: "d",
+  32: "d",
+  33: "d",
+  34: "a",
+  35: "a",
+  36: "d",
+  37: "d",
+  38: "d",
+  39: "a",
+  40: "a",
+  41: "d",
+  42: "b",
+  43: "d",
+  44: "b",
+  45: "d",
+  46: "d",
+  47: "b",
+  48: "d",
+  49: "d",
+  50: "a",
+  51: "d",
+};
+
+let finished = false;      
+let timeLeft =51 * 60;    // 51 min
+let timerInterval;
+
+// TIMER ISHLASHI
+function startTimer() {
+  timerInterval = setInterval(() => {
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      blockAll();
+      finishTest();
+      return;
+    }
+    timeLeft--;
+    updateTimerDisplay();
+  }, 1000);
+}
+
+function updateTimerDisplay() {
+  const m = String(Math.floor(timeLeft / 60)).padStart(2, '0');
+  const s = String(timeLeft % 60).padStart(2, '0');
+  document.getElementById("timer").innerText = `Vaqt: ${m}:${s}`;
+}
+
+startTimer();
+
+// Barcha inputlarni bloklash
+function blockAll() {
+  const all = document.querySelectorAll('input[type="radio"], input[type="text"]');
+  all.forEach(i => i.disabled = true);
+  document.getElementById("finishBtn").disabled = true;
+}
+
+function finishTest() {
+  if (finished) return; // qayta bosishga ruxsat yo‘q
+  finished = true;
+
+  clearInterval(timerInterval);
+  blockAll();
+
+  showResults();
+}
+
+//  BAHO QO'YISH
+function showResults() {
+  const resultsDiv = document.getElementById("results");
+  resultsDiv.innerHTML = "";
+
+  let totalCorrect = 0;
+
+  for (let q in correctAnswers) {
+    const options = document.getElementsByName(q);
+    let selected = null;
+    for (const opt of options) if (opt.checked) selected = opt.value;
+
+    const div = document.createElement("div");
+
+    if (!selected) {
+      div.innerHTML = `${q}: Javob tanlanmagan. To‘g‘ri javob: <span class="correct">${correctAnswers[q]}</span>`;
+      div.classList.add("wrong");
+    } else if (selected === correctAnswers[q]) {
+      div.innerHTML = `${q}: ✅`;
+      div.classList.add("correct");
+      totalCorrect++;
+    } else {
+      div.innerHTML = `${q}: ❌. To‘g‘ri javob: <span class="correct">${correctAnswers[q]}</span>`;
+      div.classList.add("wrong");
+    }
+
+    resultsDiv.appendChild(div);
+  }
+
+  // 5 ballik tizim bo‘yicha baholash
+  let baho = 2;
+  if (totalCorrect >= 43) baho = 5;
+  else if (totalCorrect >= 35) baho = 4;
+  else if (totalCorrect >= 28) baho = 3;
+
+  const summary = document.createElement("div");
+  summary.style.marginTop = "10px";
+  summary.innerHTML = `<strong>Jami to‘g‘ri: ${totalCorrect} / 51 — Baho: ${baho}</strong>`;
+  resultsDiv.appendChild(summary);
+}
+
+// TXT saqlash
+function saveResults() {
+  if (!finished) {
+    alert("Avval tugatish tugmasini bosing!");
+    return;
+  }
+
+  const fio = document.getElementById("fio").value.trim() || "NoName";
+ // const group = document.getElementById("group").value.trim() || "NoGroup";
+  const resultsDiv = document.getElementById("results");
+
+  const header = `Ism: ${fio}\n\n`;
+  const body = resultsDiv.innerText;
+  const textResult = header + body;
+
+  const blob = new Blob([textResult], { type: "text/plain" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = `${fio}_natija.txt`;
+  link.click();
+}
+</script>
+
+</body>
+</html>

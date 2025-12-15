@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<title>Test</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; }
+  .question { margin-bottom: 20px; }
+  .answer { margin-top: 5px; font-weight: bold; }
+  .correct { color: green; }
+  .wrong { color: red; }
+  #timer { font-size: 22px; font-weight: bold; color: green; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+
+<div id="timer">Vaqt: 60:00</div>
+
+<form id="testForm" onsubmit="return false;">
+  <h1><p style="text-align: center; font-weight: 1000;">Ахборот-ресурс марказига оид ТЕСТ саволлари</p></h1>
+
+  <label>Ismingizni kiriting:</label><br>
+  <input type="text" id="fio" placeholder="FISH"><br><br>
+<!--
+  <label>Guruh</label><br>
+  <input type="text" id="group" placeholder="YUP/BI"><br><br>
+-->
+
+
+  <!-- 1 -->
+<div class="question" id="q1">
+  <p>1. Ўзбекистон Республикаси Вазирлар Махкамасининг «Олий таълим муассасаларини ўқув адабиётлари билан таъминлаш тўғрисида»ги қарори:</p>
+  <input type="radio" name="1" value="a"> 2021 йил 21 сентярдаги 556-сон қарори<br>
+  <input type="radio" name="1" value="b">2018 йил 10 октябрдаги 816-сон қарори<br>
+  <input type="radio" name="1" value="c"> 2020 йил 5 ноябрдаги 455-сон қарори<br>
+  <input type="radio" name="1" value="d"> 2019 йил 20 июлдаги 212-сон қарори<br>
+</div>
+
+<!-- 2 -->
+<div class="question" id="q2">
+  <p>2. Кутубхона сўзи қандай тилдан олинган ва қандай маънони англатади?</p>
+  <input type="radio" name="2" value="a">Форсча тилдан олинган бўлиб «китоблар уйи», «китоблар сақланадиган жой»<br>
+  <input type="radio" name="2" value="b"> Юнонча сўздан олинган бўлиб «маълумот бераман»<br>
+  <input type="radio" name="2" value="c"> Англизча сўздан олинган бўлиб « ахборотни тарқатаман»<br>
+  <input type="radio" name="2" value="d"> Арабча сўздан олинган бўлиб «ўқиб ўрганаман»<br>
+</div>
+
+<!-- 3 -->
+<div class="question" id="q3">
+  <p>3. Ахборот кутубхона фаолияти тўғрисидаги Ўзбекистон Республикаси қонуни?</p>
+  <input type="radio" name="3" value="a"> 100-қонун<br>
+  <input type="radio" name="3" value="b">280-қонун<br>
+  <input type="radio" name="3" value="c"> 94-қонун<br>
+  <input type="radio" name="3" value="d"> 105-қонун<br>
+</div>
+
+<!-- 4 -->
+<div class="question" id="q4">
+  <p>4. Библиографик обзор нима?</p>
+  <input type="radio" name="4" value="a"> Маълум давр ичида нашр қилинган ёки айрим белгиларига кўра, ўзаро боғланган босма асарларга бериладиган умумий характеристика ва баҳо<br>
+  <input type="radio" name="4" value="b"> Янги нашр қилинган китоблар тўғрисидаги ахборот ёки суҳбат<br>
+  <input type="radio" name="4" value="c">Биринчи ва иккинчи жавоблар тўғри<br>
+  <input type="radio" name="4" value="d"> Тўғри жавоб йўқ<br>
+</div>
+
+<!-- 5 -->
+<div class="question" id="q5">
+  <p>5. Кутубхона китобни тарғибот қилишни неча тури мавжуд ва улар қайсилари?</p>
+  <input type="radio" name="5" value="a">4 та, оғзаки тарғибот, обзор, коференция, кеча<br>
+  <input type="radio" name="5" value="b"> 2 та, оғаки, кўргазмали тарғибот<br>
+  <input type="radio" name="5" value="c"> 1 та, библиографик рўйхатлар асосида<br>
+  <input type="radio" name="5" value="d"> Тўғри жавоб йўқ<br>
+</div>
+
+<!-- 6 -->
+<div class="question" id="q6">
+  <p>6. Электрон дарсликларга қўйиладиган умумий техник, технологик талаблар:</p>
+  <input type="radio" name="6" value="a"> Локал ва бошқа ташқи ахборот ташувчиларда, тармоқли тартиботда ҳаракатланиши;<br>
+  <input type="radio" name="6" value="b"> Ишлаш қобилияти пухта ва барқарор бўлиши, турли электрон ташувчиларни қўллаш имкониятига эга бўлиши;<br>
+  <input type="radio" name="6" value="c"> Мультимедиа ва телекоммуникация технологияларининг замонавий воситаларини максимал қўллаш имконини бериши;<br>
+  <input type="radio" name="6" value="d">Барча жавоблар тўғри<br>
+</div>
+
+<!-- 7 -->
+<div class="question" id="q7">
+  <p>7. Ўзбекистонда дастлабки жамоат кутубхонаси қандай ном билан номланган ва нечанчи йилда ташкил топган?</p>
+  <input type="radio" name="7" value="a">Туркистон оммавий кутубхонаси 1870 йил<br>
+  <input type="radio" name="7" value="b"> А.Навоий кутубхонаси 1900 йил<br>
+  <input type="radio" name="7" value="c"> Ўзбекистон республикаси кутубхонаси 1899 йил<br>
+  <input type="radio" name="7" value="d"> Тўғри жавоб йўқ<br>
+</div>
+
+<!-- 8 -->
+<div class="question" id="q8">
+  <p>8. Ахборот-кутубхона ресурси бу .....</p>
+  <input type="radio" name="8" value="a"> Тизимлаштирилган ахборот-кутубхона ресурсларининг мажмуи;<br>
+  <input type="radio" name="8" value="b"> Ахборот-кутубхона муассасаларининг электрон каталоглари мажмуи;<br>
+  <input type="radio" name="8" value="c">Моддий объектда матн, овозли ёзув ёки тасвир тарзида қайд этилган ҳамда идентификациялаш, сақлаш ва фойдаланишни таъминлаш учун реквизитларга эга бўлган ахборот;<br>
+  <input type="radio" name="8" value="d"> Ахборот-кутубхона муассасаларининг ахборот коммуникация технологиялари асосида ахборот-кутубхона фондларини шакллантириш;<br>
+</div>
+
+<!-- 9 -->
+<div class="question" id="q9">
+  <p>9. Ўзбекистон Республикаси Вазирлар Махкамасининг 552-сон қарори -....</p>
+  <input type="radio" name="9" value="a"> Ахборот кутубхона фаолияти тўғрисида<br>
+  <input type="radio" name="9" value="b"> Ўзбекистон Республикаси аҳолисига ахборот-кутубхона хизмати кўрасатишни янада такомиллаштириш тўғрисида<br>
+  <input type="radio" name="9" value="c"> Электрон кутубхона тўғрисидаги намунавий низомни ҳамда ахборот-кутубхона ва ахборот-ресурс марказларида ва кутубхоналарда тўлиқ матнли электрон ахборот-кутубхона ресурслари фондини яратиш режа жадвалини тасдиқлаш тўғрисида<br>
+  <input type="radio" name="9" value="d">Ахборот – кутубхона муассасаларида ахборот-кутубхона ресурсларини ҳисобга олиш, фондларни сақлаш ва ҳисобдан чиқариш соҳасидаги айрим нораматив –ҳуқуқий ҳужжатларни тасдиқлаш тўғрисида<br>
+</div>
+
+<!-- 10 -->
+<div class="question" id="q10">
+  <p>10. Агар йўқолган ахборот-кутубхона ресурслари ахборот-кутубхона фонди ҳисобига 1992 йил 1 апрелгача олинган бўлса, унинг номинал қиймати ... қайси қарорда белгиланган?</p>
+  <input type="radio" name="10" value="a">552-сон қарор<br>
+  <input type="radio" name="10" value="b"> 365-сон қарор<br>
+  <input type="radio" name="10" value="c"> 816-сон қарор<br>
+  <input type="radio" name="10" value="d"> 112-сон қарор<br>
+</div>
+
+<!-- 11 -->
+<div class="question" id="q11">
+  <p>11. Ахборот-кутубхона фаолияти соҳасидаги давлат бошқаруви қайси давлат органи томонидан амалга оширилади?</p>
+  <input type="radio" name="11" value="a"> Ўзбекистон Республикаси Олий ва ўрта махсус таълим вазирлиги;<br>
+  <input type="radio" name="11" value="b"> Ўзбекистон Республикаси Халқ таълими вазирлиги;<br>
+  <input type="radio" name="11" value="c">Ўзбекистон Республикаси Вазирлар Махкамаси;<br>
+  <input type="radio" name="11" value="d"> Ўзбекистон Республикаси Президент Администрацияси<br>
+</div>
+
+<!-- 12 -->
+<div class="question" id="q12">
+  <p>12. Ўзбекистон Республикаси Вазирлар Махкамасининг 2018 йил 10 октябрдаги 816 сон қарори — .....</p>
+  <input type="radio" name="12" value="a"> Ахборот- кутубхона фаолияти тўғрисида;<br>
+  <input type="radio" name="12" value="b">Олий таълим муассасаларини ўқув адабиётлари билан таъминлаш тўғрисида;<br>
+  <input type="radio" name="12" value="c"> 2020-2025 йилларда китобхонлик маданиятини ривожлантириш ва қўллаб қувватлар миллий дастурини тасдиқлаш тўғрисида;<br>
+  <input type="radio" name="12" value="d"> Китоб махсулотларини нашр этиш ва тарқатиш тизимини ривожлантириш, китоб мутолааси ва китобхонлик маданиятини ошириш хамда тарғиб қилиш бўйича косплекс чора тадбирлар дастури тўғрисида;<br>
+</div>
+
+<!-- 13 -->
+<div class="question" id="q13">
+  <p>13. Ахборот-кутубхона муассасаларининг турлари:</p>
+  <input type="radio" name="13" value="a"> Ўзбекистон Миллий кутубхонаси, Ахборот-кутубхона марказлари, Китоб дўконлари;<br>
+  <input type="radio" name="13" value="b"> Ўзбекистон Миллий кутубхонаси, Ахборот-кутубхона марказлари, Ахборот-ресурс марказлари;<br>
+  <input type="radio" name="13" value="c"> Ўзбекистон Миллий кутубхонаси, Китоб дўконлари, Нашриётлар<br>
+  <input type="radio" name="13" value="d">Ўзбекистон Миллий кутубхонаси, Ахборот-кутубхона марказлари, Ахборот-ресурс марказлари, давлат ҳокимияти ва бошқаруви органларининг кутубхоналари;<br>
+</div>
+
+<!-- 14 -->
+<div class="question" id="q14">
+  <p>14. Ўзбекистон Миллий кутубхонаси:</p>
+  <input type="radio" name="14" value="a"> Ахборот-кутубхона фаолияти соҳасидаги давлат дастурларини ишлаб чиқиш ва амалга оширишда иштирок этади;<br>
+  <input type="radio" name="14" value="b"> Ўзбекистон Республикасида чиқариладиган нашрларнинг мажбурий нусхасини, шунингдек диссертацияларнинг кўчирма нусхасини олади; <br>
+  <input type="radio" name="14" value="c"> Кутубхонашунослик, библиографияшунослик ва китобшунослик соҳасида илмий-тадқиқот ҳамда илмий-услубий фаолиятни амалга оширади ва мувофиқлаштиради;<br>
+  <input type="radio" name="14" value="d">Барча жавоблар тўғри<br>
+</div>
+
+<!-- 15 -->
+<div class="question" id="q15">
+  <p>15. Кутубхона конференцияси деганда нимани тушунасиз?</p>
+  <input type="radio" name="15" value="a">Китобни уюшиб муҳокама қилиш, матбуотнинг бир ёки бир неча асарлари юзасидан китобхонлар ўртасида фикр алмашиш<br>
+  <input type="radio" name="15" value="b"> Бу оммавий иш бўлиб унла китоб кўргазмали тарғиб қилинади<br>
+  <input type="radio" name="15" value="c"> Бу китобдан парча келтириш ва сахна кўринишини кўрсатиш<br>
+  <input type="radio" name="15" value="d"> Асардаги қаҳрамонларни салби ва ижобий томонларини очиб бериш <br>
+</div>
+
+<!-- 16 -->
+<div class="question" id="q16">
+  <p>16. Ахборот-кутубхона маркази тўғрисидаги намунавий низом қайси Вазирлик томонидан тасдиқланади?</p>
+  <input type="radio" name="16" value="a"> Ўзбекистон Республикаси Президент Администрацияси<br>
+  <input type="radio" name="16" value="b"> Ўзбекистон Республикаси Халқ таълими вазирлиги;<br>
+  <input type="radio" name="16" value="c">Ўзбекистон Республикаси Вазирлар Махкамаси;<br>
+  <input type="radio" name="16" value="d"> Ўзбекистон Республикаси Олий ва ўрта махсус таълим вазирлиги;<br>
+</div>
+
+<!-- 17 -->
+<div class="question" id="q17">
+  <p>17. Ахборот-кутубхона фондини шакллантиришга қандай вазифалар киради?</p>
+  <input type="radio" name="17" value="a"> Жамлаш, хисобга олиш ва жойлаштириш;<br>
+  <input type="radio" name="17" value="b"> Жамлаш, ишлов бериш ва бут сақлаш;<br>
+  <input type="radio" name="17" value="c"> Хисобга олиш, ишлов бериш ва жойлаштириш<br>
+  <input type="radio" name="17" value="d">Жамлаш, хисобга олиш, ишловдан ўтказиш, жойлаштириш ва сақлаш;<br>
+</div>
+
+<!-- 18 -->
+<div class="question" id="q18">
+  <p>18. Ахборот-кутубхона муассасаларини молиялаштириш нимани ҳисобидан амалга оширилади?</p>
+  <input type="radio" name="18" value="a"> Ўзбекистон Республикасининг Давлат бюджети маблағлари;<br>
+  <input type="radio" name="18" value="b"> Пулли хизматлар кўрсатишдан олинадиган маблағлар;<br>
+  <input type="radio" name="18" value="c"> Йили эски бўлган китобларни сотишдан тушган пуллар хисобига;<br>
+  <input type="radio" name="18" value="d">Ўзбекистон Республикасининг Давлат бюджети маблағлари, пулли хизматлар кўрсатишдан олинадиган маблағлар, муассисларнинг маблағлари<br>
+</div>
+
+<!-- 19 -->
+<div class="question" id="q19">
+  <p>19. Ахборот-кутубхона фаолияти соҳасидаги халқаро ҳамкорликлар нимага асосан амалга оширилади?</p>
+  <input type="radio" name="19" value="a"> Ахборот-кутубхона Низомига асосан<br>
+  <input type="radio" name="19" value="b"> Ахборот-кутубхона зарурий холларда хеч қандай шартларсиз хамкорликни амалга ошириши мумкин<br>
+  <input type="radio" name="19" value="c">Ўзбекистон Республикаси қонун хужжатлари ва халқаро шартномалар асосида</b><br>
+  <input type="radio" name="19" value="d"> Ахборот-кутубхона фаолияти соҳасидаги халқаро ҳамкорликларни амалга ошириш хуқуқи мавжуд эмас<br>
+</div>
+
+<!-- 20 -->
+<div class="question" id="q20">
+  <p>20. Китоб сақланадиган бинода ҳароат қандай бўлиши керак?</p>
+  <input type="radio" name="20" value="a"> 16-18 градус<br>
+  <input type="radio" name="20" value="b">20-35 градус<br>
+  <input type="radio" name="20" value="c"> 10-20 градус<br>
+  <input type="radio" name="20" value="d"> 30-35 градус<br>
+</div>
+
+<!-- 21 -->
+<div class="question" id="q21">
+  <p>21. Олий таълим тизимини ўқув адабиётлари билан таъминлаш қандай йўллар билан амалга оширилади?</p>
+  <input type="radio" name="21" value="a"> Зарур ўқув адабиётларини харид қилиш<br>
+  <input type="radio" name="21" value="b"> Янгиларини яратиш ва белгиланган тартибда нашр қилиш<br>
+  <input type="radio" name="21" value="c">Янги зарурий ўқув адабиётлари харид қилиш, белгиланган тартибда нашр қилиш ва олий таълим муассасаларининг ахборот-ресурс марказларига жойлаштириш<br>
+  <input type="radio" name="21" value="d"> Тўғри жавоб кўрсатилмаган<br>
+</div>
+
+<!-- 22 -->
+<div class="question" id="q22">
+  <p>22. Олий таълимнинг ўқув адабиётлари турлари:</p>
+  <input type="radio" name="22" value="a"> Дарслик, ўқув қўлланма, журнал, услубий қўлланма, услубий кўрсатма,<br>
+  <input type="radio" name="22" value="b"> Дарслик, ўқув қўлланма, машқлар (масалалар) тўплами, луғат, дайджест, услубий қўлланма, услубий кўрсатма,<br>
+  <input type="radio" name="22" value="c">Дарслик, ўқув қўлланма, услубий қўлланма, услубий кўрсатма, услубий тавсиянома, маълумотлар тўплами (банки), маърузалар курси, маърузалар тўплами, машқлар (масалалар) тўплами, луғат, дайджест<br>
+  <input type="radio" name="22" value="d"> Дарслик, ўқув қўлланма, услубий қўлланма, услубий кўрсатма, журнал, газета, маърузалар курси, маърузалар тўплами, машқлар (масалалар) тўплами, луғат, дайджест<br>
+</div>
+
+<!-- 23 -->
+<div class="question" id="q23">
+  <p>23. Кутубхона катологлари қандай номлар билан юритилади?</p>
+  <input type="radio" name="23" value="a"> Системали каталог<br>
+  <input type="radio" name="23" value="b"> Альфаветли каталог<br>
+  <input type="radio" name="23" value="c"> Предмет кўрсаткичли каталог<br>
+  <input type="radio" name="23" value="d">Барча жавоблар тўғри<br>
+</div>
+
+<!-- 24 -->
+<div class="question" id="q24">
+  <p>24. Бакалавриат таълим йўналишлари ва магистратура мутахассисликларининг ўқув режаларига киритилган фанлар бўйича яратилиши зарур бўлган ўқув адабиётлари рўйхатини шакллантириш қайси тартибда амалга оширилади?</p>
+  <input type="radio" name="24" value="a"> ...<br>
+  <input type="radio" name="24" value="b"> ...<br>
+  <input type="radio" name="24" value="c"> ...<br>
+  <input type="radio" name="24" value="d">Барча жавоблар тўғри<br>
+</div>
+
+<!-- 25 -->
+<div class="question" id="q25">
+  <p>25. Қачон ўқув адабиётларини яратиш учун муаллифлар танлов асосида белгиланиши мумкин?</p>
+  <input type="radio" name="25" value="a"> Фақат қонун хужжатларида белгиланган муаллифлар иштирок этади <br>
+  <input type="radio" name="25" value="b">Зарурий холларда<br>
+  <input type="radio" name="25" value="c"> Фақат тегишли идоралар рухсати билан<br>
+  <input type="radio" name="25" value="d"> Тўғри жавоб йўқ<br>
+</div>
+
+<!-- 26 -->
+<div class="question" id="q26">
+  <p>26. Чоп этилган ўқув адабиётларидан талабалар фойдаланиши учун қайси қоидаларга амал қилган ҳолда олий таълим муассасаларининг ахборот-ресурс марказларига ўқув адабиётларининг босма ҳамда электрон нусхалари жойлаштирилади?</p>
+  <input type="radio" name="26" value="a"> Муаллифлик ҳуқуқи<br>
+  <input type="radio" name="26" value="b"> Қонун ҳужжатларида белгиланган қоидаларга амал қилган ҳолда<br>
+  <input type="radio" name="26" value="c">Муаллифлик ҳуқуқи ва турдош ҳуқуқлар бўйича қонун ҳужжатларида белгиланган қоидаларга амал қилган ҳолда<br>
+  <input type="radio" name="26" value="d"> Чоп этилган ўқув адабиётларидан талабалар фойдаланиши учун олий таълим муассасаларининг ахборот-ресурс марказларига ўқув адабиётларининг босма ҳамда электрон нусхалари жойлаштиришда хеч қандай қонун хужжатларига амал қилинмайди<br>
+</div>
+
+<!-- 27 -->
+<div class="question" id="q27">
+  <p>27. Олий таълим ташкилотлари қонунга мувофиқ академик эркинлик, ўзини ўзи бошқариш, тадқиқотлар ўтказиш ва ўқитиш эркинлиги ҳуқуқига эга.</p>
+  <input type="radio" name="27" value="a">Конституция 51-модда<br>
+  <input type="radio" name="27" value="b"> Фуқоролик кодекси 18 модда<br>
+  <input type="radio" name="27" value="c"> Жиноят кодекси 112 модда<br>
+  <input type="radio" name="27" value="d"> Божхона кодекси 82 модда<br>
+</div>
+
+<!-- 28 -->
+<div class="question" id="q28">
+  <p>28. Олий таълимнинг бакалавриат босқичи учун ўтилаётган фанлар бўйича адабиётларнинг таъминланганлик даражасини белгиланг:</p>
+  <input type="radio" name="28" value="a"> Хар 5 та талабага 1 та китоб<br>
+  <input type="radio" name="28" value="b"> Хар 3 та талабага 1 та китоб<br>
+  <input type="radio" name="28" value="c">Хар 6 та талабага 1 та китоб<br>
+  <input type="radio" name="28" value="d"> Хар 4 та талабага 1 та китоб<br>
+</div>
+
+<!-- 29 -->
+<div class="question" id="q29">
+  <p>29. Олий таълимнинг магистратура мутахассисликлари учун ўтилаётган фанлар бўйича адабиётларнинг таъминланганлик даражасини белгиланг:</p>
+  <input type="radio" name="29" value="a"> Хар 5 та талабага 1 та китоб<br>
+  <input type="radio" name="29" value="b"> Хар 3 та талабага 1 та китоб<br>
+  <input type="radio" name="29" value="c">Хар 2 та талабага 1 та китоб<br>
+  <input type="radio" name="29" value="d"> Хар 4 та талабага 1 та китоб<br>
+</div>
+
+<!-- 30 -->
+<div class="question" id="q30">
+  <p>30. Махсус фанлар бўйича ўқув адабиётларини янгилаб бориш даврийлиги:</p>
+  <input type="radio" name="30" value="a"> 3 йил<br>
+  <input type="radio" name="30" value="b"> 4 йил<br>
+  <input type="radio" name="30" value="c"> 5 йил<br>
+  <input type="radio" name="30" value="d">6 йил<br>
+</div>
+<!-- 31 -->
+<div class="question" id="q31">
+  <p>31. Кутубхонада ахборот библиографик маркази қандай йўналишларда иш олиб боради?</p>
+  <input type="radio" name="31" value="a"> Жамоа учун ахборот хизматини, педагогик жамоа материалларини, педагогик ўқишлар ва ва жорий йилда халқ таълими тизимида чиқарилган қарорларнинг картотекасини тузади<br>
+  <input type="radio" name="31" value="b"> Илмий-амалий конференция, семинар материалларини, ўқитувчининг ижодий ишларини<br>
+  <input type="radio" name="31" value="c"> Ўқув муассаса тарихига ва ўзи яшаб турган ҳудуднинг тарихига доир материалларни<br>
+  <input type="radio" name="31" value="d">Барча жавоблар тўғри<br>
+</div>
+
+<!-- 32 -->
+<div class="question" id="q32">
+  <p>32. Ўқув адабиётлари неча хил шаклда тайёрланади?</p>
+  <input type="radio" name="32" value="a"> Анъанавий (босма) ўқув адабиётлари, Аудиокитоб кўринишида<br>
+  <input type="radio" name="32" value="b"> Электрон ўқув адабиётлари, маърузалар<br>
+  <input type="radio" name="32" value="c"> Аудиокитоб кўринишида, Электрон ўқув адабиётлари,<br>
+  <input type="radio" name="32" value="d">Анъанавий (босма) ўқув адабиётлари, Электрон ўқув адабиётлари<br>
+</div>
+
+<!-- 33 -->
+<div class="question" id="q33">
+  <p>33. Дарсликни қисман тўлдирувчи, муайян фан дастури бўйича тузилган ва мавзуларни зарурий ҳажмда тизимли ёритиб берадиган, фан асосларининг мукаммал ўзлаштирилишини таъминловчи, мазмунан ва шаклан таълим турларига мослаштирилган расмий тасдиқланадиган ўқув нашри бу-....</p>
+  <input type="radio" name="33" value="a"> Услубий тавсиянома<br>
+  <input type="radio" name="33" value="b">Ўқув қўлланма<br>
+  <input type="radio" name="33" value="c"> Маърузалар тўплами<br>
+  <input type="radio" name="33" value="d"> Дайджест<br>
+</div>
+
+<!-- 34 -->
+<div class="question" id="q34">
+  <p>34. Мехробдан чаён асарини ким ёзган?</p>
+  <input type="radio" name="34" value="a">Абдулла Қодирий<br>
+  <input type="radio" name="34" value="b"> Фитрат<br>
+  <input type="radio" name="34" value="c"> Чўлпон<br>
+  <input type="radio" name="34" value="d"> Абдулла Қаххор<br>
+</div>
+
+<!-- 35 -->
+<div class="question" id="q35">
+  <p>35. Абдулла Қодирийнинг қайси асарида «Раъно» образи гавдалантирилган?</p>
+  <input type="radio" name="35" value="a"> Ўтган кунлар<br>
+  <input type="radio" name="35" value="b">Мехробдан чаён<br>
+  <input type="radio" name="35" value="c"> Обит кетмон<br>
+  <input type="radio" name="35" value="d"> Диёри бакр<br>
+</div>
+
+<!-- 36 -->
+<div class="question" id="q36">
+  <p>36. Ўзбекистон Республикасининг «Ахборот кутубхона фаолияти» тўғрисидаги қонуни неча бобдан иборат?</p>
+  <input type="radio" name="36" value="a"> 8 боб 30 модда<br>
+  <input type="radio" name="36" value="b"> 7 боб 30 модда<br>
+  <input type="radio" name="36" value="c"> 8 боб 28 модда<br>
+  <input type="radio" name="36" value="d">7 боб 28 модда<br>
+</div>
+
+<!-- 37 -->
+<div class="question" id="q37">
+  <p>37. Вазирлар Махкамасининг Ахборот-кутубхона муассасаларида ахборот-кутубхона ресурсларини ҳисобга олиш ва ахборот-кутубхона фондини текшириш тартиби белгиланган қарори?</p>
+  <input type="radio" name="37" value="a">552-сон қарор<br>
+  <input type="radio" name="37" value="b"> 365-сон қарор<br>
+  <input type="radio" name="37" value="c"> 816-сон қарор<br>
+  <input type="radio" name="37" value="d"> 112-сон қарор<br>
+</div>
+
+<!-- 38 -->
+<div class="question" id="q38">
+  <p>38. Форзац деб нимага айтилади?</p>
+  <input type="radio" name="38" value="a"> Китобнинг бош қисми<br>
+  <input type="radio" name="38" value="b">Муқованинг Китоб саҳифалари билан бириктирилган қисми<br>
+  <input type="radio" name="38" value="c"> Китоб сахифаларига айтилади<br>
+  <input type="radio" name="38" value="d"> Матннинг кетма кетлиги тўғри тикилиига<br>
+</div>
+
+<!-- 39 -->
+<div class="question" id="q39">
+  <p>39. Ахборот, кутубхона ва нашриётчилик иши бўйича стандартлар тизимида каталог ва картотекалар учун белгиланган варақчалар ўлчамини топинг?</p>
+  <input type="radio" name="39" value="a">125х75<br>
+  <input type="radio" name="39" value="b"> 115х75<br>
+  <input type="radio" name="39" value="c"> 75х95<br>
+  <input type="radio" name="39" value="d"> 75х115<br>
+</div>
+
+<!-- 40 -->
+<div class="question" id="q40">
+  <p>40. Формулярнинг муқовасида «Кутубхоначи белгилари» деб номланган сўзлар бўлиб, унда нималар кўрсатилади?</p>
+  <input type="radio" name="40" value="a"> Яна бошқа қандай кутубхоналардан фойдаланасиз<br>
+  <input type="radio" name="40" value="b"> Сизни қандай маълумотлар қизиқтиради, севимли машғулотингиз?<br>
+  <input type="radio" name="40" value="c"> Нималар ҳақида ўқишни хохлайсиз ва қайси фанларни қизиқарли деб хисоблайсиз?<br>
+  <input type="radio" name="40" value="d">Барча жавоблар тўғри<br>
+</div>
+<!-- 41 -->
+<div class="question" id="q41">
+  <p>41. “Ҳайрат ул-аброр”, “Фарҳод ва Ширин”, “Лайли ва Мажнун”, “Сабъаи сайёр”, “Садди Искандарий” достонлари кимга тегишли?</p>
+  <input type="radio" name="41" value="a"> Чўлпон<br>
+  <input type="radio" name="41" value="b"> Фитрат<br>
+  <input type="radio" name="41" value="c">Алишер Новоий<br>
+  <input type="radio" name="41" value="d"> Абдулла Авлоний<br>
+</div>
+
+<!-- 42 -->
+<div class="question" id="q42">
+  <p>42. “Хамса” достони нечта бобдан иборат?</p>
+  <input type="radio" name="42" value="a"> 3 та боб<br>
+  <input type="radio" name="42" value="b"> 4 та боб<br>
+  <input type="radio" name="42" value="c">5 та боб<br>
+  <input type="radio" name="42" value="d"> 6 та боб<br>
+</div>
+
+<!-- 43 -->
+<div class="question" id="q43">
+  <p>43. “Ҳайрат ул-аброр”, “Фарҳод ва Ширин”, “Лайли ва Мажнун”, “Сабъаи сайёр” ...... давом эттиринг</p>
+  <input type="radio" name="43" value="a"> “Айёми висол ўлди яна”<br>
+  <input type="radio" name="43" value="b">“Садди Искандарий”<br>
+  <input type="radio" name="43" value="c"> “Лисон ут-тайр”<br>
+  <input type="radio" name="43" value="d"> Маҳбуб ул-қулуб<br>
+</div>
+
+<!-- 44 -->
+<div class="question" id="q44">
+  <p>44. Оразин ёпқоч, кўзумдан сочилур ҳар лаҳза ёш, Бўйлаким, пайдо бўлур юлдуз, ниҳон бўлғач қуёш. Мисралари кимга тегишли?</p>
+  <input type="radio" name="44" value="a"> Чўлпон<br>
+  <input type="radio" name="44" value="b"> Фитрат<br>
+  <input type="radio" name="44" value="c">Алишер Навоий<br>
+  <input type="radio" name="44" value="d"> Абдулла Қодирий<br>
+</div>
+
+<!-- 45 -->
+<div class="question" id="q45">
+  <p>45. Амир Темур туғилган йили?</p>
+  <input type="radio" name="45" value="a"> 1338 йил 7 апрель<br>
+  <input type="radio" name="45" value="b">1336 йил 9 апрель<br>
+  <input type="radio" name="45" value="c"> 1338 йил 9 апрель<br>
+  <input type="radio" name="45" value="d"> 1336 йил 6 апрель<br>
+</div>
+
+<!-- 46 -->
+<div class="question" id="q46">
+  <p>46. Кимлар давлат таълим ташкилотларида танлов асосида давлат ҳисобидан олий маълумот олишга ҳақли?</p>
+  <input type="radio" name="46" value="a"> Ногиронлар фуқаролар<br>
+  <input type="radio" name="46" value="b"> Боқувчисини йўқотганлар<br>
+  <input type="radio" name="46" value="c">Барча фуқаролар<br>
+  <input type="radio" name="46" value="d"> Чет эл фуқаролари<br>
+</div>
+
+<!-- 47 -->
+<div class="question" id="q47">
+  <p>47. “Кеча ва кундуз” романи кимга тегишли?</p>
+  <input type="radio" name="47" value="a"> Фитрат<br>
+  <input type="radio" name="47" value="b"> Алишер Навоий<br>
+  <input type="radio" name="47" value="c">Чўлпон<br>
+  <input type="radio" name="47" value="d"> Абдулла Авлоний<br>
+</div>
+
+<!-- 48 -->
+<div class="question" id="q48">
+  <p>48. Таълим турлари?</p>
+  <input type="radio" name="48" value="a"> Мактабгача таълим ва тарбия; умумий ўрта ва ўрта махсус таълим; олий таълим;<br>
+  <input type="radio" name="48" value="b"> Мактабгача таълим ва тарбия; умумий ўрта ва ўрта махсус таълим; профессионал таълим; олий таълим;<br>
+  <input type="radio" name="48" value="c"> Олий таълимдан кейинги таълим; кадрларни қайта тайёрлаш ва уларнинг малакасини ошириш; мактабдан ташқари таълим.<br>
+  <input type="radio" name="48" value="d">Мактабгача таълим ва тарбия; умумий ўрта ва ўрта махсус таълим; профессионал таълим; олий таълим; олий таълимдан кейинги таълим; кадрларни қайта тайёрлаш ва уларнинг малакасини ошириш; мактабдан ташқари таълим<br>
+</div>
+
+<!-- 49 -->
+<div class="question" id="q49">
+  <p>49. Бакалавриат ва магистратура босқичига эга таълим тури?</p>
+  <input type="radio" name="49" value="a">Олий таълим<br>
+  <input type="radio" name="49" value="b"> Профессионал таълим<br>
+  <input type="radio" name="49" value="c"> Кадрларни қайта тайёрлаш ва уларнинг малакасини ошириш<br>
+  <input type="radio" name="49" value="d"> Олий таълимдан кейинги таълим<br>
+</div>
+
+<!-- 50 -->
+<div class="question" id="q50">
+  <p>50. 2022 йил 30 сентябрдаги 552-сон қарори?</p>
+  <input type="radio" name="50" value="a"> Вазирлар Махкамасининг “Олий таълим муассасаларини ўқув адабиётлари билан таъминлаш тўғрисида”ги қарор<br>
+  <input type="radio" name="50" value="b">Вазирлар Махкамасининг “Ахборот-кутубхона муассасаларида ахборот-кутубхона ресурсларини ҳисобга олиш, фондларни сақлаш ва ҳисобга чиқариш соҳасидаги айрим норматив ҳуқуқий хужжатларни тасдиқлаш тўғрисида”ги қарори<br>
+  <input type="radio" name="50" value="c"> Вазирлар Махкамасининг “2020-2025 йииллардаги китобхонлик маданиятини ривожлантириш ва қўллаб-қувватлаш миллий дастурини тасдиқлаш тўғрисида”ги қарор<br>
+  <input type="radio" name="50" value="d"> Ахборот-кутубхона фаолияти тўғрисида<br>
+</div>
+<!-- 51 -->
+<div class="question" id="q51">
+  <p>51. Ўзбекистон Республикасининг 2021 йил 26 ноябрдаги “Ноширлик фаолияти тўғрисида”ги ЎРҚ-731-сон Қонунининг мақсади нима?</p>
+  <input type="radio" name="51" value="a">Ноширлик фаолияти соҳасидаги муносабатларни тартибга солиш<br>
+  <input type="radio" name="51" value="b"> Тадбиркорлик фаолияти соҳасидаги муносабатларни тартибга солиш<br>
+  <input type="radio" name="51" value="c"> Ишлаб чиқариш фаолияти соҳасидаги муносабатларни тартибга солиш<br>
+  <input type="radio" name="51" value="d"> Савдо фаолияти соҳасидаги муносабатларни тартибга солиш<br>
+</div>
+
+<!-- 52 -->
+<div class="question" id="q52">
+  <p>52. ЎРҚ-731-сон Қонунига мувофиқ, адад нима?</p>
+  <input type="radio" name="52" value="a"> Моддий жисмда матн ва (ёки) тасвир тарзида қайд этилган, таҳририй-ноширлик жиҳатдан ишлов берилган, ноширлик маҳсулотини тайёрлаш учун мўлжалланган ахборот<br>
+  <input type="radio" name="52" value="b">Ноширлик маҳсулотининг тайёрланган нусхалари сони<br>
+  <input type="radio" name="52" value="c"> Чоп этиш матбаачилик технологияларини ва (ёки) визуаллаштирувчи дастурий-технологик воситаларни қўллаш йўли билан нашрга мувофиқ тайёрланган маҳсулот<br>
+  <input type="radio" name="52" value="d"> Нашрларни тайёрлашга ва чиқаришга қаратилган ташкилий, ижодий, ишлаб чиқариш чора-тадбирлари ҳамда бошқа чора-тадбирлар мажмуи<br>
+</div>
+
+<!-- 53 -->
+<div class="question" id="q53">
+  <p>53. ЎРҚ-731-сон Қонунига мувофиқ, нашр нима?</p>
+  <input type="radio" name="53" value="a">Моддий жисмда матн ва (ёки) тасвир тарзида қайд этилган, таҳририй-ноширлик жиҳатдан ишлов берилган, ноширлик маҳсулотини тайёрлаш учун мўлжалланган ахборот<br>
+  <input type="radio" name="53" value="b"> Ноширлик маҳсулотининг тайёрланган нусхалари сони<br>
+  <input type="radio" name="53" value="c"> Чоп этиш матбаачилик технологияларини ва (ёки) визуаллаштирувчи дастурий-технологик воситаларни қўллаш йўли билан нашрга мувофиқ тайёрланган маҳсулот<br>
+  <input type="radio" name="53" value="d"> Нашрларни тайёрлашга ва чиқаришга қаратилган ташкилий, ижодий, ишлаб чиқариш чора-тадбирлари ҳамда бошқа чора-тадбирлар мажмуи<br>
+</div>
+
+<!-- 54 -->
+<div class="question" id="q54">
+  <p>54. Ноширлик фаолиятининг асосий принциплари бу -</p>
+  <input type="radio" name="54" value="a"> Китобхонлик маданиятини оммалаштириш ва ошириш<br>
+  <input type="radio" name="54" value="b"> Ноширлик фаолиятининг эркинлиги, муаллифлик ҳуқуқларини ҳимоя қилиш<br>
+  <input type="radio" name="54" value="c"> Ноширлик фаолияти эркинлигини суиистеъмол қилишга йўл қўймаслик<br>
+  <input type="radio" name="54" value="d">Барча жавоблар тўғри<br>
+</div>
+
+<!-- 55 -->
+<div class="question" id="q55">
+  <p>55. Тайёрловчининг ҳуқуқлари бу -</p>
+  <input type="radio" name="55" value="a"> Ноширлик маҳсулотини тайёрлашга доир шартномалар тузишга<br>
+  <input type="radio" name="55" value="b"> Ўз ноширлик маҳсулотини тайёрлашга<br>
+  <input type="radio" name="55" value="c"> Реализация қилиш учун ноширлик фаолияти субъектларидан буюртмалар қабул қилишга<br>
+  <input type="radio" name="55" value="d">Барча жавоблар тўғри<br>
+</div>
+
+<!-- 56 -->
+<div class="question" id="q56">
+  <p>56. Нашриётнинг мажбуриятлари бу -</p>
+  <input type="radio" name="56" value="a"> Нашрларни ноширлик фаолияти соҳасидаги техник регламентларга (давлат стандартларига) мувофиқ безаши<br>
+  <input type="radio" name="56" value="b"> Муаллифлик ҳуқуқи тўғрисидаги қонунчилик талабларига, ноширлик фаолияти соҳасидаги техник регламентлар (давлат стандартлари), ноширлик фаолиятини тартибга солувчи норматив-ҳуқуқий ҳужжатлар талабларига риоя этиши<br>
+  <input type="radio" name="56" value="c"> Чоп этилган нашрлар ҳақидаги ахборотни ваколатли давлат органига тақдим этиши<br>
+  <input type="radio" name="56" value="d">Барча жавоблар тўғри<br>
+</div>
+
+<!-- 57 -->
+<div class="question" id="q57">
+  <p>57. Таҳрир бу -</p>
+  <input type="radio" name="57" value="a"> Матбуотда босиш ва бошқа мақсадлар учун мўлжалланган матннинг таҳририят ходими томонидан ишланиш жараёни<br>
+  <input type="radio" name="57" value="b"> Радио, телевидениедан ўқиш, кўрсатиш ва бошқа мақсадлар учун мўлжалланган матннинг таҳририят ходими томонидан ишланиш жараёни<br>
+  <input type="radio" name="57" value="c"> Матбуотда босиш, радио, телевидениедан ўқиш, кўрсатиш учун мўлжалланган матннинг таҳририят ходими томонидан ишланиш жараёни<br>
+  <input type="radio" name="57" value="d">Матбуотда босиш, радио, телевидениедан ўқиш, кўрсатиш ва бошқа мақсадлар учун мўлжалланган матннинг таҳририят ходими томонидан ишланиш жараёни<br>
+</div>
+
+<!-- 58 -->
+<div class="question" id="q58">
+  <p>58. Муҳаррир бу -</p>
+  <input type="radio" name="58" value="a"> Босмахона нусхаларида теришда йўл қўйилган хатоларни тузатувчи таҳририят, нашриёт, босмахона ходими, шунингдек, унинг вазифасига муаллиф қўлёзмасини текшириш ҳам киради<br>
+  <input type="radio" name="58" value="b"> Масъул нашрларда муайян матнни турли жиҳатдан таҳрир қилувчи ходим, шунингдек, айрим матбуот органларига раҳбарлик қилувчи шахс<br>
+  <input type="radio" name="58" value="c"> Нашриёт ва бошқа масъул нашрларда муайян матнни турли жиҳатдан таҳрир қилиб, босмага тайёрловчи ходим<br>
+  <input type="radio" name="58" value="d">Нашриёт ва бошқа масъул нашрларда муайян матнни турли жиҳатдан таҳрир қилиб, босмага тайёрловчи ходим, шунингдек, айрим матбуот органларига раҳбарлик қилувчи шахс<br>
+</div>
+
+<!-- 59 -->
+<div class="question" id="q59">
+  <p>59. Мусаҳҳиҳ бу -</p>
+  <input type="radio" name="59" value="a"> Муайян матнни босмага тайёрловчи ходим, шунингдек, айрим матбуот органларига раҳбарлик қилувчи шахс<br>
+  <input type="radio" name="59" value="b"> Босмахона нусхаларида теришда йўл қўйилган хатоларни аниқловчи ва ўрганувчи таҳририят, нашриёт, босмахона ходими, шунингдек, унинг вазифасига муаллиф қўлёзмасини текшириш ҳам киради<br>
+  <input type="radio" name="59" value="c"> Босмахона нусхаларида теришда йўл қўйилган хатоларни белгилаб берувчи таҳририят, нашриёт, босмахона ходими<br>
+  <input type="radio" name="59" value="d">Босмахона нусхаларида теришда йўл қўйилган хатоларни тузатувчи таҳририят, нашриёт, босмахона ходими, шунингдек, мусаҳҳиҳнинг вазифасига муаллиф қўлёзмасини текшириш ҳам киради<br>
+</div>
+
+<!-- 60 -->
+<div class="question" id="q60">
+  <p>60. Нашриёт иши бу -</p>
+  <input type="radio" name="60" value="a"> Нашриётлар ташкил этиш, газета, журналлар, тасвирий санъат асарлари ва бошқа босма маҳсулотларини тайёрлаш, нашр қилиш ва уни тарқатишга оид соҳа<br>
+  <input type="radio" name="60" value="b"> Нашриётлар ташкил этиш, китоблар, тасвирий санъат асарлари ва бошқа босма маҳсулотларини тайёрлаш, нашр қилиш ва уни тарқатишга оид соҳа<br>
+  <input type="radio" name="60" value="c"> Нашриётлар ташкил этиш, китоблар, газета, журналлар ва бошқа босма маҳсулотларини тайёрлаш, нашр қилиш ва уни тарқатишга оид соҳа<br>
+  <input type="radio" name="60" value="d">Нашриётлар ташкил этиш, китоблар, газета, журналлар, тасвирий санъат асарлари ва бошқа босма маҳсулотларини тайёрлаш, нашр қилиш ва уни тарқатишга оид соҳа<br>
+</div>
+
+
+
+
+
+
+  <div class="controls">
+    <button type="button" id="finishBtn" onclick="finishTest()">Tugatish</button>
+    <button type="button" id="saveBtn" onclick="saveResults()">Natijani Saqlash (.txt)</button>
+  </div>
+
+  <h2>Natijalar:</h2>
+  <div id="results"></div>
+</form>
+
+<script>
+
+const correctAnswers = {
+1: "b",
+2: "a",
+3: "b",
+4: "c",
+5: "a",
+6: "d",
+7: "a",
+8: "c",
+9: "d",
+10: "a",
+11: "c",
+12: "b",
+13: "d",
+14: "d",
+15: "a",
+16: "c",
+17: "d",
+18: "d",
+19: "c",
+20: "b",
+21: "c",
+22: "c",
+23: "d",
+24: "d",
+25: "b",
+26: "c",
+27: "a",
+28: "c",
+29: "c",
+30: "d",
+31: "d",
+32: "d",
+33: "b",
+34: "a",
+35: "b",
+36: "d",
+37: "a",
+38: "b",
+39: "a",
+40: "d",
+41: "c",
+42: "c",
+43: "b",
+44: "c",
+45: "b",
+46: "c",
+47: "c",
+48: "d",
+49: "a",
+50: "b",
+51: "a",
+52: "b",
+53: "a",
+54: "d",
+55: "d",
+56: "d",
+57: "d",
+58: "d",
+59: "d",
+60: "d",
+
+
+  
+};
+
+let finished = false;      
+let timeLeft = 60 * 60;    // 60 min
+let timerInterval;
+
+// TIMER ISHLASHI
+function startTimer() {
+  timerInterval = setInterval(() => {
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      blockAll();
+      finishTest();
+      return;
+    }
+    timeLeft--;
+    updateTimerDisplay();
+  }, 1000);
+}
+
+function updateTimerDisplay() {
+  const m = String(Math.floor(timeLeft / 60)).padStart(2, '0');
+  const s = String(timeLeft % 60).padStart(2, '0');
+  document.getElementById("timer").innerText = `Vaqt: ${m}:${s}`;
+}
+
+startTimer();
+
+// Barcha inputlarni bloklash
+function blockAll() {
+  const all = document.querySelectorAll('input[type="radio"], input[type="text"]');
+  all.forEach(i => i.disabled = true);
+  document.getElementById("finishBtn").disabled = true;
+}
+
+function finishTest() {
+  if (finished) return; // qayta bosishga ruxsat yo‘q
+  finished = true;
+
+  clearInterval(timerInterval);
+  blockAll();
+
+  showResults();
+}
+
+//  BAHO QO'YISH
+function showResults() {
+  const resultsDiv = document.getElementById("results");
+  resultsDiv.innerHTML = "";
+
+  let totalCorrect = 0;
+
+  for (let q in correctAnswers) {
+    const options = document.getElementsByName(q);
+    let selected = null;
+    for (const opt of options) if (opt.checked) selected = opt.value;
+
+    const div = document.createElement("div");
+
+    if (!selected) {
+      div.innerHTML = `${q}: Javob tanlanmagan. To‘g‘ri javob: <span class="correct">${correctAnswers[q]}</span>`;
+      div.classList.add("wrong");
+    } else if (selected === correctAnswers[q]) {
+      div.innerHTML = `${q}: ✅`;
+      div.classList.add("correct");
+      totalCorrect++;
+    } else {
+      div.innerHTML = `${q}: ❌. To‘g‘ri javob: <span class="correct">${correctAnswers[q]}</span>`;
+      div.classList.add("wrong");
+    }
+
+    resultsDiv.appendChild(div);
+  }
+
+  // 5 ballik tizim bo‘yicha baholash
+  let baho = 2;
+  if (totalCorrect >= 51) baho = 5;
+  else if (totalCorrect >= 42) baho = 4;
+  else if (totalCorrect >= 33) baho = 3;
+
+  const summary = document.createElement("div");
+  summary.style.marginTop = "10px";
+  summary.innerHTML = `<strong>Jami to‘g‘ri: ${totalCorrect} / 60 — Baho: ${baho}</strong>`;
+  resultsDiv.appendChild(summary);
+}
+
+// TXT saqlash
+function saveResults() {
+  if (!finished) {
+    alert("Avval tugatish tugmasini bosing!");
+    return;
+  }
+
+  const fio = document.getElementById("fio").value.trim() || "NoName";
+  //const group = document.getElementById("group").value.trim() || "NoGroup";
+  const resultsDiv = document.getElementById("results");
+
+  const header = `Ism: ${fio}\n\n`;
+  const body = resultsDiv.innerText;
+  const textResult = header + body;
+
+  const blob = new Blob([textResult], { type: "text/plain" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = `${fio}_natija.txt`;
+  link.click();
+}
+</script>
+
+</body>
+</html>

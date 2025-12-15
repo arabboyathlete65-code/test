@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<title>Test</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; }
+  .question { margin-bottom: 20px; }
+  .answer { margin-top: 5px; font-weight: bold; }
+  .correct { color: green; }
+  .wrong { color: red; }
+  #timer { font-size: 22px; font-weight: bold; color: green; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+
+<div id="timer">Vaqt: 50:00</div>
+
+<form id="testForm" onsubmit="return false;">
+  <h1><p style="text-align: center; font-weight: 1000;">Oʻzbek tili fani bo‘yicha</p></h1>
+
+  <label>Ismingizni kiriting:</label><br>
+  <input type="text" id="fio" placeholder="FISH"><br><br>
+<!--
+  <label>Guruh</label><br>
+  <input type="text" id="group" placeholder="YUP/BI"><br><br>
+-->
+
+
+ <div class="question" id="q1">
+  <p>1. Особая функциональная разновидность языка, обслуживающая профессиональную сферу общения.</p>
+  <input type="radio" name="1" value="a"> Профессиональный язык<br>
+  <input type="radio" name="1" value="b"> Иностранный язык<br>
+  <input type="radio" name="1" value="c"> Литературный язык<br>
+  <input type="radio" name="1" value="d"> Национальный язык<br>
+</div>
+
+<div class="question" id="q2">
+  <p>2. Укажите качества, необходимые современному специалисту в профессиональной деятельности.</p>
+  <input type="radio" name="2" value="a"> все ответы верны<br>
+  <input type="radio" name="2" value="b"> знание норм литературного языка и устойчивые навыки их применения в речи<br>
+  <input type="radio" name="2" value="c"> умение следить за точностью, логичностью и выразительностью речи<br>
+  <input type="radio" name="2" value="d"> владение профессиональной терминологией<br>
+</div>
+
+<div class="question" id="q3">
+  <p>3. Закончите определение: Стиль международных договоров, государственных актов, юридических законов, постановлений, уставов, служебной переписки и т.п. – это …….</p>
+  <input type="radio" name="3" value="a"> Научный стиль<br>
+  <input type="radio" name="3" value="b"> Публицистический стиль<br>
+  <input type="radio" name="3" value="c"> Художественный стиль<br>
+  <input type="radio" name="3" value="d"> Официально-деловой стиль<br>
+</div>
+
+<div class="question" id="q4">
+  <p>4. Речь называется правильной, если…</p>
+  <input type="radio" name="4" value="a"> В ней соблюдены все нормы литературного языка<br>
+  <input type="radio" name="4" value="b"> В ней много заимствований, неологизмов<br>
+  <input type="radio" name="4" value="c"> В ней применены различные образные средства языка<br>
+  <input type="radio" name="4" value="d"> В ней использована аббревиатура<br>
+</div>
+
+<div class="question" id="q5">
+  <p>5. Система требований (правил, норм), которые разъясняют, как устанавливать, поддерживать и прерывать контакты с другим человеком в определенной ситуации – это…</p>
+  <input type="radio" name="5" value="a"> Речевой этикет<br>
+  <input type="radio" name="5" value="b"> Телефонные переговоры<br>
+  <input type="radio" name="5" value="c"> Деловое общение<br>
+  <input type="radio" name="5" value="d"> Деловые переговоры<br>
+</div>
+
+<div class="question" id="q6">
+  <p>6. Укажите пример просьбы в речевом этикете.</p>
+  <input type="radio" name="6" value="a"> Могу ли я попросить Вас<br>
+  <input type="radio" name="6" value="b"> Позвольте выразить благодарность<br>
+  <input type="radio" name="6" value="c"> Разрешите пригласить Вас<br>
+  <input type="radio" name="6" value="d"> Сейчас это невозможно<br>
+</div>
+
+<div class="question" id="q7">
+  <p>7. Укажите пример благодарности и комплиментов в речевом этикете.</p>
+  <input type="radio" name="7" value="a"> Могу ли я пригласить Вас<br>
+  <input type="radio" name="7" value="b"> Я вынужден отказать Вам<br>
+  <input type="radio" name="7" value="c"> Убедительно прошу Вас<br>
+  <input type="radio" name="7" value="d"> Вы прекрасный собеседник<br>
+</div>
+
+<div class="question" id="q8">
+  <p>8. Культура профессиональной речи сотрудника таможенных органов включает:</p>
+  <input type="radio" name="8" value="a"> Владение терминологией данной специальности<br>
+  <input type="radio" name="8" value="b"> Умение строить выступление на профессиональную тему<br>
+  <input type="radio" name="8" value="c"> Умение организовать профессиональный диалог и общаться с неспециалистами по вопросам профессиональной деятельности<br>
+  <input type="radio" name="8" value="d"> все ответы верны<br>
+</div>
+
+<div class="question" id="q9">
+  <p>9. Напишите правильные окончания в следующих терминологических словосочетаниях: Грузов.. таможенн.. декларация; приграничн… таможенн.. пост; главн… таможенн…. управление; оперативн… розыскн… деятельность</p>
+  <input type="radio" name="9" value="a"> ое ое; ая ый; ый ый; ая ый<br>
+  <input type="radio" name="9" value="b"> ая ая; ый ый; ое ое; ая ая<br>
+  <input type="radio" name="9" value="c"> ая ая; ой ой; ое ое; ая ая<br>
+  <input type="radio" name="9" value="d"> ая ая; ый ая; ый ый; ая ая<br>
+</div>
+
+<div class="question" id="q10">
+  <p>10. Добавьте к терминологическим словосочетаниям подходящий по смыслу глагол: …. таможенной декларации; …. таможенных платежей; ….. вещественного доказательства; …. таможенного законодательства.</p>
+  <input type="radio" name="10" value="a"> оформление; получение; взятие; рассмотрение<br>
+  <input type="radio" name="10" value="b"> наблюдение; хранение; улучшение; послушание<br>
+  <input type="radio" name="10" value="c"> применение; напоминание; выполнение; рассмотрение<br>
+  <input type="radio" name="10" value="d"> оформление; взимание; изъятие; нарушение<br>
+</div>
+
+<div class="question" id="q11">
+  <p>11. Подберите подходящие по смыслу прилагательные: …. номенклатура; …. багаж; … декларирование; …. ввоз.</p>
+  <input type="radio" name="11" value="a"> товарная; сопровождаемый; электронное; беспошлинный<br>
+  <input type="radio" name="11" value="b"> официальная; дружеский; раннее; ликвидируемый<br>
+  <input type="radio" name="11" value="c"> публичная; ждущий; скорое; быстрый<br>
+  <input type="radio" name="11" value="d"> всемирная; импортный; брокерское; выгодный<br>
+</div>
+
+<div class="question" id="q12">
+  <p>12. Пожалуйста, сохраните свою копию таможенной декларации до ……… из страны.</p>
+  <input type="radio" name="12" value="a"> отъезда<br>
+  <input type="radio" name="12" value="b"> приезда<br>
+  <input type="radio" name="12" value="c"> переезда<br>
+  <input type="radio" name="12" value="d"> проезда<br>
+</div>
+
+<div class="question" id="q13">
+  <p>13. Есть ли у вас что-нибудь, ………… пошлиной?</p>
+  <input type="radio" name="13" value="a"> таможенной<br>
+  <input type="radio" name="13" value="b"> облагаемое<br>
+  <input type="radio" name="13" value="c"> оплаченной<br>
+  <input type="radio" name="13" value="d"> задекларированной<br>
+</div>
+
+<div class="question" id="q14">
+  <p>14. Что повлияло ... ?</p>
+  <input type="radio" name="14" value="a"> вашего решения<br>
+  <input type="radio" name="14" value="b"> на ваше решение<br>
+  <input type="radio" name="14" value="c"> с вашим решением<br>
+  <input type="radio" name="14" value="d"> о вашем решении<br>
+</div>
+
+<div class="question" id="q15">
+  <p>15. Серьёзное отношение к работе помогло ему добиться ....</p>
+  <input type="radio" name="15" value="a"> хорошими результатами<br>
+  <input type="radio" name="15" value="b"> хорошим результатам<br>
+  <input type="radio" name="15" value="c"> хороших результатов<br>
+  <input type="radio" name="15" value="d"> хорошие результаты<br>
+</div>
+
+<div class="question" id="q16">
+  <p>16. Мы, скорее всего, остановимся ….</p>
+  <input type="radio" name="16" value="a"> на этот проект<br>
+  <input type="radio" name="16" value="b"> на этом проекте<br>
+  <input type="radio" name="16" value="c"> с этим проектом<br>
+  <input type="radio" name="16" value="d"> в этом проекте<br>
+</div>
+
+<div class="question" id="q17">
+  <p>17. В стоимость контракта включены ….</p>
+  <input type="radio" name="17" value="a"> из транспортных услуг<br>
+  <input type="radio" name="17" value="b"> транспортных услуг<br>
+  <input type="radio" name="17" value="c"> в транспортные услуги<br>
+  <input type="radio" name="17" value="d"> транспортные услуги<br>
+</div>
+
+<div class="question" id="q18">
+  <p>18. Вы должны принимать во внимание ….</p>
+  <input type="radio" name="18" value="a"> на результаты экспертизы<br>
+  <input type="radio" name="18" value="b"> к результатам экспертизы<br>
+  <input type="radio" name="18" value="c"> в результаты экспертиз<br>
+  <input type="radio" name="18" value="d"> результаты экспертизы<br>
+</div>
+
+<div class="question" id="q19">
+  <p>19. Этот пункт контракта оформлен согласно ….</p>
+  <input type="radio" name="19" value="a"> общепринятых стандартов<br>
+  <input type="radio" name="19" value="b"> к общепринятыми стандартами<br>
+  <input type="radio" name="19" value="c"> общепринятым стандартам<br>
+  <input type="radio" name="19" value="d"> на общепринятые стандарты<br>
+</div>
+
+<div class="question" id="q20">
+  <p>20. Оформление этой декларации не соответствует ….</p>
+  <input type="radio" name="20" value="a"> требованию инструкции<br>
+  <input type="radio" name="20" value="b"> требований инструкция<br>
+  <input type="radio" name="20" value="c"> в требований инструкций<br>
+  <input type="radio" name="20" value="d"> требования инструкцию<br>
+</div>
+<div class="question" id="q21">
+  <p>21. В соответствии с текущими правилами безопасности, подобные грузы запрещается … на открытых платформах.</p>
+  <input type="radio" name="21" value="a"> перевезти<br>
+  <input type="radio" name="21" value="b"> перевозиться<br>
+  <input type="radio" name="21" value="c"> перевозить<br>
+  <input type="radio" name="21" value="d"> перевозятся<br>
+</div>
+
+<div class="question" id="q22">
+  <p>22. Ваш груз опоздал. Напоминаем вам, что вы не вправе … график поставок.</p>
+  <input type="radio" name="22" value="a"> нарушать<br>
+  <input type="radio" name="22" value="b"> нарушаться<br>
+  <input type="radio" name="22" value="c"> нарушайте<br>
+  <input type="radio" name="22" value="d"> нарушаете<br>
+</div>
+
+<div class="question" id="q23">
+  <p>23. Мы гарантируем, что … отгрузку первой партии товара в указанный в контракте срок.</p>
+  <input type="radio" name="23" value="a"> завершим<br>
+  <input type="radio" name="23" value="b"> завершено<br>
+  <input type="radio" name="23" value="c"> будет завершать<br>
+  <input type="radio" name="23" value="d"> завершится<br>
+</div>
+
+<div class="question" id="q24">
+  <p>24. Незнание закона не освобождает вас от ….. .</p>
+  <input type="radio" name="24" value="a"> досмотра<br>
+  <input type="radio" name="24" value="b"> ответственности<br>
+  <input type="radio" name="24" value="c"> налога<br>
+  <input type="radio" name="24" value="d"> допроса<br>
+</div>
+
+<div class="question" id="q25">
+  <p>25. При проведении таможенного досмотра транспортного средства были … запрещённые к вывозу товары.</p>
+  <input type="radio" name="25" value="a"> нашли<br>
+  <input type="radio" name="25" value="b"> произведены<br>
+  <input type="radio" name="25" value="c"> обнаружены<br>
+  <input type="radio" name="25" value="d"> скрыты<br>
+</div>
+
+<div class="question" id="q26">
+  <p>26. Устный …. является формой таможенного контроля.</p>
+  <input type="radio" name="26" value="a"> разговор<br>
+  <input type="radio" name="26" value="b"> беседа<br>
+  <input type="radio" name="26" value="c"> опрос<br>
+  <input type="radio" name="26" value="d"> диалог<br>
+</div>
+
+<div class="question" id="q27">
+  <p>27. При назначении …. за преступление, совершенное в соучастии, учитывается роль каждого соучастника в совершении преступления.</p>
+  <input type="radio" name="27" value="a"> наказания<br>
+  <input type="radio" name="27" value="b"> кары<br>
+  <input type="radio" name="27" value="c"> возмездия<br>
+  <input type="radio" name="27" value="d"> расплаты<br>
+</div>
+
+<div class="question" id="q28">
+  <p>28. Начальник поста разрешил произвести … …. пересекающего лица.</p>
+  <input type="radio" name="28" value="a"> устная беседа<br>
+  <input type="radio" name="28" value="b"> оформленная декларация<br>
+  <input type="radio" name="28" value="c"> личный досмотр<br>
+  <input type="radio" name="28" value="d"> таможенное наблюдение<br>
+</div>
+
+<div class="question" id="q29">
+  <p>29. Надо извиниться….. за беспокойство.</p>
+  <input type="radio" name="29" value="a"> от него<br>
+  <input type="radio" name="29" value="b"> к нему<br>
+  <input type="radio" name="29" value="c"> перед ним<br>
+  <input type="radio" name="29" value="d"> с ним<br>
+</div>
+
+<div class="question" id="q30">
+  <p>30. Укажите вариант, в котором даны существительные только мужского рода.</p>
+  <input type="radio" name="30" value="a"> Бонус, гарант, капитал, номинал, доход<br>
+  <input type="radio" name="30" value="b"> Валюта, девальвация, дотация, прибыль<br>
+  <input type="radio" name="30" value="c"> Государство, демография, общество, субсидия<br>
+  <input type="radio" name="30" value="d"> Сальдо, предприятие, учреждение, страхование<br>
+</div>
+
+<div class="question" id="q31">
+  <p>31. Укажите вариант, в котором даны существительные только женского рода.</p>
+  <input type="radio" name="31" value="a"> Вещь, конфискация, дотация, акция<br>
+  <input type="radio" name="31" value="b"> Аудит, сальдо, деноминация, контракт<br>
+  <input type="radio" name="31" value="c"> Дилер, лизинг, таможня, импорт, экспорт<br>
+  <input type="radio" name="31" value="d"> Бюджет, дотация, демпинг, рынок<br>
+</div>
+
+<div class="question" id="q32">
+  <p>32. Он очень рассердился и с трудом ... себя.</p>
+  <input type="radio" name="32" value="a"> выдержал<br>
+  <input type="radio" name="32" value="b"> сдержал<br>
+  <input type="radio" name="32" value="c"> поддержал<br>
+  <input type="radio" name="32" value="d"> задержал<br>
+</div>
+
+<div class="question" id="q33">
+  <p>33. Эта картина … к себе внимание сотрудников.</p>
+  <input type="radio" name="33" value="a"> привлекла<br>
+  <input type="radio" name="33" value="b"> отвлекла<br>
+  <input type="radio" name="33" value="c"> завлекла<br>
+  <input type="radio" name="33" value="d"> увлекла<br>
+</div>
+
+<div class="question" id="q34">
+  <p>34. Никто не... о том, что случилось.</p>
+  <input type="radio" name="34" value="a"> заговорил<br>
+  <input type="radio" name="34" value="b"> приговорил<br>
+  <input type="radio" name="34" value="c"> поговорил<br>
+  <input type="radio" name="34" value="d"> уговорил<br>
+</div>
+
+<div class="question" id="q35">
+  <p>35. Этот кандидат не ... на выборах нужного количества голосов.</p>
+  <input type="radio" name="35" value="a"> набрал<br>
+  <input type="radio" name="35" value="b"> отобрал<br>
+  <input type="radio" name="35" value="c"> забрал<br>
+  <input type="radio" name="35" value="d"> выбрал<br>
+</div>
+
+<div class="question" id="q36">
+  <p>36. В настоящее время по выявленным фактам продолжаются …</p>
+  <input type="radio" name="36" value="a"> следственная действия<br>
+  <input type="radio" name="36" value="b"> следственному действию<br>
+  <input type="radio" name="36" value="c"> следственным действием<br>
+  <input type="radio" name="36" value="d"> следственные действия<br>
+</div>
+
+<div class="question" id="q37">
+  <p>37. Таможенные органы всегда готовы стать поддержкой для наших … … предпринимателей.</p>
+  <input type="radio" name="37" value="a"> законопослушные и честные<br>
+  <input type="radio" name="37" value="b"> законопослушных и честных<br>
+  <input type="radio" name="37" value="c"> законопослушными и честными<br>
+  <input type="radio" name="37" value="d"> законопослушного и честного<br>
+</div>
+
+<div class="question" id="q38">
+  <p>38. Вчера на собрании дознаватель рассказал нам…</p>
+  <input type="radio" name="38" value="a"> о выявленных правонарушениях<br>
+  <input type="radio" name="38" value="b"> о выявленными правонарушениями<br>
+  <input type="radio" name="38" value="c"> о выявленным правонарушением<br>
+  <input type="radio" name="38" value="d"> о выявленному правонарушению<br>
+</div>
+
+<div class="question" id="q39">
+  <p>39. Чтобы стать …, нужно постоянно учиться и много работать.</p>
+  <input type="radio" name="39" value="a"> хороший специалист<br>
+  <input type="radio" name="39" value="b"> хорошего специалиста<br>
+  <input type="radio" name="39" value="c"> с хорошим специалистом<br>
+  <input type="radio" name="39" value="d"> хорошим специалистом<br>
+</div>
+
+<div class="question" id="q40">
+  <p>40. Я думаю, что руководить … очень трудно.</p>
+  <input type="radio" name="40" value="a"> с большим коллективом<br>
+  <input type="radio" name="40" value="b"> большому коллективу<br>
+  <input type="radio" name="40" value="c"> большого коллектива<br>
+  <input type="radio" name="40" value="d"> большим коллективом<br>
+</div>
+
+<div class="question" id="q41">
+  <p>40. Иностранные граждане всегда должны иметь … паспорт.</p>
+  <input type="radio" name="41" value="a"> собой<br>
+  <input type="radio" name="41" value="b"> себя<br>
+  <input type="radio" name="41" value="c"> на себя<br>
+  <input type="radio" name="41" value="d"> при себе<br>
+</div>
+<div class="question" id="q42">
+  <p>42. Вот информация, … Вы запрашивали.</p>
+  <input type="radio" name="42" value="a"> которого<br>
+  <input type="radio" name="42" value="b"> которая<br>
+  <input type="radio" name="42" value="c"> которую<br>
+  <input type="radio" name="42" value="d"> о которой<br>
+</div>
+
+<div class="question" id="q43">
+  <p>43. Мы готовы … Ваше предложение.</p>
+  <input type="radio" name="43" value="a"> просмотреть<br>
+  <input type="radio" name="43" value="b"> рассматривать<br>
+  <input type="radio" name="43" value="c"> рассмотреть<br>
+  <input type="radio" name="43" value="d"> посмотреть<br>
+</div>
+
+<div class="question" id="q44">
+  <p>44. Этот гражданин, … говорит по-французски, требует переводчика.</p>
+  <input type="radio" name="44" value="a"> который<br>
+  <input type="radio" name="44" value="b"> которая<br>
+  <input type="radio" name="44" value="c"> которой<br>
+  <input type="radio" name="44" value="d"> которым<br>
+</div>
+
+<div class="question" id="q45">
+  <p>45. ….. срока службы.</p>
+  <input type="radio" name="45" value="a"> продление<br>
+  <input type="radio" name="45" value="b"> удлинение<br>
+  <input type="radio" name="45" value="c"> растягивание<br>
+  <input type="radio" name="45" value="d"> протягивание<br>
+</div>
+
+<div class="question" id="q46">
+  <p>46. Сотрудники таможенных органов вернулись …</p>
+  <input type="radio" name="46" value="a"> служебная командировка<br>
+  <input type="radio" name="46" value="b"> на служебный командировка<br>
+  <input type="radio" name="46" value="c"> со служебной командировки<br>
+  <input type="radio" name="46" value="d"> служебного командировка<br>
+</div>
+
+<div class="question" id="q47">
+  <p>47. "Крупной компьютерной компании требуются …"</p>
+  <input type="radio" name="47" value="a"> квалифицированными программистами<br>
+  <input type="radio" name="47" value="b"> квалифицированных программистов<br>
+  <input type="radio" name="47" value="c"> квалифицированные программисты<br>
+  <input type="radio" name="47" value="d"> квалифицированным программистам<br>
+</div>
+
+<div class="question" id="q48">
+  <p>48. Инспектор оформил пассажирскую таможенную декларацию …</p>
+  <input type="radio" name="48" value="a"> прибывшим пассажира<br>
+  <input type="radio" name="48" value="b"> от прибывшего пассажира<br>
+  <input type="radio" name="48" value="c"> прибывший пассажир<br>
+  <input type="radio" name="48" value="d"> прибывшего пассажира<br>
+</div>
+
+<div class="question" id="q49">
+  <p>49. Во время таможенного досмотра инспектор обнаружил….</p>
+  <input type="radio" name="49" value="a"> скрытые от таможенного контроля товары<br>
+  <input type="radio" name="49" value="b"> скрытый от таможенный контроль товары<br>
+  <input type="radio" name="49" value="c"> скрытому от таможенного контроля товары<br>
+  <input type="radio" name="49" value="d"> скрытых от таможенная контроль товары<br>
+</div>
+
+<div class="question" id="q50">
+  <p>50. Уважаемый гражданин, вы имеете право пользоваться …….</p>
+  <input type="radio" name="50" value="a"> юридическая помощью адвоката<br>
+  <input type="radio" name="50" value="b"> юридическим помощью адвоката<br>
+  <input type="radio" name="50" value="c"> юридической помощью адвоката<br>
+  <input type="radio" name="50" value="d"> юридической помощь адвоката<br>
+</div>
+
+
+
+
+  <div class="controls">
+    <button type="button" id="finishBtn" onclick="finishTest()">Tugatish</button>
+    <button type="button" id="saveBtn" onclick="saveResults()">Natijani Saqlash (.txt)</button>
+  </div>
+
+  <h2>Natijalar:</h2>
+  <div id="results"></div>
+</form>
+
+<script>
+
+const correctAnswers = {
+ 1: "c",
+2: "b",
+3: "a",
+4: "a",
+5: "a",
+6: "b",
+7: "c",
+8: "a",
+9: "b",
+10: "c",
+11: "a",
+12: "b",
+13: "c",
+14: "c",
+15: "a",
+16: "b",
+17: "a",
+18: "a",
+19: "c",
+20: "a",
+21: "b",
+22: "b",
+23: "c",
+24: "a",
+25: "c",
+26: "a",
+27: "a",
+28: "c",
+29: "a",
+30: "c",
+31: "c",
+32: "d",
+33: "a",
+34: "d",
+35: "a",
+36: "a",
+37: "c",
+38: "b",
+39: "c",
+40: "a",
+41: "b",
+42: "c",
+43: "a",
+44: "a",
+45: "b",
+46: "a",
+47: "c",
+48: "b",
+49: "a",
+50: "d",
+};
+
+let finished = false;      
+let timeLeft = 50 * 60;    // 50 min
+let timerInterval;
+
+// TIMER ISHLASHI
+function startTimer() {
+  timerInterval = setInterval(() => {
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      blockAll();
+      finishTest();
+      return;
+    }
+    timeLeft--;
+    updateTimerDisplay();
+  }, 1000);
+}
+
+function updateTimerDisplay() {
+  const m = String(Math.floor(timeLeft / 60)).padStart(2, '0');
+  const s = String(timeLeft % 60).padStart(2, '0');
+  document.getElementById("timer").innerText = `Vaqt: ${m}:${s}`;
+}
+
+startTimer();
+
+// Barcha inputlarni bloklash
+function blockAll() {
+  const all = document.querySelectorAll('input[type="radio"], input[type="text"]');
+  all.forEach(i => i.disabled = true);
+  document.getElementById("finishBtn").disabled = true;
+}
+
+function finishTest() {
+  if (finished) return; // qayta bosishga ruxsat yo‘q
+  finished = true;
+
+  clearInterval(timerInterval);
+  blockAll();
+
+  showResults();
+}
+
+//  BAHO QO'YISH
+function showResults() {
+  const resultsDiv = document.getElementById("results");
+  resultsDiv.innerHTML = "";
+
+  let totalCorrect = 0;
+
+  for (let q in correctAnswers) {
+    const options = document.getElementsByName(q);
+    let selected = null;
+    for (const opt of options) if (opt.checked) selected = opt.value;
+
+    const div = document.createElement("div");
+
+    if (!selected) {
+      div.innerHTML = `${q}: Javob tanlanmagan. To‘g‘ri javob: <span class="correct">${correctAnswers[q]}</span>`;
+      div.classList.add("wrong");
+    } else if (selected === correctAnswers[q]) {
+      div.innerHTML = `${q}: ✅`;
+      div.classList.add("correct");
+      totalCorrect++;
+    } else {
+      div.innerHTML = `${q}: ❌. To‘g‘ri javob: <span class="correct">${correctAnswers[q]}</span>`;
+      div.classList.add("wrong");
+    }
+
+    resultsDiv.appendChild(div);
+  }
+
+  // 5 ballik tizim bo‘yicha baholash
+ let baho = 2;
+  if (totalCorrect >= 43) baho = 5;
+  else if (totalCorrect >= 35) baho = 4;
+  else if (totalCorrect >= 28) baho = 3;
+
+  const summary = document.createElement("div");
+  summary.style.marginTop = "10px";
+  summary.innerHTML = `<strong>Jami to‘g‘ri: ${totalCorrect} / 50 — Baho: ${baho}</strong>`;
+  resultsDiv.appendChild(summary);
+}
+
+// TXT saqlash
+function saveResults() {
+  if (!finished) {
+    alert("Avval tugatish tugmasini bosing!");
+    return;
+  }
+
+  const fio = document.getElementById("fio").value.trim() || "NoName";
+  //const group = document.getElementById("group").value.trim() || "NoGroup";
+  const resultsDiv = document.getElementById("results");
+
+  const header = `Ism: ${fio}\n\n`;
+  const body = resultsDiv.innerText;
+  const textResult = header + body;
+
+  const blob = new Blob([textResult], { type: "text/plain" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = `${fio}_natija.txt`;
+  link.click();
+}
+</script>
+
+</body>
+</html>

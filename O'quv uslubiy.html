@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<title>Test</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; }
+  .question { margin-bottom: 20px; }
+  .answer { margin-top: 5px; font-weight: bold; }
+  .correct { color: green; }
+  .wrong { color: red; }
+  #timer { font-size: 22px; font-weight: bold; color: green; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+
+<div id="timer">Vaqt: 60:00</div>
+
+<form id="testForm" onsubmit="return false;">
+  <h1><p style="text-align: center; font-weight: 1000;">Ўқув-услубий бўлими ходимлари учунt</p></h1>
+
+  <label>Ismingizni kiriting:</label><br>
+  <input type="text" id="fio" placeholder="FISH"><br><br>
+<!--
+  <label>Guruh</label><br>
+  <input type="text" id="group" placeholder="YUP/BI"><br><br>
+-->
+
+<!-- 1 -->
+<div class="question" id="q1">
+  <p>1. Бакалавриат таълим йўналишлари ва магистратура мутахассисликлари бўйича юқори малакали кадрларни қандай таълим муассасалари тайёрлайди?</p>
+  <input type="radio" name="1" value="a">Тури ва шаклидан қатъий назар барча олий таълим муассасалари.<br>
+  <input type="radio" name="1" value="b">Олий таълимдан кейинги таълим муассасалари<br>
+  <input type="radio" name="1" value="c">Мактабдан ташқари таълим муассасалари<br>
+  <input type="radio" name="1" value="d">Профессионал таълим муассасалари
+</div>
+
+<!-- 2 -->
+<div class="question" id="q2">
+  <p>2. Олий таълимнинг давлат таълим стандартларини ким тасдиқлайди?</p>
+  <input type="radio" name="2" value="a">Ўзбекистон Республикаси Президенти<br>
+  <input type="radio" name="2" value="b">Ўзбекистон Республикаси Вазирлар Маҳкамаси<br>
+  <input type="radio" name="2" value="c">Олий таълим, фан ва инновациялар вазирлиги билан ҳамкорликда олий таълим муассасаси<br>
+  <input type="radio" name="2" value="d">Ўзбекистон Республикаси Олий таълим, фан ва инновациялар вазирлиги.
+</div>
+
+<!-- 3 -->
+<div class="question" id="q3">
+  <p>3. Қайси қаторда таълим турлари тўғри кўрсатилган?</p>
+  <input type="radio" name="3" value="a">Мактабгача таълим ва тарбия; умумий ўрта; олий таълим; олий таълимдан кейинги таълим<br>
+  <input type="radio" name="3" value="b">Мактабгача таълим, профессионал таълим, олий таълим, мактабдан ташқари таълим.<br>
+  <input type="radio" name="3" value="c">Мактабгача таълим ва тарбия, умумий ўрта ва ўрта махсус, бошланғич таълим<br>
+  <input type="radio" name="3" value="d">Олий  таълим, ўрта махсус таълим, профессионал таълим
+</div>
+
+<!-- 4 -->
+<div class="question" id="q4">
+  <p>4. Таълим жараёни қайси намунавий ҳужжатлар асосида амалга оширилади?</p>
+  <input type="radio" name="4" value="a">Малака талаблари, ўқув режалари, ўқув дастурлари.<br>
+  <input type="radio" name="4" value="b">Ўқув жараёни жадвали, ўқув юклама<br>
+  <input type="radio" name="4" value="c">Силлабуслар, дарс жадваллари<br>
+  <input type="radio" name="4" value="d">Фан дастури ва таълим стандартлари
+</div>
+
+<!-- 5 -->
+<div class="question" id="q5">
+  <p>5. Ўзбекистон Республикаси Президентининг 2018 йил 2 ноябрдаги ПҚ-3995 – сон қарори билан Божхона институтининг мутахассислик фанлари ўқитувчилари бўйича қандай тартиб жорий этилган?</p>
+  <input type="radio" name="5" value="a">Божхона институтининг мутахассислик фанлари ўқитувчиларининг ротациясини (1 йилгача бўлган муддатга) амалга ошириб бориш.<br>
+  <input type="radio" name="5" value="b">Ўқитишнинг замонавий инновацион шакл ва усуллари, педагогик ва ахборот-коммуникация технологиялари асосида ўқув жараёнини ташкил этиш<br>
+  <input type="radio" name="5" value="c">Назарий тайёргарлик ва божхона органларининг амалий фаолияти билан боғлиқликни таъминловчи амалиёт ўташ<br>
+  <input type="radio" name="5" value="d">Профессор-ўқитувчилар таркибини юқори даражадаги касбий ва педагогик маҳоратга, шу жумладан, амалий иш тажрибасига эга бўлган мутахассислар билан мустаҳкамлаш
+</div>
+
+<!-- 6 -->
+<div class="question" id="q6">
+  <p>6. Ўқув режалар ким томонидан ишлаб чиқилади ва тасдиқланади?</p>
+  <input type="radio" name="6" value="a">Ўзбекистон Республикаси Олий таълим, фан ва инновациялар вазирлиги ҳузуридаги билим ва малакаларни баҳолаш агентлиги<br>
+  <input type="radio" name="6" value="b">Ўзбекистон Республикаси Олий таълим, фан ва инновациялар вазирлиги<br>
+  <input type="radio" name="6" value="c">Олий таълим муассасалари.<br>
+  <input type="radio" name="6" value="d">Таълим соҳалари бўйича мувофиқлаштирувчи соҳа кенгашлари
+</div>
+
+<!-- 7 -->
+<div class="question" id="q7">
+  <p>7. 2021 йилда тасдиқланган Олий таълим давлат таълим стандарти асосида ўқув режалари нечта блокдан иборат?</p>
+  <input type="radio" name="7" value="a">2 та.<br>
+  <input type="radio" name="7" value="b">3 та<br>
+  <input type="radio" name="7" value="c">4 та<br>
+  <input type="radio" name="7" value="d">5 та
+</div>
+
+<!-- 8 -->
+<div class="question" id="q8">
+  <p>8. 2021 йилда тасдиқланган Олий таълим давлат таълим стандарти асосида ўқув режалари қайси номдаги блоклардан иборат?</p>
+  <input type="radio" name="8" value="a">Мажбурий фанлар, танлов фанлари.<br>
+  <input type="radio" name="8" value="b">Мажбурий фанлар, мутахассислик фанлари, танлов фанлар<br>
+  <input type="radio" name="8" value="c">Умумтаълим фанлар, мутахассислик фанлар, ихтисослик фанлар, қўшимча фанлар, танлов фанлар<br>
+  <input type="radio" name="8" value="d">Мажбурий фанлар, умумтаълим фанлар, мутахассислик фанлар, ихтисослик фанлар, қўшимча фанлар, танлов фанлар
+</div>
+
+<!-- 9 -->
+<div class="question" id="q9">
+  <p>9. Таълимнинг қандай шакллари мавжуд?</p>
+  <input type="radio" name="9" value="a">Кундузги<br>
+  <input type="radio" name="9" value="b">Кечки<br>
+  <input type="radio" name="9" value="c">Сиртқи<br>
+  <input type="radio" name="9" value="d">Барча жавоблар тўғри.
+</div>
+
+<!-- 10 -->
+<div class="question" id="q10">
+  <p>10. Олий таълим йўналишларидан бири бўйича чуқурлаштирилган билим, малака ва кўникмалар берадиган, давомийлиги камида уч йил бўлган олий таълим босқичи қайси?</p>
+  <input type="radio" name="10" value="a">Магистратура<br>
+  <input type="radio" name="10" value="b">Бакалавриат.<br>
+  <input type="radio" name="10" value="c">Докторантура<br>
+  <input type="radio" name="10" value="d">Ординатура
+</div>
+
+<!-- 11 -->
+<div class="question" id="q11">
+  <p>11. Тегишли бакалавриат негизидаги аниқ мутахассислик бўйича ўқиш давомийлиги камида бир йил бўлган олий таълим босқичи қайси?</p>
+  <input type="radio" name="11" value="a">Магистратура.<br>
+  <input type="radio" name="11" value="b">Бакалавриат<br>
+  <input type="radio" name="11" value="c">Докторантура<br>
+  <input type="radio" name="11" value="d">Ординатура
+</div>
+
+<!-- 12 -->
+<div class="question" id="q12">
+  <p>12. Ўқув режалар таркибидаги фанлар мавзулари, мазмуни ва таркибий тузилмасининг ягона зарурий минимал талаблари қайси ҳужжатда белгиланади?</p>
+  <input type="radio" name="12" value="a">Дарс жадвалларида<br>
+  <input type="radio" name="12" value="b">Ўқув дастури (силлабуслар).<br>
+  <input type="radio" name="12" value="c">Ишчи ўқув режа<br>
+  <input type="radio" name="12" value="d">Тақвим режа
+</div>
+
+<!-- 13 -->
+<div class="question" id="q13">
+  <p>13. Таълим сифатини назорат қилиш нима?</p>
+  <input type="radio" name="13" value="a">Профессор-ўқитувчининг педагогик маҳоратини ўрганиш ва дарс машғулотига баҳо бериш, таълим олувчилар фаоллигини назорат қилиш<br>
+  <input type="radio" name="13" value="b">Таълим олувчининг билим савиясини текшириш ва унинг ўқув дастурини ўзлаштириш даражасини аниқлаш<br>
+  <input type="radio" name="13" value="c">Ўқитиш мазмуни ва натижаларининг давлат таълим стандартлари талабларига мувофиқлигини текшириш.<br>
+  <input type="radio" name="13" value="d">Давлат таълим стандартларига мувофиқ таълим олувчининг фаолиятини ўрганиш
+</div>
+
+<!-- 14 -->
+<div class="question" id="q14">
+  <p>14. Барча турдаги аудитория ва аудиториядан ташқари ўқув ишларини ўз ичига олган ўқув юкламасини ҳажми ҳафтасига неча соат этиб белгиланган?</p>
+  <input type="radio" name="14" value="a">36 соатгача<br>
+  <input type="radio" name="14" value="b">40 соатгача<br>
+  <input type="radio" name="14" value="c">48 соатгача<br>
+  <input type="radio" name="14" value="d">54 соатгача.
+</div>
+
+<!-- 15 -->
+<div class="question" id="q15">
+  <p>15. Ўқув режада ўқув даврининг умумий ҳажмидан келиб чиққан ҳолда ушбу даврнинг неча фоизи (%) таътилга ажратилади?</p>
+  <input type="radio" name="15" value="a">45-60 фоиз<br>
+  <input type="radio" name="15" value="b">6-11 фоиз<br>
+  <input type="radio" name="15" value="c">8-18 фоиз.<br>
+  <input type="radio" name="15" value="d">10-25 фоиз
+</div>
+
+<!-- 16 -->
+<div class="question" id="q16">
+  <p>16. Ўқув режада ўқув даврининг умумий ҳажмидан келиб чиққан ҳолда ушбу даврнинг неча фоизи (%) малака амалиётига ажратилади?</p>
+  <input type="radio" name="16" value="a">45-60 фоиз<br>
+  <input type="radio" name="16" value="b">6-11 фоиз<br>
+  <input type="radio" name="16" value="c">8-18 фоиз<br>
+  <input type="radio" name="16" value="d">8-25 фоиз.
+</div>
+
+<!-- 17 -->
+<div class="question" id="q17">
+  <p>17. Ўқув-услубий бўлим томонидан ўқув жараёнига оид қандай ҳужжатлар ишлаб чиқилади?</p>
+  <input type="radio" name="17" value="a">Ўқитувчининг шахсий иш режаси<br>
+  <input type="radio" name="17" value="b">Кафедранинг йиллик иш режаси<br>
+  <input type="radio" name="17" value="c">Ўқув дастурлари ва силлабуслар<br>
+  <input type="radio" name="17" value="d">Малака талаблари, ўқув режалари, дарс жадваллари.
+</div>
+
+<!-- 18 -->
+<div class="question" id="q18">
+  <p>18. Янги ўқув йили бошланишида қандай ҳужжатлар Институт Кенгаши муҳокамасидан ўтиб тасдиқланади?</p>
+  <input type="radio" name="18" value="a">Ишчи ўқув режалар<br>
+  <input type="radio" name="18" value="b">Ўқув жараёни жадваллари<br>
+  <input type="radio" name="18" value="c">Ўқув дастурлари (силлабуслар)<br>
+  <input type="radio" name="18" value="d">Барча жавоблар тўғри.
+</div>
+
+<!-- 19 -->
+<div class="question" id="q19">
+  <p>19. Ўқув-услубий бўлимнинг вазифалари тўғри кўрсатилган жавобни белгиланг.</p>
+  <input type="radio" name="19" value="a">Ўқув жараёнининг норматив-ҳуқуқий базасини шакллантириш ва янгилаб бориш орқали унинг ташкилий масалаларини ҳал этиш<br>
+  <input type="radio" name="19" value="b">Таълим йўналишлари ва мутахассисликлари малака талаблари, ўқув режалари ва ўқув дастурларини умум эътироф этилган миллий ва халқаро стандартлар асосида ишлаб чиқилиши, ўқув жараёнини божхона ва ҳуқуқни қўллаш амалиёти билан узвий боғлиқлигини таъминлашни инобатга олган ҳолда ташкил этиш<br>
+  <input type="radio" name="19" value="c">Ишчи ўқув режаларининг семестрлар ва ўқув йили давомида бажарилишини таҳлил этиб бориш<br>
+  <input type="radio" name="19" value="d">Барча жавоблар тўғри.
+</div>
+
+<!-- 20 -->
+<div class="question" id="q20">
+  <p>20. Таълим йўналишлари ва мутахассисликларнинг малака талаблари ким томонидан тасдиқланади?</p>
+  <input type="radio" name="20" value="a">Ўзбекистон Республикаси Олий таълим, фан ва инновациялар вазирлиги ҳузуридаги билим ва малакаларни баҳолаш агентлиги<br>
+  <input type="radio" name="20" value="b">Ўзбекистон Республикаси Олий таълим, фан ва инновациялар вазирлиги.<br>
+  <input type="radio" name="20" value="c">Олий таълим муассасалари ва факультетлар<br>
+  <input type="radio" name="20" value="d">Таълим соҳалари бўйича мувофиқлаштирувчи соҳа кенгашлари
+</div>
+
+
+<!-- 21 -->
+<div class="question" id="q21">
+  <p>21. Институтда ўқув жараёнини режалаштириш қайси ҳужжатлар асосида амалга оширилади?</p>
+  <input type="radio" name="21" value="a">Малака талаблари, ўқув режалари, ўқув жараёни жадвали<br>
+  <input type="radio" name="21" value="b">Ишчи ўқув режалари, фан ўқув дастури<br>
+  <input type="radio" name="21" value="c">Фан силлабуслари, тақвим режа<br>
+  <input type="radio" name="21" value="d">Барча жавоблар тўғри.
+</div>
+
+<!-- 22 -->
+<div class="question" id="q22">
+  <p>22. Дарс жадвалида қандай маълумотлар аниқ акс этиши бўйича тўлиқ таъриф берилган қаторни белгиланг.</p>
+  <input type="radio" name="22" value="a">Ҳар бир курс, унинг алоҳида потоклари ва ўқув гуруҳлари учун машғулотлар вақти, жойи ва тури, машғулот олиб борувчи профессор-ўқитувчилар ҳақида маълумотлар.<br>
+  <input type="radio" name="22" value="b">Машғулотлар вақти, жойи ва тури, машғулот олиб борувчи ўқитувчилар ҳақида маълумотлар<br>
+  <input type="radio" name="22" value="c">Курслар, машғулот тури ва жойи, мустақил таълим акс эттирилган маълумот<br>
+  <input type="radio" name="22" value="d">Курслар кесимида потоклар учун машғулот тури, ўтказиладиган жойи қайд этилган ҳужжат
+</div>
+
+<!-- 23 -->
+<div class="question" id="q23">
+  <p>23. Профессор-ўқитувчиларнинг шахсий иш режаларида нималар акс эттирилади?</p>
+  <input type="radio" name="23" value="a">Ўқув, ўқув-услубий ишлар<br>
+  <input type="radio" name="23" value="b">Илмий тадқиқот ишлари<br>
+  <input type="radio" name="23" value="c">Ташкилий ва маънавий-маърифий ишлар<br>
+  <input type="radio" name="23" value="d">Барча жавоблар тўғри.
+</div>
+
+<!-- 24 -->
+<div class="question" id="q24">
+  <p>24. Ўқув-услубий бўлимда юритиладиган ҳужжатлар тўғри кўрсатилган қаторни белгиланг.</p>
+  <input type="radio" name="24" value="a">Малака талаблари, ўқув режалари, ўқув жараёни жадвали, фан ўқув дастурлари, маърузалар матни.<br>
+  <input type="radio" name="24" value="b">Малака талаблари, ўқув режалари, ишчи ўқув режалар, фан силлабуслари, кафедра йиллик иш режалари, тест саволлари <br>
+  <input type="radio" name="24" value="c">Малака талаблари, ўқув режалари, ўқув жараёни жадвали, амалиёт дастурлари, кафедра ҳисоботлари<br>
+  <input type="radio" name="24" value="d">Малака талаблари, ўқув режалари, ўқув жараёни жадвали, ишчи ўқув режалар, дарс жадваллари.
+</div>
+
+<!-- 25 -->
+<div class="question" id="q25">
+  <p>25. Ўқув машғулотларининг асосий турлари қайсилар?</p>
+  <input type="radio" name="25" value="a">Маъруза, семинар машғулотлари, амалий машғулотлар, лаборатория машғулотлари<br>
+  <input type="radio" name="25" value="b">Курс иши, консультация<br>
+  <input type="radio" name="25" value="c">Ўқув амалиёти, илмий-педагогик амалиёт (стажировка)<br>
+  <input type="radio" name="25" value="d">Барча жавоблар тўғри.
+</div>
+
+<!-- 26 -->
+<div class="question" id="q26">
+  <p>26. Профессор-ўқитувчилар томонидан тайёрланадиган ўқув адабиётлари ким томонидан экспертизадан ўтказилади?</p>
+  <input type="radio" name="26" value="a">Институт кенгаши<br>
+  <input type="radio" name="26" value="b">Экспертлар кенгаши.<br>
+  <input type="radio" name="26" value="c">Сифат комиссияси кенгаши<br>
+  <input type="radio" name="26" value="d">Услубий кенгаш
+</div>
+
+<!-- 27 -->
+<div class="question" id="q27">
+  <p>27. Ўқув жараёнини назорат қилиш қандай шаклларда амалга оширилади?</p>
+  <input type="radio" name="27" value="a">Кафедраларнинг ўқув, услубий ва илмий-тадқиқот фаолиятини текшириш. Дарс машғулотлари сифатини назорат қилиш<br>
+  <input type="radio" name="27" value="b">Видеоназорат олиб бориш ва натижаси ҳақида Институт раҳбариятига маълумот тақдим этиш. Дарслик, ўқув қўлланма, маъруза матнлари, услубий қўлланмалар ва кўрсатмалар ҳамда бошқа турдаги адабиётларни муҳокама қилиш<br>
+  <input type="radio" name="27" value="c">Курсантларнинг назорат ишлари, курс ишлари, битирув малакавий ишлари ҳамда тингловчиларнинг магистрлик диссертацияларини объектив баҳоланишини назорат қилиш. Тингловчилар фаолияти мониторингини олиб бориш<br>
+  <input type="radio" name="27" value="d">Барча жавоблар тўғри.
+</div>
+
+<!-- 28 -->
+<div class="question" id="q28">
+  <p>28. Оралиқ назорат шакли ва ўтказилишини ким белгилайди?</p>
+  <input type="radio" name="28" value="a">Божхона иши факультети<br>
+  <input type="radio" name="28" value="b">Кафедралар.<br>
+  <input type="radio" name="28" value="c">Ўқув-услубий бўлим<br>
+  <input type="radio" name="28" value="d">Институт Кенгаши
+</div>
+
+<!-- 29 -->
+<div class="question" id="q29">
+  <p>29. Ёзма шаклда ўтказиладиган якуний назоратлар қайси таркибий тузилма томонидан ташкил этилади?</p>
+  <input type="radio" name="29" value="a">Божхона иши факультети<br>
+  <input type="radio" name="29" value="b">Ўқув-услубий бўлим.<br>
+  <input type="radio" name="29" value="c">Илмий-тадқиқот ва илмий педагогик кадрларни тайёрлаш бўлими<br>
+  <input type="radio" name="29" value="d">Кафедралар
+</div>
+
+<!-- 30 -->
+<div class="question" id="q30">
+  <p>30. Янги авлод дарсликлари ва қўлланмаларни тайёрлаш ишларини мувофиқлаштириш қайси таркибий тузилма томонидан амалга оширилади?</p>
+  <input type="radio" name="30" value="a">Божхона иши факультети<br>
+  <input type="radio" name="30" value="b">Ўқув-услубий бўлим.<br>
+  <input type="radio" name="30" value="c">Илмий-тадқиқот ва илмий педагогик кадрларни тайёрлаш бўлими<br>
+  <input type="radio" name="30" value="d">Кафедралар
+</div>
+
+<!-- 31 -->
+<div class="question" id="q31">
+  <p>31. Профессор-ўқитувчиларнинг йиллик шахсий иш режаларидаги ўқув, ўқув-услубий йўналишлар бўйича режалаштирган ишлари бажарилишини назорат қилиш қайси таркибий тузилмалар томонидан амалга оширилади?</p>
+  <input type="radio" name="31" value="a">Божхона иши факультети<br>
+  <input type="radio" name="31" value="b">Ўқув-услубий бўлим ва кафедралар.<br>
+  <input type="radio" name="31" value="c">Илмий-тадқиқот ва илмий педагогик кадрларни тайёрлаш бўлими<br>
+  <input type="radio" name="31" value="d">Кафедралар
+</div>
+
+<!-- 32 -->
+<div class="question" id="q32">
+  <p>32. Курсант ва тингловчиларнинг мустақил таълим бўйича баҳолари қандай расмийлаштирилади?</p>
+  <input type="radio" name="32" value="a">Гуруҳ журналининг фан бўйича фақат семинар машғулот учун ажратилган саҳифаларига қўйиб борилади<br>
+  <input type="radio" name="32" value="b">Гуруҳ журналининг фан бўйича маърузалар учун ажратилган саҳифаларига қўйиб борилади<br>
+  <input type="radio" name="32" value="c">Гуруҳ журналининг фан бўйича мустақил таълим учун ажратилган саҳифаларига қўйиб борилади.<br>
+  <input type="radio" name="32" value="d">Гуруҳ журналининг фан бўйича фақат амалий машғулот учун ажратилган саҳифаларига қўйиб борилади
+</div>
+
+<!-- 33 -->
+<div class="question" id="q33">
+  <p>33. Олий таълим муассасалари профессор-ўқитувчилари неча йилда малака ошириши мажбурий этиб белгиланган?</p>
+  <input type="radio" name="33" value="a">2 йил<br>
+  <input type="radio" name="33" value="b">3 йил.<br>
+  <input type="radio" name="33" value="c">4 йил<br>
+  <input type="radio" name="33" value="d">5 йил
+</div>
+
+<!-- 34 -->
+<div class="question" id="q34">
+  <p>34. Қайси қаторда ўқув адабиёти турлари тўғри кўрсатилган?</p>
+  <input type="radio" name="34" value="a">Дарслик, ўқув қўлланма, услубий қўлланма<br>
+  <input type="radio" name="34" value="b">Услубий кўрсатма, услубий тавсиянома, маълумотлар тўплами<br>
+  <input type="radio" name="34" value="c">Маърузалар матни, маърузалар тўплами, машқлар тўплами<br>
+  <input type="radio" name="34" value="d">Барча жавоблар тўғри.
+</div>
+
+<!-- 35 -->
+<div class="question" id="q35">
+  <p>35. Қайси турдаги ўқув адабиётлари учун Олий таълим, фан ва инновациялар вазирлигининг нашр рухсатномаси талаб этилади?</p>
+  <input type="radio" name="35" value="a">Дарслик, ўқув қўлланма.<br>
+  <input type="radio" name="35" value="b">Услубий қўлланма, услубий кўрсатма <br>
+  <input type="radio" name="35" value="c">Маърузалар курси, маълумотлар тўплами<br>
+  <input type="radio" name="35" value="d">Дайжест, луғат
+</div>
+
+<!-- 36 -->
+<div class="question" id="q36">
+  <p>36. Қуйидагилардан қайси бири муқобил малака ошириш шаклларига киради?</p>
+  <input type="radio" name="36" value="a">Сўнгги 3 йилда хорижий мамлакатларда малака ошириш, стажировка ўтиш (малака оширишнинг давомийлиги бир ойдан кам бўлмаган, стажировканинг давомийлиги уч ойдан кам бўлмаган муддатда)<br>
+  <input type="radio" name="36" value="b">Охирги 3 йилда докторлик (PhD, DSc) диссертациясини ҳимоя қилиш.<br>
+  <input type="radio" name="36" value="c">Сўнгги 3 йилда камида битта мутахассислик бўйича фан доктори (DSc) даражасини олиш учун ҳимоя қилинган диссертация ишига илмий маслаҳатчи ёки фалсафа доктори (PhD) даражасини олиш учун ҳимоя қилинган 2 та диссертация ишига илмий раҳбарлик қилиш<br>
+  <input type="radio" name="36" value="d">Сўнги 3 йилда профессор ёки доцент илмий унвонига эга бўлиш
+</div>
+
+<!-- 37 -->
+<div class="question" id="q37">
+  <p>37. Божхона институтида кафедра бошлиғи лавозимининг ўқув юкламаси неча соат этиб белгиланган?</p>
+  <input type="radio" name="37" value="a">150 – 200 соат.<br>
+  <input type="radio" name="37" value="b">200 – 250 соат<br>
+  <input type="radio" name="37" value="c">250 – 300 соат<br>
+  <input type="radio" name="37" value="d">300 – 350 соат
+</div>
+
+<!-- 38 -->
+<div class="question" id="q38">
+  <p>38. Божхона институтида профессор лавозимининг ўқув юкламаси неча соат этиб белгиланган?</p>
+  <input type="radio" name="38" value="a">150 – 200 соат<br>
+  <input type="radio" name="38" value="b">200 – 250 соат.<br>
+  <input type="radio" name="38" value="c">250 – 300 соат<br>
+  <input type="radio" name="38" value="d">300 – 350 соат
+</div>
+
+<!-- 39 -->
+<div class="question" id="q39">
+  <p>39. Божхона институтида доцент лавозимининг ўқув юкламаси неча соат этиб белгиланган?</p>
+  <input type="radio" name="39" value="a">150 – 200 соат<br>
+  <input type="radio" name="39" value="b">200 – 250 соат<br>
+  <input type="radio" name="39" value="c">250 – 300 соат.<br>
+  <input type="radio" name="39" value="d">300 – 350 соат
+</div>
+
+<!-- 40 -->
+<div class="question" id="q40">
+  <p>40. Божхона институтида катта ўқитувчи лавозимининг ўқув юкламаси неча соат этиб белгиланган?</p>
+  <input type="radio" name="40" value="a">150 – 200 соат<br>
+  <input type="radio" name="40" value="b">200 – 250 соат<br>
+  <input type="radio" name="40" value="c">250 – 300 соат<br>
+  <input type="radio" name="40" value="d">300 – 350 соат.
+</div>
+
+<!-- 41 -->
+<div class="question" id="q41">
+  <p>41. Божхона институтида ўқитувчи лавозимининг ўқув юкламаси неча соат этиб белгиланган?</p>
+  <input type="radio" name="41" value="a">200 – 250 соат<br>
+  <input type="radio" name="41" value="b">250 – 300 соат<br>
+  <input type="radio" name="41" value="c">300 – 350 соат<br>
+  <input type="radio" name="41" value="d">350 – 400 соат
+</div>
+
+<!-- 42 -->
+<div class="question" id="q42">
+  <p>42. Мустақил таълим иш турининг қайси шаклига киради?</p>
+  <input type="radio" name="42" value="a">Ўқув-услубий<br>
+  <input type="radio" name="42" value="b">Маънавий-маърифий<br>
+  <input type="radio" name="42" value="c">Илмий тадқиқот<br>
+  <input type="radio" name="42" value="d">Ташкилий
+</div>
+
+<!-- 43 -->
+<div class="question" id="q43">
+  <p>43. Ўқув режасига киритилган ҳар бир фанни ўзлаштириш қандай уйғунликда амалга оширилади?</p>
+  <input type="radio" name="43" value="a">Аудитория машғулотлари ва амалиёт ўташ ишлари<br>
+  <input type="radio" name="43" value="b">Аудитория машғулотлари ва мустақил таълим машғулотлари.<br>
+  <input type="radio" name="43" value="c">Маъруза, амалий ва семинар машғулотлар<br>
+  <input type="radio" name="43" value="d">Практикум ва факультатив машғулотлар
+</div>
+
+<!-- 44 -->
+<div class="question" id="q44">
+  <p>44. Фанлар кесимида мустақил таълим топшириқлари учун услубий кўрсатмалар, йўриқномалар тайёрланиши ва доимий янгиланиб борилишини ким таъминлайди?</p>
+  <input type="radio" name="44" value="a">Ўқув-услубий бўлим бошлиғи<br>
+  <input type="radio" name="44" value="b">Божхона иши факультети бошлиғи<br>
+  <input type="radio" name="44" value="c">Кафедра бошлиқлари.<br>
+  <input type="radio" name="44" value="d">Илмий-тадқиқот ва илмий-педагогик кадрларни тайёрлаш бўлими бошлиғи
+</div>
+
+<!-- 45 -->
+<div class="question" id="q45">
+  <p>45. Курсантларни мустақил таълим топшириқларини баҳолаш тартиби қайси ҳужжатда келтирилган?</p>
+  <input type="radio" name="45" value="a">Курсантлар билимини назорат қилиш ва баҳолаш тўғрисидаги низом<br>
+  <input type="radio" name="45" value="b">Ўқув фан дастурида<br>
+  <input type="radio" name="45" value="c">Фан силлабусида<br>
+  <input type="radio" name="45" value="d">Малака талабларида
+</div>
+
+<!-- 46 -->
+<div class="question" id="q46">
+  <p>46. Оралиқ ва якуний назорат саволларининг қанча қисми мустақил ўқиб ўрганиш учун тавсия этилган мавзу ва топшириқлар(мустақил таълим бўйича) юзасидан бўлиши лозим?</p>
+  <input type="radio" name="46" value="a">30 фоизи<br>
+  <input type="radio" name="46" value="b">40 фоизи<br>
+  <input type="radio" name="46" value="c">50 фоизи.<br>
+  <input type="radio" name="46" value="d">60 фоизи
+</div>
+
+<!-- 47 -->
+<div class="question" id="q47">
+  <p>47. Мустақил малака ошириш шаклларидан фойдаланиб, раҳбар ва педагог кадрларнинг индивидуал касбий маҳорат натижалари тасдиғини амалдаги бевосита малака ошириш шаклларига тенглаштирилган шакли бу нима?</p>
+  <input type="radio" name="47" value="a">Муқобил малака ошириш<br>
+  <input type="radio" name="47" value="b">Масофавий малака ошириш<br>
+  <input type="radio" name="47" value="c">Мустақил малака ошириш.<br>
+  <input type="radio" name="47" value="d">Узлуксиз малака ошириш
+</div>
+
+<!-- 48 -->
+<div class="question" id="q48">
+  <p>48. Хорижда малака ошириш ва стажировка ўтишнинг қандай шакли, муддати ва соатлар миқдори миллий малака ошириш тартибининг муқобил малака ошириш турига тенглаштирилади?</p>
+  <input type="radio" name="48" value="a">Масофавий шаклда умумий давомийлиги 2 ҳафта ёки 72 соатдан кам бўлмаган малака ошириш ёки стажировка ўтиш<br>
+  <input type="radio" name="48" value="b">Масофавий шаклда умумий давомийлиги 4 ҳафта ёки 144 соатдан кам бўлмаган малака ошириш ёки стажировка ўтиш<br>
+  <input type="radio" name="48" value="c">Тўғридан-тўғри шаклда умумий давомийлиги 2 ҳафта ёки 144 соатдан кам бўлмаган малака ошириш ёки стажировка ўтиш<br>
+  <input type="radio" name="48" value="d">Тўғридан-тўғри шаклда умумий давомийлиги 4 ҳафта ёки 144 соатдан кам бўлмаган малака ошириш ёки стажировка ўтиш
+</div>
+
+<!-- 49 -->
+<div class="question" id="q49">
+  <p>49. Сўнгги 3 йилда фалсафа доктори (PhD) ёки мутахассислик бўйича фан доктори (DSc) даражасини олиш учун диссертация ҳимоя қилган профессор ўқитувчилар қайси шаклда малака оширади?</p>
+  <input type="radio" name="49" value="a">Муқобил.<br>
+  <input type="radio" name="49" value="b">Масофавий<br>
+  <input type="radio" name="49" value="c">Мустақил<br>
+  <input type="radio" name="49" value="d">Узлуксиз
+</div>
+
+<!-- 50 -->
+<div class="question" id="q50">
+  <p>50. Профессор-ўқитувчиларнинг қайта тайёрлаш ва малака ошириш курсларида ўқув соатлар ҳажми қанча этиб белгиланган?</p>
+  <input type="radio" name="50" value="a">72 соат<br>
+  <input type="radio" name="50" value="b">144 соат<br>
+  <input type="radio" name="50" value="c">288 соат.<br>
+  <input type="radio" name="50" value="d">400 соат
+</div>
+
+<!-- 51 -->
+<div class="question" id="q51">
+  <p>51. Дарсликлар ва ўқув-услубий қўлланмалар қўлёзмаларининг муаллифларига қанча муддатгача ижодий таътил берилади?</p>
+  <input type="radio" name="51" value="a">1 ойгача<br>
+  <input type="radio" name="51" value="b">2 ойгача<br>
+  <input type="radio" name="51" value="c">3 ойгача.<br>
+  <input type="radio" name="51" value="d">4 ойгача
+</div>
+
+<!-- 52 -->
+<div class="question" id="q52">
+  <p>52. Божхона институтидаги қайси таркибий тузилма томонидан ўқув жараёнини назорат қилишни амалга оширишга рухсат берилмаган</p>
+  <input type="radio" name="52" value="a">Ўқув-услубий бўлим<br>
+  <input type="radio" name="52" value="b">Божхона иши факультети<br>
+  <input type="radio" name="52" value="c">Институт сифат комиссияси<br>
+  <input type="radio" name="52" value="d">Инсон ресурсларини бошқариш ва ривожлантириш бўлими.
+</div>
+
+<!-- 53 -->
+<div class="question" id="q53">
+  <p>53. Нашр қилинаётган ўқув адабиётларининг адади бакалавриат таълим йўналишлари ва магистратура мутахассисликларининг ўзига хос хусусиятларидан келиб чиққан ҳолда, ўқитилаётган фанлар бўйича ҳар нечта нафар талабага камида 1 (бир) дона адабиёт тўғри келиши керак?</p>
+  <input type="radio" name="53" value="a">2 нафар<br>
+  <input type="radio" name="53" value="b">4 нафар<br>
+  <input type="radio" name="53" value="c">6 нафар.<br>
+  <input type="radio" name="53" value="d">8 нафар
+</div>
+
+<!-- 54 -->
+<div class="question" id="q54">
+  <p>54. Муайян фаннинг ўқув дастури бўйича мавзуларнинг асосий мазмунини ёки айрим мураккаб мавзулар ва масалаларни ўзлаштириш, назарий ва амалий вазифалар, топшириқларни бажариш бўйича услубий ёрдам кўрсатиш ва педагогик тавсия беришга қаратилган ёрдамчи ўқув адабиёти ҳисобланадиган, таълим муассасаларининг кенгаши тавсияси асосида чоп этиладиган кичик ададли нашр бу нима?</p>
+  <input type="radio" name="54" value="a">Ўқув қўлланма<br>
+  <input type="radio" name="54" value="b">Услубий қўлланма<br>
+  <input type="radio" name="54" value="c">Дарслик<br>
+  <input type="radio" name="54" value="d">Услубий тавсиянома.
+</div>
+
+<!-- 55 -->
+<div class="question" id="q55">
+  <p>55. Аудитория машғулотларининг энг юқори ҳажми ҳафтасига неча соатдан ошмаслиги лозим?</p>
+  <input type="radio" name="55" value="a">30 соат<br>
+  <input type="radio" name="55" value="b">36 соат.<br>
+  <input type="radio" name="55" value="c">40 соат<br>
+  <input type="radio" name="55" value="d">54 соат
+</div>
+
+<!-- 56 -->
+<div class="question" id="q56">
+  <p>56. Божхона институтида ўқув жараёнини масофавий шаклда ўтказиш қандай тартибда амалга оширилади?</p>
+  <input type="radio" name="56" value="a">Институт бошлиғи буйруғига асосан<br>
+  <input type="radio" name="56" value="b">Институт кенгаши қарорига асосан<br>
+  <input type="radio" name="56" value="c">Олий таълим фан ва инновациялар вазири буйруғига асосан<br>
+  <input type="radio" name="56" value="d">Божхона қўмитаси раиси буйруғига асосан.
+</div>
+
+<!-- 57 -->
+<div class="question" id="q57">
+  <p>57. Олий таълим муассасаларида соатбай шаклида дарс ўтиш ўқув йили давомида қанча соатни ташкил этади?</p>
+  <input type="radio" name="57" value="a">100 соат<br>
+  <input type="radio" name="57" value="b">150 соат<br>
+  <input type="radio" name="57" value="c">200 соат.<br>
+  <input type="radio" name="57" value="d">250 соат
+</div>
+
+<!-- 58 -->
+<div class="question" id="q58">
+  <p>58. Олий таълим муассасалари профессор-ўқитувчилари қайта тайёрлаш ва малака ошириш курсларида ўқиш якунлари бўйича аттестациядан ўтмаган тақдирда қаерда дарс ўтиши мумкин?</p>
+  <input type="radio" name="58" value="a">Ишлаб турган олий таълим муассасасида<br>
+  <input type="radio" name="58" value="b">Бошқа олий таълим муассасада<br>
+  <input type="radio" name="58" value="c">Профессионал таълим муассасаларида.<br>
+  <input type="radio" name="58" value="d">Тўғри жавоб йўқ
+</div>
+
+<!-- 59 -->
+<div class="question" id="q59">
+  <p>59. Экспертлар кенгаши йиғилиши заруратга кўра қанча вақтда ўтказилиши белгиланган?</p>
+  <input type="radio" name="59" value="a">Ҳар ҳафтада бир маротаба<br>
+  <input type="radio" name="59" value="b">Икки ойда бир маротаба.<br>
+  <input type="radio" name="59" value="c">Ҳар чоракда бир маротаба<br>
+  <input type="radio" name="59" value="d">Семестрда бир маротаба
+</div>
+
+<!-- 60 -->
+<div class="question" id="q60">
+  <p>60. Экспертлар кенгашига келиб тушган ўқув адабиётларини экспертизадан ўтказиш муддати қанча этиб белгиланади?</p>
+  <input type="radio" name="60" value="a">10 кун<br>
+  <input type="radio" name="60" value="b">15 кун<br>
+  <input type="radio" name="60" value="c">1 ой.<br>
+  <input type="radio" name="60" value="d">2 ой
+</div>
+
+
+
+
+
+  <div class="controls">
+    <button type="button" id="finishBtn" onclick="finishTest()">Tugatish</button>
+    <button type="button" id="saveBtn" onclick="saveResults()">Natijani Saqlash (.txt)</button>
+  </div>
+
+  <h2>Natijalar:</h2>
+  <div id="results"></div>
+</form>
+
+<script>
+
+const correctAnswers = {
+1: "a",
+2: "a",
+3: "a",
+4: "a",
+5: "a",
+6: "a",
+7: "a",
+8: "a",
+9: "a",
+10: "b",
+11: "a",
+12: "b",
+13: "c",
+14: "d",
+15: "c",
+16: "d",
+17: "d",
+18: "d",
+19: "d",
+20: "b",
+21: "d",
+22: "a",
+23: "d",
+24: "d",
+25: "d",
+26: "b",
+27: "d",
+28: "b",
+29: "b",
+30: "b",
+31: "b",
+32: "c",
+33: "b",
+34: "d",
+35: "a",
+36: "b",
+37: "a",
+38: "b",
+39: "c",
+40: "d",
+41: "d",
+42: "a",
+43: "b",
+44: "c",
+45: "c",
+46: "c",
+47: "c",
+48: "d",
+49: "a",
+50: "c",
+51: "c",
+52: "d",
+53: "c",
+54: "d",
+55: "b",
+56: "d",
+57: "c",
+58: "c",
+59: "b",
+60: "c",
+
+};
+
+let finished = false;      
+let timeLeft = 60 * 60;    // 60 min
+let timerInterval;
+
+// TIMER ISHLASHI
+function startTimer() {
+  timerInterval = setInterval(() => {
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      blockAll();
+      finishTest();
+      return;
+    }
+    timeLeft--;
+    updateTimerDisplay();
+  }, 1000);
+}
+
+function updateTimerDisplay() {
+  const m = String(Math.floor(timeLeft / 60)).padStart(2, '0');
+  const s = String(timeLeft % 60).padStart(2, '0');
+  document.getElementById("timer").innerText = `Vaqt: ${m}:${s}`;
+}
+
+startTimer();
+
+// Barcha inputlarni bloklash
+function blockAll() {
+  const all = document.querySelectorAll('input[type="radio"], input[type="text"]');
+  all.forEach(i => i.disabled = true);
+  document.getElementById("finishBtn").disabled = true;
+}
+
+function finishTest() {
+  if (finished) return; // qayta bosishga ruxsat yo‘q
+  finished = true;
+
+  clearInterval(timerInterval);
+  blockAll();
+
+  showResults();
+}
+
+//  BAHO QO'YISH
+function showResults() {
+  const resultsDiv = document.getElementById("results");
+  resultsDiv.innerHTML = "";
+
+  let totalCorrect = 0;
+
+  for (let q in correctAnswers) {
+    const options = document.getElementsByName(q);
+    let selected = null;
+    for (const opt of options) if (opt.checked) selected = opt.value;
+
+    const div = document.createElement("div");
+
+    if (!selected) {
+      div.innerHTML = `${q}: Javob tanlanmagan. To‘g‘ri javob: <span class="correct">${correctAnswers[q]}</span>`;
+      div.classList.add("wrong");
+    } else if (selected === correctAnswers[q]) {
+      div.innerHTML = `${q}: ✅`;
+      div.classList.add("correct");
+      totalCorrect++;
+    } else {
+      div.innerHTML = `${q}: ❌. To‘g‘ri javob: <span class="correct">${correctAnswers[q]}</span>`;
+      div.classList.add("wrong");
+    }
+
+    resultsDiv.appendChild(div);
+  }
+
+  // 5 ballik tizim bo‘yicha baholash
+  let baho = 2;
+  if (totalCorrect >= 51) baho = 5;
+  else if (totalCorrect >= 42) baho = 4;
+  else if (totalCorrect >= 33) baho = 3;
+
+  const summary = document.createElement("div");
+  summary.style.marginTop = "10px";
+  summary.innerHTML = `<strong>Jami to‘g‘ri: ${totalCorrect} / 60 — Baho: ${baho}</strong>`;
+  resultsDiv.appendChild(summary);
+}
+
+// TXT saqlash
+function saveResults() {
+  if (!finished) {
+    alert("Avval tugatish tugmasini bosing!");
+    return;
+  }
+
+  const fio = document.getElementById("fio").value.trim() || "NoName";
+  //const group = document.getElementById("group").value.trim() || "NoGroup";
+  const resultsDiv = document.getElementById("results");
+
+  const header = `Ism: ${fio}\n\n`;
+  const body = resultsDiv.innerText;
+  const textResult = header + body;
+
+  const blob = new Blob([textResult], { type: "text/plain" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = `${fio}_natija.txt`;
+  link.click();
+}
+</script>
+
+</body>
+</html>

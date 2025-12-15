@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<title>Test</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; }
+  .question { margin-bottom: 20px; }
+  .answer { margin-top: 5px; font-weight: bold; }
+  .correct { color: green; }
+  .wrong { color: red; }
+  #timer { font-size: 22px; font-weight: bold; color: green; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+
+<div id="timer">Vaqt: 50:00</div>
+
+<form id="testForm" onsubmit="return false;">
+  <h1><p style="text-align: center; font-weight: 1000;">Темир йўл транспорти йўналиши бўйича тайёрланган</p></h1>
+
+  <label>Ismingizni kiriting:</label><br>
+  <input type="text" id="fio" placeholder="FISH"><br><br>
+<!--
+  <label>Guruh</label><br>
+  <input type="text" id="group" placeholder="YUP/BI"><br><br>
+-->
+
+
+<div class="question">
+  <p><b>1. Темир йўл чегара божхона постларида ахборот тизимларида носозлик юзага келганда қайси ҳолатда божхона органи товарларни етказиб беришнинг назорат ҳужжатини қоғоз шаклида расмийлаштирган ҳолда ташувнинг кейинги босқичига рухсат беради?</b></p>
+  <label><input type="radio" name="1" value="a">Тизим узлуксиз 1 соатдан кўп вақтга узилганда</label><br>
+  <label><input type="radio" name="1" value="b">Тизим узлуксиз 2 соатдан кўп вақтга узилганда</label><br>
+  <label><input type="radio" name="1" value="c">Божхона қўмитаси раҳбариятининг рухсати билан</label><br>
+  <label><input type="radio" name="1" value="d">Тизим узлуксиз 4 соатдан кўп вақтга узилганда</label>
+</div>
+
+<div class="question">
+  <p><b>2. Божхона қўмитасининг ахборот тизимларида юзага келган носозлик бартараф этилгандан сўнг божхона органи декларантни хабардор қилган ҳолда улар томонидан тақдим этилган электрон ҳужжатларни қанча муддатда расмийлаштириши лозим?</b></p>
+  <label><input type="radio" name="2" value="a">3 соат ичида</label><br>
+  <label><input type="radio" name="2" value="b">24 соат ичида</label><br>
+  <label><input type="radio" name="2" value="c">Бир иш куни ичида</label><br>
+  <label><input type="radio" name="2" value="d">Уч иш куни ичида</label>
+</div>
+
+<div class="question">
+  <p><b>3. Божхона қўмитасининг ахборот тизимларида носозлик юзага келганда товар олиб чиқаётган темир йўл таркиблари қандай чиқариб юборилади?</b></p>
+  <label><input type="radio" name="3" value="a">Ҳужжатлардан нусха олиб қолинади</label><br>
+  <label><input type="radio" name="3" value="b">Божхона назоратидан ўтказилади</label><br>
+  <label><input type="radio" name="3" value="c">Чиқариб юбориш таъқиқланади</label><br>
+  <label><input type="radio" name="3" value="d">Ҳужжатлардан нусха олиб қолинади ҳамда божхона назоратидан ўтказилади</label>
+</div>
+
+<div class="question">
+  <p><b>4. Божхона қўмитасининг 30.05.2023 йилдаги 77-сон қарорига асосан электрон тарози маълумотларини автоматик бириктириш имкони мавжуд бўлмаган божхона постларида ушбу маълумотларни бириктириш қайси вақтда амалга оширилади?</b></p>
+  <label><input type="radio" name="4" value="a">Божхона кўздан кечируви якунланган вақтда</label><br>
+  <label><input type="radio" name="4" value="b">Кинолог текшируви якунланган вақтда</label><br>
+  <label><input type="radio" name="4" value="c">Транспорт назорати якунланган вақтда</label><br>
+  <label><input type="radio" name="4" value="d">Юк кузатув ҳужжатлари қабул қилиб олинаётган вақтда</label>
+</div>
+
+<div class="question">
+  <p><b>5. Божхона қўмитасининг 30.05.2023 йилдаги 77-сон қарорига асосан амалда кириб келган темир йўл таркибидаги вагонлар кетма-кетлигини «Ўзбекистон темир йўллари» АЖ томонидан тақдим этилган электрон маълумотлар асосида текшириш ким томонидан амалга оширилади?</b></p>
+  <label><input type="radio" name="5" value="a">Божхона кўздан кечируви ходими томонидан</label><br>
+  <label><input type="radio" name="5" value="b">Кинология хизмати ходими томонидан</label><br>
+  <label><input type="radio" name="5" value="c">Божхона назорати ва расмийлаштируви гуруҳи ходими томонидан</label><br>
+  <label><input type="radio" name="5" value="d">Пост бошлиғи томонидан белгиланган масъул ходим томонидан</label>
+</div>
+
+<div class="question">
+  <p><b>6. Транзит декларацияси жўнатувчи божхона органи томонидан рўйхатга олинган кундан қанча муддат ичида унда кўрсатилган товарлар божхона органига тақдим этилмаган бўлса, транзит декларацияси берилмаган деб ҳисобланади ва автоматик тарзда бекор қилинади?</b></p>
+  <label><input type="radio" name="6" value="a">Ўттиз календарь кун ичида</label><br>
+  <label><input type="radio" name="6" value="b">Ўн календарь кун ичида</label><br>
+  <label><input type="radio" name="6" value="c">Беш иш кун ичида</label><br>
+  <label><input type="radio" name="6" value="d">Ўн иш кун ичида</label>
+</div>
+
+<div class="question">
+  <p><b>7. Божхона органига транзит декларациясини тақдим этиш қандай ҳолатларда талаб этилмайди?</b></p>
+  <label><input type="radio" name="7" value="a">Товар ва транспорт воситалари республика ҳудудига олиб кирилаётганда</label><br>
+  <label><input type="radio" name="7" value="b">Жисмоний шахслар томонидан тижорат мақсадида қўл юки ёки кузатиб бориладиган багажида товарлар олиб ўтаётганида</label><br>
+  <label><input type="radio" name="7" value="c">Юксиз транспорт воситалари ўтганда ҳамда йўловчилар ташилганда, транспорт воситасини Ўзбекистон Республикасининг божхона ҳудудига товар сифатида олиб кириш ва Ўзбекистон Республикасининг ҳудуди орқали товар сифатида транзит олиб ўтиш ҳолатлари бундан мустасно</label><br>
+  <label><input type="radio" name="7" value="d">Юкларни халқаро йўлларда ташиш дафтарчасини қўллаган ҳолда Юкларни халқаро ташиш тўғрисидаги божхона Конвенциясига мувофиқ товарлар Юкларни халқаро йўлларда ташиш дафтарчаси асосида ташилганда</label>
+</div>
+
+<div class="question">
+  <p><b>8. Темир йўл транспорти орқали ҳаракатланаётган битта йўловчининг қўл юки, багажи, валюта ва валюта қимматликларининг божхона кўриги, божхона кўздан кечируви ҳамда йўловчи божхона декларациясини расмийлаштириш вақти неча дақиқани ташкил этади?</b></p>
+  <label><input type="radio" name="8" value="a">2 дақиқа</label><br>
+  <label><input type="radio" name="8" value="b">1 дақиқа</label><br>
+  <label><input type="radio" name="8" value="c">1,5 дақиқа</label><br>
+  <label><input type="radio" name="8" value="d">3 дақиқа</label>
+</div>
+
+<div class="question">
+  <p><b>9. Темир йўл транспорти орқали ҳаракатланаётган йўловчини шахсий кўрикдан ўтказиш вақти қанча?</b></p>
+  <label><input type="radio" name="9" value="a">30 дақиқа ичида</label><br>
+  <label><input type="radio" name="9" value="b">20 дақиқа ичида</label><br>
+  <label><input type="radio" name="9" value="c">10 дақиқа ичида</label><br>
+  <label><input type="radio" name="9" value="d">1 соат ичида</label>
+</div>
+
+<div class="question">
+  <p><b>10. Темир йўл транспорти орқали ҳаракатланаётган йўловчиларни қўл юки багажларини божхона кўриги ва/ёки божхона кўздан кечирувининг амалга ошириш давомийлиги қайси ҳолларда узайтирилиши мумкин?</b></p>
+  <label><input type="radio" name="10" value="a">Божхона қўмитаси ААТ дастурларида носозлик бўлса</label><br>
+  <label><input type="radio" name="10" value="b">Темир йўл станцияси навбатчисига хабар бериш кечикканда</label><br>
+  <label><input type="radio" name="10" value="c">Йўловчининг соғлиги ёмонлашганда</label><br>
+  <label><input type="radio" name="10" value="d">Ҳуқуқбузарлик ҳолати аниқланганда</label>
+</div>
+
+<div class="question">
+  <p><b>11. Темир йўл транспортида халқаро ташиш чоғида товарлар ва (ёки) транспорт воситалари божхона ҳудудига олиб кирилаётганда ташувчи божхона органига қайси хужжатларни тақдим этиши шарт?</b></p>
+  <label><input type="radio" name="11" value="a">Халқаро темир йўл юк йўналишлари тўғрисидаги битимга мувофиқ ҳужжатлар</label><br>
+  <label><input type="radio" name="11" value="b">Товарнинг кузатув ҳужжатлари</label><br>
+  <label><input type="radio" name="11" value="c">Темир йўлнинг ҳаракатдаги таркибига доир топшириш қайдномаси</label><br>
+  <label><input type="radio" name="11" value="d">Барча жавоблар тўғри</label>
+</div>
+
+<div class="question">
+  <p><b>12. Темир йўл транспорт воситасида етказиб берилаётган товарлар бўйича транзит декларациянинг 1 майдонида нима тўғрисида маълумот кўрсатилади?</b></p>
+  <label><input type="radio" name="12" value="a">СМГС шаклидаги темир йўл юк хатида қайд этилган темир йўл вагони рақами кўрсатилади</label><br>
+  <label><input type="radio" name="12" value="b">Транспортнинг (поезднинг) индекс рақами кўрсатилади</label><br>
+  <label><input type="radio" name="12" value="c">Божхона постлари таснифлагичига асосан транзит декларацияси тақдим этиладиган божхона постининг коди ва номи танланади</label><br>
+  <label><input type="radio" name="12" value="d">СМГС шаклидаги темир йўл юк хатида қайд этилган дастлабки жўнатувчи станциянинг коди кўрсатилади</label>
+</div>
+<div class="question">
+  <p><b>13. Темир йўл транспорт воситасида етказиб берилаётган товарлар бўйича транзит декларациянинг 6 майдонида нима тўғрисида маълумот кўрсатилади?</b></p>
+  <label><input type="radio" name="13" value="a">СМГС шаклидаги темир йўл юк хатида қайд этилган темир йўл вагони рақами кўрсатилади</label><br>
+  <label><input type="radio" name="13" value="b">Транспортнинг (поезднинг) индекс рақами кўрсатилади</label><br>
+  <label><input type="radio" name="13" value="c">Божхона постлари таснифлагичига асосан транзит декларацияси тақдим этиладиган божхона постининг коди ва номи танланади</label><br>
+  <label><input type="radio" name="13" value="d">Майдондаги алоҳида ажратилган майдончаларда контейнер рақами, унинг юксиз вазни ва контейнер товар сифатида олиб ўтилаётганлиги ёки товар сифатида олиб ўтилмаётганлиги ҳақидаги маълумотлар</label>
+</div>
+
+<div class="question">
+  <p><b>14. Транзит декларацияси божхона органи ташаббуси билан қандай ҳолларда бекор қилинади?</b></p>
+  <label><input type="radio" name="14" value="a">Қабул қилинган транзит декларациясига белгиланган муддатда декларацияловчи шахс томонидан «Е-Транзит» ААТ орқали ўзгартириш ва (ёки) қўшимча киритилмаса</label><br>
+  <label><input type="radio" name="14" value="b">Қабул қилинган транзит декларациясига белгиланган муддатда декларант томонидан тузатиш киритиш варағи тақдим этилмаса</label><br>
+  <label><input type="radio" name="14" value="c">Транспорт воситалари олиб кирилган чегара божхона назорат зонасини тарк этмасдан қайтариб олиб чиқиб кетилганда</label><br>
+  <label><input type="radio" name="14" value="d">Барча жавоблар тўғри</label>
+</div>
+
+<div class="question">
+  <p><b>15. Қайси ҳолларда транзит декларациясига ўзгартириш ва (ёки) қўшимча киритиш, уни қайтариб олиш таъқиқланади?</b></p>
+  <label><input type="radio" name="15" value="a">Декларант ёки декларацияловчи шахсдан транзит декларациясида кўрсатилган товарларга тегишли ҳужжатлар ва (ёки) маълумотлар талаб қилиниб, бу бўйича текширув якунига етмаган бўлса</label><br>
+  <label><input type="radio" name="15" value="b">Транзит декларациясида кўрсатилган товарларни божхона кўригидан ўтказиш белгиланиб, бу жараён якунига етмаган бўлса</label><br>
+  <label><input type="radio" name="15" value="c">Транзит декларациясида кўрсатилган товарларни божхона экспертизасидан ўтказиш тайинланиб, бу жараён якунига етказилмаган бўлса</label><br>
+  <label><input type="radio" name="15" value="d">Барча жавоблар тўғри</label>
+</div>
+
+<div class="question">
+  <p><b>16. Товар келиб тушадиган божхона органига товарларни етказиб беришнинг энг кўп муддати темир йўл транспорти учун қанча муддатни ташкил этади?</b></p>
+  <label><input type="radio" name="16" value="a">10 кундан ошмаслиги лозим</label><br>
+  <label><input type="radio" name="16" value="b">Икки минг километр учун ўттиз календарь кундан ошмаслиги лозим</label><br>
+  <label><input type="radio" name="16" value="c">Минг километр учун 10 календарь кундан ошмаслиги лозим</label><br>
+  <label><input type="radio" name="16" value="d">30 кундан ошмаслиги лозим</label>
+</div>
+
+<div class="question">
+  <p><b>17. Темир йўл таркиби маълумотлари таркиби маълумотлари бўйича охирги неча кун давомида божхона постига кириб келмаган темир йўл таркиби маълумотлари юзасидан темир йўл станцияси билан аниқлик киритган ҳолда “яроқсиз” мақомига ўтказади?</b></p>
+  <label><input type="radio" name="17" value="a">3 кун</label><br>
+  <label><input type="radio" name="17" value="b">5 кун</label><br>
+  <label><input type="radio" name="17" value="c">2 кун</label><br>
+  <label><input type="radio" name="17" value="d">1 кун</label>
+</div>
+
+<div class="question">
+  <p><b>18. Темир йўл транспорти воситалари божхона постига кириб келишидан неча соат олдин темир йўл таркиби ҳақидаги маълумотлар тақдим этилиши лозим?</b></p>
+  <label><input type="radio" name="18" value="a">Камида 2 соат олдин</label><br>
+  <label><input type="radio" name="18" value="b">Камида 1 соат олдин</label><br>
+  <label><input type="radio" name="18" value="c">Камида 3 соат олдин</label><br>
+  <label><input type="radio" name="18" value="d">Камида 30 дақиқа олдин</label>
+</div>
+
+<div class="question">
+  <p><b>19. Темир йўл транспорти воситалари божхона чегарасидан чиқиб кетишидан неча соат олдин темир йўл таркиби ҳақидаги маълумотлар тақдим этилиши лозим?</b></p>
+  <label><input type="radio" name="19" value="a">Камида 2 соат олдин</label><br>
+  <label><input type="radio" name="19" value="b">Камида 1 соат олдин</label><br>
+  <label><input type="radio" name="19" value="c">Камида 3 соат олдин</label><br>
+  <label><input type="radio" name="19" value="d">Камида 30 дақиқа олдин</label>
+</div>
+
+<div class="question">
+  <p><b>20. Битта товар юзасидан такроран қабул қилинган транзит декларациясини бекор қилишда хавф даражаси қандай бўлган транзит декларациялари бекор қилинади?</b></p>
+  <label><input type="radio" name="20" value="a">Хавф даражаси нисбатан юқори бўлганлари</label><br>
+  <label><input type="radio" name="20" value="b">Хавф даражаси нисбатан паст бўлганлари</label><br>
+  <label><input type="radio" name="20" value="c">Барчаси бекор қилинади</label><br>
+  <label><input type="radio" name="20" value="d">Ҳеч қайси бекор қилинмайди</label>
+</div>
+
+<div class="question">
+  <p><b>21. Агар битта товар юзасидан қабул қилинган транзит декларацияларининг хавф даражалари бир хил бўлса, қайсилари бекор қилинади?</b></p>
+  <label><input type="radio" name="21" value="a">Рўйхатга олиш вақти бўйича дастлабкилари</label><br>
+  <label><input type="radio" name="21" value="b">Рўйхатга олиш вақти бўйича охиргилари</label><br>
+  <label><input type="radio" name="21" value="c">Ҳеч бири</label><br>
+  <label><input type="radio" name="21" value="d">Барчаси</label>
+</div>
+
+<div class="question">
+  <p><b>22. Товарлар темир йўл станциядаги божхона назорати зонасига ёки божхона омборига келиб тушгандан сўнг қанча муддатда товар ва транспорт воситаларининг барча юк ташиш ҳужжатларини божхона органи ходимларига тақдим этиши шарт?</b></p>
+  <label><input type="radio" name="22" value="a">Юк келтирилгандан кейин 30 минутдан кечиктирмасдан</label><br>
+  <label><input type="radio" name="22" value="b">Товар ва транспорт воситалари божхона органининг иш вақтидан ташқари вақтда етказиб келтирилган тақдирда, божхона органининг иш вақти бошланганидан кейин 30 минутдан кечиктирилмасдан</label><br>
+  <label><input type="radio" name="22" value="c">Қисқа муддатларда</label><br>
+  <label><input type="radio" name="22" value="d">Барча жавоблар тўғри</label>
+</div>
+
+<div class="question">
+  <p><b>23. Хавфли юклар транзитига рухсатномалар берилишини кўриб чиқиш бўйича ваколатли органни топинг?</b></p>
+  <label><input type="radio" name="23" value="a">Ўзбекистон Республикаси Транспорт вазирлиги</label><br>
+  <label><input type="radio" name="23" value="b">Ўзбекистон Республикаси Соғлиқни сақлаш вазирлиги</label><br>
+  <label><input type="radio" name="23" value="c">Ўзбекистон Республикаси Божхона қўмитаси</label><br>
+  <label><input type="radio" name="23" value="d">Ўзбекистон Республикаси Туризм ва маданий мерос вазирлиги</label>
+</div>
+
+<div class="question">
+  <p><b>24. Темир йўл чегара божхона постларида «Хавфни бошқариш» тизимини тўлиқ жорий этиш қайси қонун ҳужжат билан белгилаб берилган?</b></p>
+  <label><input type="radio" name="24" value="a">Ўзбекистон Республикаси Президентининг 2020 йил 5 июндаги ПФ-6005-сон Фармони</label><br>
+  <label><input type="radio" name="24" value="b">Ўзбекистон Республикаси Президентининг 2018 йил 12 апрелдаги ПФ-5414-сон Фармони</label><br>
+  <label><input type="radio" name="24" value="c">Ўзбекистон Республикаси Президентининг 2018 йил 12 апрелдаги ПҚ-3665-сон Қарори</label><br>
+  <label><input type="radio" name="24" value="d">Ўзбекистон Республикаси Президентининг 2018 йил 24 ноябрдаги ПФ-5582-сон Фармони</label>
+</div>
+
+<div class="question">
+  <p><b>25. Темир йўл чегара божхона постларида Хавфни бошқариш тизими қачондан бошлаб тўлиқ амалиётга жорий этилди?</b></p>
+  <label><input type="radio" name="25" value="a">2020 йил июнь ойидан бошлаб</label><br>
+  <label><input type="radio" name="25" value="b">2021 йил апрель ойидан бошлаб</label><br>
+  <label><input type="radio" name="25" value="c">2021 йил март ойидан бошлаб</label><br>
+  <label><input type="radio" name="25" value="d">2021 йил июль ойидан бошлаб</label>
+</div>
+
+<div class="question">
+  <p><b>26. Темир йўл чегара постларида «Е-Транзит RW» дастурида юкни етказиб бериш муддати ким томонидан белгиланади?</b></p>
+  <label><input type="radio" name="26" value="a">Пост бошлиғи томонидан</label><br>
+  <label><input type="radio" name="26" value="b">Бош инспектор — смена бошлиғи томонидан</label><br>
+  <label><input type="radio" name="26" value="c">Дастур томонидан автоматик равишда белгиланади</label><br>
+  <label><input type="radio" name="26" value="d">Ҳудудий БНТEБ томонидан белгиланади</label>
+</div>
+
+<div class="question">
+  <p><b>27. Божхона назорати остидаги юклар билан божхона назорати остида бўлмаган юкларни битта темир йўл вагонда (контейнерда) ташиш мумкинми?</b></p>
+  <label><input type="radio" name="27" value="a">Ҳа, мумкин</label><br>
+  <label><input type="radio" name="27" value="b">Йўқ, мумкин эмас</label><br>
+  <label><input type="radio" name="27" value="c">Вагонга кириш имконияти бўлса, мумкин</label><br>
+  <label><input type="radio" name="27" value="d">Барча жавоблар тўғри</label>
+</div>
+
+<div class="question">
+  <p><b>28. Жисмоний шахслар томонидан Темир йўл транспорти орқали шахсий эҳтиёжлари учун олиб кирилаётган товарларнинг божхона тўловлари ундирилмайдиган чекланган меъёридан ортган қисмидан қандай божхона тўловлари ундирилади?</b></p>
+  <label><input type="radio" name="28" value="a">Божхона расмийлаштирув учун йиғим ва ягона божхона тўлови</label><br>
+  <label><input type="radio" name="28" value="b">Ягона божхона тўлови ва акциз солиғи</label><br>
+  <label><input type="radio" name="28" value="c">Божхона расмийлаштирув учун йиғим, импорт божи, акциз солиғи ва ҚҚС</label><br>
+  <label><input type="radio" name="28" value="d">Импорт божи ва ҚҚС</label>
+</div>
+
+<div class="question">
+  <p><b>29. Битта темир йўли юк ҳати билан жўнатилган вагонлардан битта ёки бир нечта вагонни ажратиб бошқа манзилга ўтказиш тартиби тўғри кўрсатилган жавобни белгиланг.</b></p>
+  <label><input type="radio" name="29" value="a">Темир йўл станцияси бошлиғининг ёзма билдиргиси асосида</label><br>
+  <label><input type="radio" name="29" value="b">Божхона органи ходимининг шахсий мухри асосида тасдиқланган далолатномаси асосида</label><br>
+  <label><input type="radio" name="29" value="c">Таъқиқланади</label><br>
+  <label><input type="radio" name="29" value="d">Тўғри жавоб йўқ</label>
+</div>
+
+<div class="question">
+  <p><b>30. Темир йўл чегара постларида «Е-Транзит RW»  дастури темир йўл таркибига вагонларни ким қўшиши мумкин ?</b></p>
+  <label><input type="radio" name="30" value="a">Барча пост ходимлари</label><br>
+  <label><input type="radio" name="30" value="b">Пост бошлиғи</label><br>
+  <label><input type="radio" name="30" value="c">Смена бошлиғи</label><br>
+  <label><input type="radio" name="30" value="d">Расмийлаштирувчи ходим</label>
+</div>
+
+<div class="question">
+  <p><b>31. Темир йўл чегара постларида “Е-Транзит RW”  дастури пост расмийлаштирувчисида қандай мақомлар мавжуд?</b></p>
+  <label><input type="radio" name="31" value="a">Кўздан кечирувчи</label><br>
+  <label><input type="radio" name="31" value="b">Пост расмийлаштирувчи</label><br>
+  <label><input type="radio" name="31" value="c">Транспорт назарати</label><br>
+  <label><input type="radio" name="31" value="d">Барча жавоблар тўғри</label>
+</div>
+
+<div class="question">
+  <p><b>32. Халқаро темир йўл юк йўналишлари тўғрисидаги битим качон қабул қилинган?</b></p>
+  <label><input type="radio" name="32" value="a">1951 йил 1 ноябрь</label><br>
+  <label><input type="radio" name="32" value="b">1950 йил 1 ноябрь</label><br>
+  <label><input type="radio" name="32" value="c">1952 йил 1 ноябрь</label><br>
+  <label><input type="radio" name="32" value="d">1959 йил 1 ноябрь</label>
+</div>
+
+<div class="question">
+  <p><b>33. СМГС талабларига мувофиқ юкхатиниг 7-графасида қандай маълумотлар тўлдирилади ?</b></p>
+  <label><input type="radio" name="33" value="a">Брутто, Нетто вазни</label><br>
+  <label><input type="radio" name="33" value="b">Ўринлар сони</label><br>
+  <label><input type="radio" name="33" value="c">Пломбалар</label><br>
+  <label><input type="radio" name="33" value="d">Вагон номери</label>
+</div>
+
+<div class="question">
+  <p><b>34. СМГС талабларига мувофиқ юкхатиниг 19-графасида қандай маълумотлар тўлдирилади ?</b></p>
+  <label><input type="radio" name="34" value="a">Брутто, Нетто вазни</label><br>
+  <label><input type="radio" name="34" value="b">Ўринлар сони</label><br>
+  <label><input type="radio" name="34" value="c">Пломбалар</label><br>
+  <label><input type="radio" name="34" value="d">Вагон номери</label>
+</div>
+
+<div class="question">
+  <p><b>35. Темир йўл чегара божхона постлари орқали жисмоний шахс томонидан олиб кириладиган алкоголь маҳсулотининг чегараланган нормаси қанча?</b></p>
+  <label><input type="radio" name="35" value="a">Умумий миқдори 1 литрдан кўп бўлмаган</label><br>
+  <label><input type="radio" name="35" value="b">Умумий миқдори 2 литрдан кўп бўлмаган</label><br>
+  <label><input type="radio" name="35" value="c">Умумий миқдори 3 литрдан кўп бўлмаган</label><br>
+  <label><input type="radio" name="35" value="d">Умумий миқдори 4 литрдан кўп бўлмаган</label>
+</div>
+
+<div class="question">
+  <p><b>36. Ўзбекистон Республикаси Вазирлар Маҳкамасининг 463-сон Қарорида келтирилган товарларни қайси турдаги давлат чегарасидан олиб ўтиш тартиби назарда тутилган?</b></p>
+  <label><input type="radio" name="36" value="a">Авто йўл</label><br>
+  <label><input type="radio" name="36" value="b">Темир йўл</label><br>
+  <label><input type="radio" name="36" value="c">Дарё ўтказиш пунклари</label><br>
+  <label><input type="radio" name="36" value="d">Барчаси тўғри</label>
+</div>
+
+<div class="question">
+  <p><b>37. Вагон – ҳоппер вагон турига қандай юклар ташилади?</b></p>
+  <label><input type="radio" name="37" value="a">Люклар орқали гравитацион ортиладиган озиқ-овқат маҳсулотлари</label><br>
+  <label><input type="radio" name="37" value="b">Узун, ҳажмли юклар, ўрмон/тахта, қурилиш маҳсулотлари, контейнер, ғилдиракли асосидаги юкхонаси ҳажмидан ошмайдиган машиналар, ташқи табиий таъсирлардан ҳимоя талаб қилмайдиган юклар</label><br>
+  <label><input type="radio" name="37" value="c">Хавфли бўлмаган, тўкилувчан юклар</label><br>
+  <label><input type="radio" name="37" value="d">Ёпиқ вагон, темир йўллари орқали донали қадоқланган, штабелланган ва пакетланган, баъзи сочилувчан дон маҳсулотлари каби табиий таъсирдан ҳимоя талаб қилувчи юклар</label>
+</div>
+
+<div class="question">
+  <p><b>38. Цистерна вагон турига қандай юклар ташилади?</b></p>
+  <label><input type="radio" name="38" value="a">Люклар орқали гравитацион ортиладиган озиқ-овқат маҳсулотлари</label><br>
+  <label><input type="radio" name="38" value="b">Нефть маҳсулотлари</label><br>
+  <label><input type="radio" name="38" value="c">Хавфли бўлмаган, тўкилувчан юклар</label><br>
+  <label><input type="radio" name="38" value="d">Ёпиқ вагон, темир йўллари орқали донали қадоқланган юклар</label>
+</div>
+
+<div class="question">
+  <p><b>39. Платформа вагон турига қандай юклар ташилади?</b></p>
+  <label><input type="radio" name="39" value="a">Люклар орқали гравитацион ортиладиган озиқ-овқат маҳсулотлари</label><br>
+  <label><input type="radio" name="39" value="b">Узун, ҳажмли юклар, ўрмон/тахта, қурилиш маҳсулотлари, контейнер, ғилдиракли асосидаги юкхонаси ҳажмидан ошмайдиган машиналар, ташқи табиий таъсирлардан ҳимоя талаб қилмайдиган юклар</label><br>
+  <label><input type="radio" name="39" value="c">Хавфли бўлмаган, тўкилувчан юклар</label><br>
+  <label><input type="radio" name="39" value="d">Ёпиқ вагон, темир йўллари орқали донали қадоқланган юклар</label>
+</div>
+
+<div class="question">
+  <p><b>40. Ярим вагон вагон турига қандай юклар ташилади?</b></p>
+  <label><input type="radio" name="40" value="a">Люклар орқали гравитацион ортиладиган озиқ-овқат маҳсулотлари</label><br>
+  <label><input type="radio" name="40" value="b">Узун, ҳажмли юклар, ўрмон/тахта, қурилиш маҳсулотлари, контейнер, ғилдиракли асосидаги юкхонаси ҳажмидан ошмайдиган машиналар, ташқи табиий таъсирдан ҳимоя талаб қилмайдиган юклар</label><br>
+  <label><input type="radio" name="40" value="c">Хавфли бўлмаган, тўкилувчан юклар</label><br>
+  <label><input type="radio" name="40" value="d">Ёпиқ вагон, темир йўллари орқали донали қадоқланган юклар</label>
+</div>
+
+<div class="question">
+  <p><b>41. Темир йўлларида қўлланиладиган асосий вагон турларини белгиланг ?</b></p>
+  <label><input type="radio" name="41" value="a">Ёпиқ 4 ўқли, Ярим вагон, Платформа, Вагон – ҳоппер, Цистерна</label><br>
+  <label><input type="radio" name="41" value="b">Ярим вагон, Платформа, Вагон – ҳоппер</label><br>
+  <label><input type="radio" name="41" value="c">Платформа, Вагон – ҳоппер, Цистерна</label><br>
+  <label><input type="radio" name="41" value="d">Ёпиқ 4 ўқли, Ярим вагон, Платформа, Вагон – ҳоппер</label>
+</div>
+
+<div class="question">
+  <p><b>42. Темир йўл транспортида товарлар ва контейнерлар манзил станцияга етиб келгандан сўнг, ташувчи бу тўғрисида, ҳар бир вагон(контейнер) рақамини кўрсатган ҳолда, божхона органига хабар беради. Ушбу ҳолда хабар бериш қанча вақтда амалга оширилиши лозим?</b></p>
+  <label><input type="radio" name="42" value="a">Хабар қилиш товарлар етказиб берилгандан сўнг ўттиз дақиқадан кечиктирмай</label><br>
+  <label><input type="radio" name="42" value="b">Товарлар товар келиб тушадиган божхона органининг иш вақтидан ташқари пайтда етказиб берилган тақдирда эса, божхона органининг иш вақти бошланганидан кейин ўттиз дақиқадан кечиктирмай амалга оширилади.</label><br>
+  <label><input type="radio" name="42" value="c">А ва Б жавоблар</label><br>
+  <label><input type="radio" name="42" value="d">Тўғри жавоб келтирилмаган</label>
+</div>
+
+<div class="question">
+  <p><b>43. Темир йўл чегара божхона постлари орқали жисмоний шахслар томонидан қанча миқдорда гуруч олиб кетилиши мумкин?</b></p>
+  <label><input type="radio" name="43" value="a">Умумий оғирлиги 3 кг.дан кўп бўлмаган</label><br>
+  <label><input type="radio" name="43" value="b">Умумий оғирлиги 5 кг.дан кўп бўлмаган</label><br>
+  <label><input type="radio" name="43" value="c">Умумий оғирлиги 2 кг.дан кўп бўлмаган</label><br>
+  <label><input type="radio" name="43" value="d">Умумий оғирлиги 40 кг.дан кўп бўлмаган</label>
+</div>
+
+<div class="question">
+  <p><b>44. Темир йўл чегара божхона постлари орқали жисмоний шахслар томонидан янги узилган мева-сабзавот маҳсулотлари, узум, полиз экинлари, дуккакли ўсимликлари ҳамда қуритилган сабзавот ва мевалар қанча миқдорда олиб кетилиши мумкин?</b></p>
+  <label><input type="radio" name="44" value="a">Умумий оғирлиги 5 кг.дан кўп бўлмаган</label><br>
+  <label><input type="radio" name="44" value="b">Умумий оғирлиги 40 кг.дан кўп бўлмаган</label><br>
+  <label><input type="radio" name="44" value="c">Умумий оғирлиги 10 кг.дан кўп бўлмаган</label><br>
+  <label><input type="radio" name="44" value="d">Умумий оғирлиги 2 кг.дан кўп бўлмаган</label>
+</div>
+
+<div class="question">
+  <p><b>45. СМГС талабларига мувофиқ юк хатида Манзил станция тўғрисидаги маълумотлар қайси графасида тўлдирилади ?</b></p>
+  <label><input type="radio" name="45" value="a">4</label><br>
+  <label><input type="radio" name="45" value="b">5</label><br>
+  <label><input type="radio" name="45" value="c">6</label><br>
+  <label><input type="radio" name="45" value="d">7</label>
+</div>
+
+<div class="question">
+  <p><b>46. СМГС талабларига мувофиқ юк хатининг рақами қайси графада кўрсатилади ?</b></p>
+  <label><input type="radio" name="46" value="a">29</label><br>
+  <label><input type="radio" name="46" value="b">28</label><br>
+  <label><input type="radio" name="46" value="c">27</label><br>
+  <label><input type="radio" name="46" value="d">30</label>
+</div>
+
+<div class="question">
+  <p><b>47. СМГС талабларига мувофиқ юкхатиниг 1-графасида қандай маълумотлар тўлдирилади ?</b></p>
+  <label><input type="radio" name="47" value="a">Юборувчи</label><br>
+  <label><input type="radio" name="47" value="b">Пломбалар</label><br>
+  <label><input type="radio" name="47" value="c">Вагон номери</label><br>
+  <label><input type="radio" name="47" value="d">Брутто, Нетто вазни</label>
+</div>
+
+<div class="question">
+  <p><b>48. Қайси ҳолларда божхона назорати остидаги товарлар ортилган транспорт воситаларининг юк бўлимларига махсус божхона пломбалари қўйилмайди?</b></p>
+  <label><input type="radio" name="48" value="a">Бир транспорт воситасида контейнерлар эшиклари бир-бирига қараб жойлаштирилганлиги натижасида пломба қўйишнинг имкони бўлмаса</label><br>
+  <label><input type="radio" name="48" value="b">Товарлар усти очиқ транспорт воситасига юкланса</label><br>
+  <label><input type="radio" name="48" value="c">Темир йўл станцияларида юқори кучланишли электр симлари ўтган жойлардаги вагон ва контейнерларига махсус божхона пломбаларини қўйиш ходимнинг ҳаёти ва саломатлигига жиддий хавф солса</label><br>
+  <label><input type="radio" name="48" value="d">Барча жавоблар тўғри</label>
+</div>
+
+<div class="question">
+  <p><b>49. Ўзбекистон Республикаси Давлат чегараларининг темир йўл божхона чегаралари ўтиш пунктлари орқали олиб ўтишда жисмоний шахс томонидан республикага олиб кириладиган, божхона тўловларига тортилмайдиган товарларнинг чегараланган нормаси канча?</b></p>
+  <label><input type="radio" name="49" value="a">2 000 (икки минг) АҚШ доллари</label><br>
+  <label><input type="radio" name="49" value="b">1 000 (бир минг) АҚШ доллари</label><br>
+  <label><input type="radio" name="49" value="c">300 (уч юз) АҚШ доллари</label><br>
+  <label><input type="radio" name="49" value="d">100 (юз) АҚШ доллари</label>
+</div>
+
+<div class="question">
+  <p><b>50. Темир йўл транспорт воситаларида ташилаётган юкларга нисбатан хавфни бошқариш тизими қайси норматив ҳужжат асосида тартибга солинади ?</b></p>
+  <label><input type="radio" name="50" value="a">БҚ-135 10.07.2021</label><br>
+  <label><input type="radio" name="50" value="b">БҚ-161 10.07.2021</label><br>
+  <label><input type="radio" name="50" value="c">БҚ-138 10.07.2021</label><br>
+  <label><input type="radio" name="50" value="d">БҚ-160 10.07.2021</label>
+</div>
+
+
+
+  <div class="controls">
+    <button type="button" id="finishBtn" onclick="finishTest()">Tugatish</button>
+    <button type="button" id="saveBtn" onclick="saveResults()">Natijani Saqlash (.txt)</button>
+  </div>
+
+  <h2>Natijalar:</h2>
+  <div id="results"></div>
+</form>
+
+<script>
+
+const correctAnswers = {
+  1: "c",
+  2: "c",
+  3: "d",
+  4: "d",
+  5: "d",
+  6: "a",
+  7: "c",
+  8: "c",
+  9: "a",
+  10: "d",
+  11: "d",
+  12: "a",
+  13: "d",
+  14: "d",
+  15: "d",
+  16: "b",
+  17: "a",
+  18: "b",
+  19: "a",
+  20: "b",
+  21: "b",
+  22: "d",
+  23: "a",
+  24: "a",
+  25: "d",
+  26: "c",
+  27: "b",
+  28: "a",
+  29: "c",
+  30: "b",
+  31: "d",
+  32: "a",
+  33: "d",
+  34: "c",
+  35: "b",
+  36: "d",
+  37: "a",
+  38: "b",
+  39: "b",
+  40: "c",
+  41: "a",
+  42: "c",
+  43: "a",
+  44: "b",
+  45: "b",
+  46: "a",
+  47: "a",
+  48: "d",
+  49: "b",
+  50: "b",
+};
+
+let finished = false;      
+let timeLeft = 50 * 60;    // 50 min
+let timerInterval;
+
+// TIMER ISHLASHI
+function startTimer() {
+  timerInterval = setInterval(() => {
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      blockAll();
+      finishTest();
+      return;
+    }
+    timeLeft--;
+    updateTimerDisplay();
+  }, 1000);
+}
+
+function updateTimerDisplay() {
+  const m = String(Math.floor(timeLeft / 60)).padStart(2, '0');
+  const s = String(timeLeft % 60).padStart(2, '0');
+  document.getElementById("timer").innerText = `Vaqt: ${m}:${s}`;
+}
+
+startTimer();
+
+// Barcha inputlarni bloklash
+function blockAll() {
+  const all = document.querySelectorAll('input[type="radio"], input[type="text"]');
+  all.forEach(i => i.disabled = true);
+  document.getElementById("finishBtn").disabled = true;
+}
+
+function finishTest() {
+  if (finished) return; // qayta bosishga ruxsat yo‘q
+  finished = true;
+
+  clearInterval(timerInterval);
+  blockAll();
+
+  showResults();
+}
+
+//  BAHO QO'YISH
+function showResults() {
+  const resultsDiv = document.getElementById("results");
+  resultsDiv.innerHTML = "";
+
+  let totalCorrect = 0;
+
+  for (let q in correctAnswers) {
+    const options = document.getElementsByName(q);
+    let selected = null;
+    for (const opt of options) if (opt.checked) selected = opt.value;
+
+    const div = document.createElement("div");
+
+    if (!selected) {
+      div.innerHTML = `${q}: Javob tanlanmagan. To‘g‘ri javob: <span class="correct">${correctAnswers[q]}</span>`;
+      div.classList.add("wrong");
+    } else if (selected === correctAnswers[q]) {
+      div.innerHTML = `${q}: ✅`;
+      div.classList.add("correct");
+      totalCorrect++;
+    } else {
+      div.innerHTML = `${q}: ❌. To‘g‘ri javob: <span class="correct">${correctAnswers[q]}</span>`;
+      div.classList.add("wrong");
+    }
+
+    resultsDiv.appendChild(div);
+  }
+
+  // 5 ballik tizim bo‘yicha baholash
+   let baho = 2;
+  if (totalCorrect >= 43) baho = 5;
+  else if (totalCorrect >= 35) baho = 4;
+  else if (totalCorrect >= 28) baho = 3;
+
+  const summary = document.createElement("div");
+  summary.style.marginTop = "10px";
+  summary.innerHTML = `<strong>Jami to‘g‘ri: ${totalCorrect} / 50 — Baho: ${baho}</strong>`;
+  resultsDiv.appendChild(summary);
+}
+
+// TXT saqlash
+function saveResults() {
+  if (!finished) {
+    alert("Avval tugatish tugmasini bosing!");
+    return;
+  }
+
+  const fio = document.getElementById("fio").value.trim() || "NoName";
+ // const group = document.getElementById("group").value.trim() || "NoGroup";
+  const resultsDiv = document.getElementById("results");
+
+  const header = `Ism: ${fio}\n\n`;
+  const body = resultsDiv.innerText;
+  const textResult = header + body;
+
+  const blob = new Blob([textResult], { type: "text/plain" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = `${fio}_natija.txt`;
+  link.click();
+}
+</script>
+
+</body>
+</html>

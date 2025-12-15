@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<title>Test</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; }
+  .question { margin-bottom: 20px; }
+  .answer { margin-top: 5px; font-weight: bold; }
+  .correct { color: green; }
+  .wrong { color: red; }
+  #timer { font-size: 22px; font-weight: bold; color: green; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+
+<div id="timer">Vaqt: 08:00</div>
+
+<form id="testForm" onsubmit="return false;">
+  <h1><p style="text-align: center; font-weight: 1000;">1-variant</p></h1>
+
+  <label>Ismingizni kiriting:</label><br>
+  <input type="text" id="fio" placeholder="FISH"><br><br>
+
+  <label>Guruh</label><br>
+  <input type="text" id="group" placeholder="YUP/BI"><br><br>
+
+
+
+  <div class="question" id="q1">
+    <p>1.31 grafada o'ramsiz olib otiladigan tovarlar kodlari berilgan qatorni belgilang?</p>
+    <input type="radio" name="1" value="a"> 01 sochilgan<br>
+    <input type="radio" name="1" value="b"> 02 uyumlangan<br>
+    <input type="radio" name="1" value="c"> 03 quyilgan holda<br>
+  </div>
+
+  <div class="question" id="q2">
+    <p>2. 9 grafada rezident jismoniy shaxslar kodi qaysi?</p>
+    <input type="radio" name="2" value="a"> 000001<br>
+    <input type="radio" name="2" value="b"> 00000001<br>
+    <input type="radio" name="2" value="c"> 0000001<br>
+  </div>
+
+  <div class="question" id="q3">
+        <p>3. Umumiy bojxona qiymatlari qaysi grafada korsatiladi?</p>
+        <input type="radio" name="3" value="a"> 28<br>
+        <input type="radio" name="3" value="b"> 12<br>
+        <input type="radio" name="3" value="c"> 42<br>
+      </div>
+
+      <div class="question" id="q4">
+        <p>4. 44 grafa kim tomonidan to'ldiriladi?</p>
+        <input type="radio" name="4" value="a"> deklarant<br>
+        <input type="radio" name="4" value="b"> yuk jo'natuvchi<br>
+        <input type="radio" name="4" value="c"> Bojxona organi<br>
+      </div>
+
+      <div class="question" id="q5">
+        <p>5. Agar transport vositasi bir nechta davlatga tegishli bulsa 18g bo'yicha qanday kod qoyiladi?</p>
+        <input type="radio" name="5" value="a"> 999<br>
+        <input type="radio" name="5" value="b"> 099<br>
+        <input type="radio" name="5" value="c"> 9999<br>
+      </div>
+
+      <div class="question" id="q6">
+        <p>6.43g asosan  yuk jo'natuvchi tovarni o'zi ishlab chiqargan bo'lsa va ishlab chiqarmagan bo'lsa qanday belgi qo'yiladi?</p>
+        <input type="radio" name="6" value="a"> ishlab chiqargan bo'lsa 01 ishlab chiqarmasa 02<br>
+        <input type="radio" name="6" value="b"> ishlab chiqargan bo'lsa 10 ishlab chiqarmagan 0<br>
+        <input type="radio" name="6" value="c"> ishlab chiqargan bo'lsa 1 ishlab chiqarmagan bo'lsa 0<br>
+      </div>
+
+      <div class="question" id="q7">
+        <p>7. 3g necha qismdan iborat va qaysilar?</p>
+        <input type="radio" name="7" value="a"> 1-bo'lmada varaq tartib raqami 2-bo'lmada varaqlar umumiy soni<br>
+        <input type="radio" name="7" value="b"> 1-bo'lmada tovarlar soni 2-bo'lmada jami varoqlar<br>
+        <input type="radio" name="7" value="c"> 1-bo'lmada varaqlar umumiy soni 2-bo'lmadavaraq tartib raqami<br>
+      </div>
+
+      <div class="question" id="q8">
+        <p>8. 20g ko'ra eksport qilinayotgan tovarlar uchun hisob-kitob shakli ya'ni 2ta raqamli kodining necha xil shakli bor?</p>
+        <input type="radio" name="8" value="a"> 7<br>
+        <input type="radio" name="8" value="b"> 8<br>
+        <input type="radio" name="8" value="c"> 9<br>
+      </div>
+
+      <div class="question" id="q9">
+        <p>9. 39g nima uchun to'ldiriladi?</p>
+        <input type="radio" name="9" value="a"> eksportda to'ldirilmaydi<br>
+        <input type="radio" name="9" value="b"> yuk jo'natuvchi ishlab chiqargan bo'lsa<br>
+        <input type="radio" name="9" value="c"> miqdoriy cheklovlar belgilangan tovarlarni deklaratsiyalashda to'ldiriladi<br>
+      </div>
+
+      <div class="question" id="q10">
+        <p>10. 41g qaday hollarda to'ldirilmaydi?</p>
+        <input type="radio" name="10" value="a"> asosiy o'lchov birligi qo'llansa<br>
+        <input type="radio" name="10" value="b"> beg'araz yordamlarda<br>
+        <input type="radio" name="10" value="c"> Hardoim to'ldiriladi<br>
+      </div>
+
+
+
+
+  <div class="controls">
+    <button type="button" id="finishBtn" onclick="finishTest()">Tugatish</button>
+    <button type="button" id="saveBtn" onclick="saveResults()">Natijani Saqlash (.txt)</button>
+  </div>
+
+  <h2>Natijalar:</h2>
+  <div id="results"></div>
+</form>
+
+<script>
+
+const correctAnswers = {
+  1: "a", 
+  2: "b", 
+  3: "b",
+   4: "c", 
+   5: "a",
+  6: "c", 
+  7: "a", 
+  8: "b", 
+  9: "c", 
+  10: "a",
+  
+};
+
+let finished = false;      
+let timeLeft = 8 * 60;    // 08 min
+let timerInterval;
+
+// TIMER ISHLASHI
+function startTimer() {
+  timerInterval = setInterval(() => {
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      blockAll();
+      finishTest();
+      return;
+    }
+    timeLeft--;
+    updateTimerDisplay();
+  }, 1000);
+}
+
+function updateTimerDisplay() {
+  const m = String(Math.floor(timeLeft / 60)).padStart(2, '0');
+  const s = String(timeLeft % 60).padStart(2, '0');
+  document.getElementById("timer").innerText = `Vaqt: ${m}:${s}`;
+}
+
+startTimer();
+
+// Barcha inputlarni bloklash
+function blockAll() {
+  const all = document.querySelectorAll('input[type="radio"], input[type="text"]');
+  all.forEach(i => i.disabled = true);
+  document.getElementById("finishBtn").disabled = true;
+}
+
+function finishTest() {
+  if (finished) return; // qayta bosishga ruxsat yo‘q
+  finished = true;
+
+  clearInterval(timerInterval);
+  blockAll();
+
+  showResults();
+}
+
+//  BAHO QO'YISH
+function showResults() {
+  const resultsDiv = document.getElementById("results");
+  resultsDiv.innerHTML = "";
+
+  let totalCorrect = 0;
+
+  for (let q in correctAnswers) {
+    const options = document.getElementsByName(q);
+    let selected = null;
+    for (const opt of options) if (opt.checked) selected = opt.value;
+
+    const div = document.createElement("div");
+
+    if (!selected) {
+      div.innerHTML = `${q}: Javob tanlanmagan. To‘g‘ri javob: <span class="correct">${correctAnswers[q]}</span>`;
+      div.classList.add("wrong");
+    } else if (selected === correctAnswers[q]) {
+      div.innerHTML = `${q}: ✅`;
+      div.classList.add("correct");
+      totalCorrect++;
+    } else {
+      div.innerHTML = `${q}: ❌. To‘g‘ri javob: <span class="correct">${correctAnswers[q]}</span>`;
+      div.classList.add("wrong");
+    }
+
+    resultsDiv.appendChild(div);
+  }
+
+  // 5 ballik tizim bo‘yicha baholash
+  let baho = 2;
+  if (totalCorrect >= 9) baho = 5;
+  else if (totalCorrect >= 8) baho = 4;
+  else if (totalCorrect >= 6) baho = 3;
+
+  const summary = document.createElement("div");
+  summary.style.marginTop = "10px";
+  summary.innerHTML = `<strong>Jami to‘g‘ri: ${totalCorrect} / 10 — Baho: ${baho}</strong>`;
+  resultsDiv.appendChild(summary);
+}
+
+// TXT saqlash
+function saveResults() {
+  if (!finished) {
+    alert("Avval tugatish tugmasini bosing!");
+    return;
+  }
+
+  const fio = document.getElementById("fio").value.trim() || "NoName";
+  const group = document.getElementById("group").value.trim() || "NoGroup";
+  const resultsDiv = document.getElementById("results");
+
+  const header = `Ism: ${fio}\nGuruh: ${group}\n\n`;
+  const body = resultsDiv.innerText;
+  const textResult = header + body;
+
+  const blob = new Blob([textResult], { type: "text/plain" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = `${fio}_natija.txt`;
+  link.click();
+}
+</script>
+
+</body>
+</html>

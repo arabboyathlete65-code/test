@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<title>Test</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; }
+  .question { margin-bottom: 20px; }
+  .answer { margin-top: 5px; font-weight: bold; }
+  .correct { color: green; }
+  .wrong { color: red; }
+  #timer { font-size: 22px; font-weight: bold; color: green; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+
+<div id="timer">Vaqt: 50:00</div>
+
+<form id="testForm" onsubmit="return false;">
+  <h1><p style="text-align: center; font-weight: 1000;">Ingliz tili fani bo‘yicha</p></h1>
+
+  <label>Ismingizni kiriting:</label><br>
+  <input type="text" id="fio" placeholder="FISH"><br><br>
+<!--
+  <label>Guruh</label><br>
+  <input type="text" id="group" placeholder="YUP/BI"><br><br>
+-->
+
+
+  <div class="question" id="q1">
+  <p>1. The assessment and collection of duties and taxes ………….one of the main functions of the customs service.</p>
+  <input type="radio" name="1" value="a"> have always been<br>
+  <input type="radio" name="1" value="b"> has always been<br>
+  <input type="radio" name="1" value="c"> had had<br>
+  <input type="radio" name="1" value="d"> have had<br>
+</div>
+
+<div class="question" id="q2">
+  <p>2. Cargo shipments entering the country are to be supplied ……. the necessary documents</p>
+  <input type="radio" name="2" value="a"> with<br>
+  <input type="radio" name="2" value="b"> up<br>
+  <input type="radio" name="2" value="c"> without<br>
+  <input type="radio" name="2" value="d"> within<br>
+</div>
+
+<div class="question" id="q3">
+  <p>3. Laboratory analyses are to be performed in order ……….. merchandise and …………..the correct amount of duty.</p>
+  <input type="radio" name="3" value="a"> to classify / collect<br>
+  <input type="radio" name="3" value="b"> to ascertain / to collect<br>
+  <input type="radio" name="3" value="c"> to detect / charge<br>
+  <input type="radio" name="3" value="d"> to identify / pay<br>
+</div>
+
+<div class="question" id="q4">
+  <p>4. Declarant is a person declaring the ……and (or)…… in its own name or on whose behalf the goods are declared and (or) means of transport.</p>
+  <input type="radio" name="4" value="a"> Goods / equipments<br>
+  <input type="radio" name="4" value="b"> Goods / vehicles<br>
+  <input type="radio" name="4" value="c"> Items / tools<br>
+  <input type="radio" name="4" value="d"> Declarations / documents<br>
+</div>
+
+<div class="question" id="q5">
+  <p>5. When declaring goods and (or) vehicles, the following types of customs declarations are used:</p>
+  <input type="radio" name="5" value="a"> Declaration of the vehicle; Cargo customs declaration; Passenger customs declaration<br>
+  <input type="radio" name="5" value="b"> Cargo customs declaration, Annual declaration, Declaration of the vehicle<br>
+  <input type="radio" name="5" value="c"> Passenger customs declaration, Declaration of the vehicle, Electronic declaration<br>
+  <input type="radio" name="5" value="d"> Declaration of the vehicle, Tax declaration<br>
+</div>
+
+<div class="question" id="q6">
+  <p>6. If you have a foreign currency …. cash not more amount ….. 70 million soums, you can not declare it.</p>
+  <input type="radio" name="6" value="a"> in / of<br>
+  <input type="radio" name="6" value="b"> with / about<br>
+  <input type="radio" name="6" value="c"> in / -<br>
+  <input type="radio" name="6" value="d"> within / of<br>
+</div>
+
+<div class="question" id="q7">
+  <p>7. Declaration should be filled by a person aged…. years of old.</p>
+  <input type="radio" name="7" value="a"> 18<br>
+  <input type="radio" name="7" value="b"> 16<br>
+  <input type="radio" name="7" value="c"> 17<br>
+  <input type="radio" name="7" value="d"> 20<br>
+</div>
+
+<div class="question" id="q8">
+  <p>8. I lost my hand-luggage. I looked _____, but I couldn’t find them.</p>
+  <input type="radio" name="8" value="a"> everywhere<br>
+  <input type="radio" name="8" value="b"> nowhere<br>
+  <input type="radio" name="8" value="c"> anywhere<br>
+  <input type="radio" name="8" value="d"> somewhere<br>
+</div>
+
+<div class="question" id="q9">
+  <p>9. The Customs duty is one of the main payments …….by customs authorities in transferring the goods through customs border.</p>
+  <input type="radio" name="9" value="a"> charging<br>
+  <input type="radio" name="9" value="b"> implementing<br>
+  <input type="radio" name="9" value="c"> given<br>
+  <input type="radio" name="9" value="d"> bringing<br>
+</div>
+
+<div class="question" id="q10">
+  <p>10. Word “excise” came from Latin “accidere” that means “……”.</p>
+  <input type="radio" name="10" value="a"> to impose<br>
+  <input type="radio" name="10" value="b"> to bring<br>
+  <input type="radio" name="10" value="c"> to cut<br>
+  <input type="radio" name="10" value="d"> to take<br>
+</div>
+<div class="question" id="q11">
+  <p>11. He must go …. the red channel, as he has things to declare.</p>
+  <input type="radio" name="11" value="a"> up<br>
+  <input type="radio" name="11" value="b"> at<br>
+  <input type="radio" name="11" value="c"> in<br>
+  <input type="radio" name="11" value="d"> through<br>
+</div>
+
+<div class="question" id="q12">
+  <p>12. A customs warehouse is a specially allocated and equipped premises and (or) open space ….. storage of goods …… customs control.</p>
+  <input type="radio" name="12" value="a"> On / up<br>
+  <input type="radio" name="12" value="b"> For / at<br>
+  <input type="radio" name="12" value="c"> For / under<br>
+  <input type="radio" name="12" value="d"> In / for<br>
+</div>
+
+<div class="question" id="q13">
+  <p>13. ….. you have a veterinary certificate for your dog?</p>
+  <input type="radio" name="13" value="a"> have<br>
+  <input type="radio" name="13" value="b"> do<br>
+  <input type="radio" name="13" value="c"> does<br>
+  <input type="radio" name="13" value="d"> has<br>
+</div>
+
+<div class="question" id="q14">
+  <p>14. He had an accident and was…… injured.</p>
+  <input type="radio" name="14" value="a"> bad<br>
+  <input type="radio" name="14" value="b"> least<br>
+  <input type="radio" name="14" value="c"> badly<br>
+  <input type="radio" name="14" value="d"> few<br>
+</div>
+
+<div class="question" id="q15">
+  <p>15. You are driving too ... . Can you drive ... ?</p>
+  <input type="radio" name="15" value="a"> fast / a bit slowest<br>
+  <input type="radio" name="15" value="b"> fastly / a bit slower<br>
+  <input type="radio" name="15" value="c"> fastly / a bit slowest<br>
+  <input type="radio" name="15" value="d"> fast / a bit slower<br>
+</div>
+
+<div class="question" id="q16">
+  <p>16. …… you please open your case?</p>
+  <input type="radio" name="16" value="a"> do<br>
+  <input type="radio" name="16" value="b"> did<br>
+  <input type="radio" name="16" value="c"> have<br>
+  <input type="radio" name="16" value="d"> will<br>
+</div>
+
+<div class="question" id="q17">
+  <p>17. You…. … argue with the officials.</p>
+  <input type="radio" name="17" value="a"> have to<br>
+  <input type="radio" name="17" value="b"> does not<br>
+  <input type="radio" name="17" value="c"> should not<br>
+  <input type="radio" name="17" value="d"> has to<br>
+</div>
+
+<div class="question" id="q18">
+  <p>18. “Tashkent” international airport completely…… international standards and IT requirements and…… all the types of aircraft.</p>
+  <input type="radio" name="18" value="a"> meet / receive<br>
+  <input type="radio" name="18" value="b"> Met / receive<br>
+  <input type="radio" name="18" value="c"> Meets / receive<br>
+  <input type="radio" name="18" value="d"> Meets / receives<br>
+</div>
+
+<div class="question" id="q19">
+  <p>19. Sorry…. you, but you are not quite right</p>
+  <input type="radio" name="19" value="a"> Interrupt<br>
+  <input type="radio" name="19" value="b"> to interrupt<br>
+  <input type="radio" name="19" value="c"> interrupts<br>
+  <input type="radio" name="19" value="d"> will interrupt<br>
+</div>
+
+<div class="question" id="q20">
+  <p>20. Choose the antonym to the underlined word. He took an active part in the fight of the Central Asian people for their freedom.</p>
+  <input type="radio" name="20" value="a"> Liberation<br>
+  <input type="radio" name="20" value="b"> fight<br>
+  <input type="radio" name="20" value="c"> independence<br>
+  <input type="radio" name="20" value="d"> oppression<br>
+</div>
+
+<div class="question" id="q21">
+  <p>21. What is the synonym of underlined word? To combat smuggling, customs officials have the authority to search an individual and his baggage or any packages or containers sent into the country.</p>
+  <input type="radio" name="21" value="a"> fight<br>
+  <input type="radio" name="21" value="b"> act<br>
+  <input type="radio" name="21" value="c"> prevent<br>
+  <input type="radio" name="21" value="d"> move<br>
+</div>
+
+<div class="question" id="q22">
+  <p>22. Some drug couriers .........narcotics to avoid detection of the drugs if……...</p>
+  <input type="radio" name="22" value="a"> swallow / searched<br>
+  <input type="radio" name="22" value="b"> wallows / searched<br>
+  <input type="radio" name="22" value="c"> have swallowed / searched<br>
+  <input type="radio" name="22" value="d"> are swallowing / are searching<br>
+</div>
+
+<div class="question" id="q23">
+  <p>23. The WCO is officially established in 1952 as the ………………………….</p>
+  <input type="radio" name="23" value="a"> Customs Co-operation Council<br>
+  <input type="radio" name="23" value="b"> Customs cooperation<br>
+  <input type="radio" name="23" value="c"> Executive organ of Customs<br>
+  <input type="radio" name="23" value="d"> Cooperative Council<br>
+</div>
+
+<div class="question" id="q24">
+  <p>24. Which was the first official national flag of America?</p>
+  <input type="radio" name="24" value="a"> Stars and Stripes<br>
+  <input type="radio" name="24" value="b"> Union Flag<br>
+  <input type="radio" name="24" value="c"> Continental Colours<br>
+  <input type="radio" name="24" value="d"> The same as now<br>
+</div>
+
+<div class="question" id="q25">
+  <p>25. The customs territory embodies the land territory of the Republic of Uzbekistan, as well as territorial and inland waters and air space ……. them.</p>
+  <input type="radio" name="25" value="a"> above<br>
+  <input type="radio" name="25" value="b"> out of<br>
+  <input type="radio" name="25" value="c"> under<br>
+  <input type="radio" name="25" value="d"> on<br>
+</div>
+
+<div class="question" id="q26">
+  <p>26. …........... have you been sitting here in the dark all by yourself?</p>
+  <input type="radio" name="26" value="a"> How long<br>
+  <input type="radio" name="26" value="b"> Since noon<br>
+  <input type="radio" name="26" value="c"> When<br>
+  <input type="radio" name="26" value="d"> How much<br>
+  <input type="radio" name="26" value="e"> How many<br>
+</div>
+
+<div class="question" id="q27">
+  <p>27. The WCO offers its members a range of ………… and other international instruments, as well as technical ………….and training services.</p>
+  <input type="radio" name="27" value="a"> Conventions / assistance<br>
+  <input type="radio" name="27" value="b"> Tools / confidence<br>
+  <input type="radio" name="27" value="c"> Issues / supply<br>
+  <input type="radio" name="27" value="d"> Conventions / education<br>
+</div>
+
+<div class="question" id="q28">
+  <p>28. Customs had to establish the legal foundation …………. legitimate trade and travel, ………… business, to safeguard the quality of life and public health.</p>
+  <input type="radio" name="28" value="a"> to facilitate / to encourage<br>
+  <input type="radio" name="28" value="b"> facilitate / increase<br>
+  <input type="radio" name="28" value="c"> to lead / to move<br>
+  <input type="radio" name="28" value="d"> to provide / to supply<br>
+</div>
+
+<div class="question" id="q29">
+  <p>29. The synonym of the verb “to charge” is …………..</p>
+  <input type="radio" name="29" value="a"> to seize<br>
+  <input type="radio" name="29" value="b"> to hide<br>
+  <input type="radio" name="29" value="c"> to release<br>
+  <input type="radio" name="29" value="d"> to levy<br>
+</div>
+
+<div class="question" id="q30">
+  <p>30. I can’t let you ……….without your report</p>
+  <input type="radio" name="30" value="a"> to go<br>
+  <input type="radio" name="30" value="b"> gone<br>
+  <input type="radio" name="30" value="c"> go<br>
+  <input type="radio" name="30" value="d"> have gone<br>
+</div>
+<div class="question" id="q31">
+  <p>31. I have to ask you ……..your gun at the customs.</p>
+  <input type="radio" name="31" value="a"> leave<br>
+  <input type="radio" name="31" value="b"> to leave<br>
+  <input type="radio" name="31" value="c"> leaving<br>
+  <input type="radio" name="31" value="d"> have to leave<br>
+</div>
+
+<div class="question" id="q32">
+  <p>32. You are ………this icon.</p>
+  <input type="radio" name="32" value="a"> declare<br>
+  <input type="radio" name="32" value="b"> to declare<br>
+  <input type="radio" name="32" value="c"> declared<br>
+  <input type="radio" name="32" value="d"> have declare<br>
+</div>
+
+<div class="question" id="q33">
+  <p>33. You’d better fill out the declaration …..block letters.</p>
+  <input type="radio" name="33" value="a"> on<br>
+  <input type="radio" name="33" value="b"> in<br>
+  <input type="radio" name="33" value="c"> of<br>
+  <input type="radio" name="33" value="d"> wich<br>
+</div>
+
+<div class="question" id="q34">
+  <p>34. Exhibition goods …………goods are subject to customs control.</p>
+  <input type="radio" name="34" value="a"> some of<br>
+  <input type="radio" name="34" value="b"> so as<br>
+  <input type="radio" name="34" value="c"> as any other<br>
+  <input type="radio" name="34" value="d"> as a<br>
+</div>
+
+<div class="question" id="q35">
+  <p>35. What are the synonyms of underlined words? In the process of customs clearance the customs officials examine exhibition goods to see whether the data declared by the participant in the shipping documents coincide with the contents.</p>
+  <input type="radio" name="35" value="a"> Check / information<br>
+  <input type="radio" name="35" value="b"> Inspect / date<br>
+  <input type="radio" name="35" value="c"> Observe / inform<br>
+  <input type="radio" name="35" value="d"> Look / declare<br>
+</div>
+
+<div class="question" id="q36">
+  <p>36. Mr. Saidov didn’t _____ yesterday afternoon; he _____ at home.</p>
+  <input type="radio" name="36" value="a"> go out / stayed<br>
+  <input type="radio" name="36" value="b"> Went out / stay<br>
+  <input type="radio" name="36" value="c"> go out / stay<br>
+  <input type="radio" name="36" value="d"> went out / stayed<br>
+</div>
+
+<div class="question" id="q37">
+  <p>37. I _____ a friend while I _____ the shopping.</p>
+  <input type="radio" name="37" value="a"> met / was doing<br>
+  <input type="radio" name="37" value="b"> Will meet / am doing<br>
+  <input type="radio" name="37" value="c"> Was meeting / did<br>
+  <input type="radio" name="37" value="d"> meet / do<br>
+</div>
+
+<div class="question" id="q38">
+  <p>38. The definition of the word “to release” is ………….</p>
+  <input type="radio" name="38" value="a"> to give freedom or free movement to someone or something<br>
+  <input type="radio" name="38" value="b"> to apprehend someone<br>
+  <input type="radio" name="38" value="c"> to leave something<br>
+  <input type="radio" name="38" value="d"> to depend on someone<br>
+</div>
+
+<div class="question" id="q39">
+  <p>39. These flowers ______ all dead; please give me some fresh ______.</p>
+  <input type="radio" name="39" value="a"> are / ones<br>
+  <input type="radio" name="39" value="b"> Was / were<br>
+  <input type="radio" name="39" value="c"> will be / one<br>
+  <input type="radio" name="39" value="d"> will / -<br>
+</div>
+
+<div class="question" id="q40">
+  <p>40. She can speak Turkish quite fluently; and so ______.</p>
+  <input type="radio" name="40" value="a"> can her friend<br>
+  <input type="radio" name="40" value="b"> am I<br>
+  <input type="radio" name="40" value="c"> is he<br>
+  <input type="radio" name="40" value="d"> he<br>
+</div>
+
+<div class="question" id="q41">
+  <p>41. I understand that you’ve sent him an e-mail message. I think you …............ him instead</p>
+  <input type="radio" name="41" value="a"> should have phoned<br>
+  <input type="radio" name="41" value="b"> should phone<br>
+  <input type="radio" name="41" value="c"> couldn’t have phoned<br>
+  <input type="radio" name="41" value="d"> must not have phoned<br>
+</div>
+
+<div class="question" id="q42">
+  <p>42. Collection of the revenue is the …………………. with which the customs usually started</p>
+  <input type="radio" name="42" value="a"> responsibility<br>
+  <input type="radio" name="42" value="b"> obligatory<br>
+  <input type="radio" name="42" value="c"> liabilities<br>
+  <input type="radio" name="42" value="d"> possibility<br>
+</div>
+
+<div class="question" id="q43">
+  <p>43. Merchandise ………… is the foundation on which duty collection occurs.</p>
+  <input type="radio" name="43" value="a"> classification<br>
+  <input type="radio" name="43" value="b"> collection<br>
+  <input type="radio" name="43" value="c"> check-in<br>
+  <input type="radio" name="43" value="d"> testing<br>
+</div>
+
+<div class="question" id="q44">
+  <p>44. All goods entering the country should be classified by use of the established numerical ………… system.</p>
+  <input type="radio" name="44" value="a"> coding<br>
+  <input type="radio" name="44" value="b"> accounting<br>
+  <input type="radio" name="44" value="c"> complicated<br>
+  <input type="radio" name="44" value="d"> appraisement<br>
+</div>
+
+<div class="question" id="q45">
+  <p>45. Please, keep your arrival copy till….</p>
+  <input type="radio" name="45" value="a"> departure<br>
+  <input type="radio" name="45" value="b"> way<br>
+  <input type="radio" name="45" value="c"> arrival<br>
+  <input type="radio" name="45" value="d"> road<br>
+</div>
+
+<div class="question" id="q46">
+  <p>46. The synonym of “violation” is…………….</p>
+  <input type="radio" name="46" value="a"> infringement<br>
+  <input type="radio" name="46" value="b"> valuation<br>
+  <input type="radio" name="46" value="c"> bribes<br>
+  <input type="radio" name="46" value="d"> fraud<br>
+</div>
+
+<div class="question" id="q47">
+  <p>47. The synonym of “merchandise” is…………….</p>
+  <input type="radio" name="47" value="a"> commodity<br>
+  <input type="radio" name="47" value="b"> trade<br>
+  <input type="radio" name="47" value="c"> compartment<br>
+  <input type="radio" name="47" value="d"> consumer<br>
+</div>
+
+<div class="question" id="q48">
+  <p>48. Entry declaration must be kept… the passenger till the duration of his stay in the country.</p>
+  <input type="radio" name="48" value="a"> of<br>
+  <input type="radio" name="48" value="b"> from<br>
+  <input type="radio" name="48" value="c"> by<br>
+  <input type="radio" name="48" value="d"> up<br>
+</div>
+
+<div class="question" id="q49">
+  <p>49. Norms of duty-free import of goods to Uzbekistan: through airports is up to….., by railway - ………, through road checkpoints - …….    .</p>
+  <input type="radio" name="49" value="a"> $2000 / $1000 / $300<br>
+  <input type="radio" name="49" value="b"> $100 / $2000 / $300<br>
+  <input type="radio" name="49" value="c"> $3000 / $1000 / $100<br>
+  <input type="radio" name="49" value="d"> $2000 / $1000 / $100<br>
+</div>
+
+<div class="question" id="q50">
+  <p>50. The synonym of the word “forbidden” is………….</p>
+  <input type="radio" name="50" value="a"> prohibited<br>
+  <input type="radio" name="50" value="b"> restricted<br>
+  <input type="radio" name="50" value="c"> allowed<br>
+  <input type="radio" name="50" value="d"> promised<br>
+</div>
+
+
+
+
+  <div class="controls">
+    <button type="button" id="finishBtn" onclick="finishTest()">Tugatish</button>
+    <button type="button" id="saveBtn" onclick="saveResults()">Natijani Saqlash (.txt)</button>
+  </div>
+
+  <h2>Natijalar:</h2>
+  <div id="results"></div>
+</form>
+
+<script>
+
+const correctAnswers = {
+  1: "b",
+  2: "a",
+  3: "b",
+  4: "b",
+  5: "a",
+  6: "a",
+  7: "b",
+  8: "a",
+  9: "a",
+  10: "c",
+  11: "d",
+  12: "c",
+  13: "b",
+  14: "c",
+  15: "d",
+  16: "d",
+  17: "c",
+  18: "d",
+  19: "b",
+  20: "d",
+   21: "a",
+  22: "a",
+  23: "a",
+  24: "a",
+  25: "a",
+  26: "a",
+  27: "a",
+  28: "a",
+  29: "d",
+  30: "c",
+  31: "b",
+  32: "b",
+  33: "b",
+  34: "c",
+  35: "a",
+  36: "c",
+  37: "a",
+  38: "a",
+  39: "a",
+  40: "d",
+   41: "a",
+  42: "a",
+  43: "a",
+  44: "a",
+  45: "a",
+  46: "a",
+  47: "a",
+  48: "c",
+  49: "a",
+  50: "a",
+};
+
+let finished = false;      
+let timeLeft = 50 * 60;    // 50 min
+let timerInterval;
+
+// TIMER ISHLASHI
+function startTimer() {
+  timerInterval = setInterval(() => {
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      blockAll();
+      finishTest();
+      return;
+    }
+    timeLeft--;
+    updateTimerDisplay();
+  }, 1000);
+}
+
+function updateTimerDisplay() {
+  const m = String(Math.floor(timeLeft / 60)).padStart(2, '0');
+  const s = String(timeLeft % 60).padStart(2, '0');
+  document.getElementById("timer").innerText = `Vaqt: ${m}:${s}`;
+}
+
+startTimer();
+
+// Barcha inputlarni bloklash
+function blockAll() {
+  const all = document.querySelectorAll('input[type="radio"], input[type="text"]');
+  all.forEach(i => i.disabled = true);
+  document.getElementById("finishBtn").disabled = true;
+}
+
+function finishTest() {
+  if (finished) return; // qayta bosishga ruxsat yo‘q
+  finished = true;
+
+  clearInterval(timerInterval);
+  blockAll();
+
+  showResults();
+}
+
+//  BAHO QO'YISH
+function showResults() {
+  const resultsDiv = document.getElementById("results");
+  resultsDiv.innerHTML = "";
+
+  let totalCorrect = 0;
+
+  for (let q in correctAnswers) {
+    const options = document.getElementsByName(q);
+    let selected = null;
+    for (const opt of options) if (opt.checked) selected = opt.value;
+
+    const div = document.createElement("div");
+
+    if (!selected) {
+      div.innerHTML = `${q}: Javob tanlanmagan. To‘g‘ri javob: <span class="correct">${correctAnswers[q]}</span>`;
+      div.classList.add("wrong");
+    } else if (selected === correctAnswers[q]) {
+      div.innerHTML = `${q}: ✅`;
+      div.classList.add("correct");
+      totalCorrect++;
+    } else {
+      div.innerHTML = `${q}: ❌. To‘g‘ri javob: <span class="correct">${correctAnswers[q]}</span>`;
+      div.classList.add("wrong");
+    }
+
+    resultsDiv.appendChild(div);
+  }
+
+  // 5 ballik tizim bo‘yicha baholash
+ let baho = 2;
+  if (totalCorrect >= 43) baho = 5;
+  else if (totalCorrect >= 35) baho = 4;
+  else if (totalCorrect >= 28) baho = 3;
+
+  const summary = document.createElement("div");
+  summary.style.marginTop = "10px";
+  summary.innerHTML = `<strong>Jami to‘g‘ri: ${totalCorrect} / 50 — Baho: ${baho}</strong>`;
+  resultsDiv.appendChild(summary);
+}
+
+// TXT saqlash
+function saveResults() {
+  if (!finished) {
+    alert("Avval tugatish tugmasini bosing!");
+    return;
+  }
+
+  const fio = document.getElementById("fio").value.trim() || "NoName";
+  //const group = document.getElementById("group").value.trim() || "NoGroup";
+  const resultsDiv = document.getElementById("results");
+
+  const header = `Ism: ${fio}\n\n`;
+  const body = resultsDiv.innerText;
+  const textResult = header + body;
+
+  const blob = new Blob([textResult], { type: "text/plain" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = `${fio}_natija.txt`;
+  link.click();
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<title>Test</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; }
+  .question { margin-bottom: 20px; }
+  .answer { margin-top: 5px; font-weight: bold; }
+  .correct { color: green; }
+  .wrong { color: red; }
+  #timer { font-size: 22px; font-weight: bold; color: green; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+
+<div id="timer">Vaqt: 60:00</div>
+
+<form id="testForm" onsubmit="return false;">
+  <h1><p style="text-align: center; font-weight: 1000;">Ўқув баталони йўналишида тест-савол жавоблари.</p></h1>
+
+  <label>Ismingizni kiriting:</label><br>
+  <input type="text" id="fio" placeholder="FISH"><br><br>
+<!--
+  <label>Guruh</label><br>
+  <input type="text" id="group" placeholder="YUP/BI"><br><br>
+-->
+
+
+<!-- 1 -->
+<div class="question" id="q1">
+  <p>1. Божхона хизмати майори унвонида хизматни ўташ қанча муддатни ташкил этади?</p>
+  <input type="radio" name="1" value="a">5 йил<br>
+  <input type="radio" name="1" value="b">4 йил<br>
+  <input type="radio" name="1" value="c">3 йил<br>
+  <input type="radio" name="1" value="d">2 йил
+</div>
+
+<!-- 2 -->
+<div class="question" id="q2">
+  <p>2. Кучайтирилган ва суткалик режимларни жорий этиш ҳамда бекор қилиш, шунингдек божхона органлари ходимларини жанговар ҳаракатларда иштирок этишга жалб этиш кимнинг буйруғи билан амалга оширилади?</p>
+  <input type="radio" name="2" value="a">Бошқарма бошлиғи<br>
+  <input type="radio" name="2" value="b">Раис ўринбосари<br>
+  <input type="radio" name="2" value="c">Бош вазир<br>
+  <input type="radio" name="2" value="d">ДБҚ Раиси
+</div>
+
+<!-- 3 -->
+<div class="question" id="q3">
+  <p>3. Қуйида кўрсатилганлардан қайси бири ҳарбий хизматни ўташ тартибига қарши жиноятлар сирасига кирмайди?</p>
+  <input type="radio" name="3" value="a">ЖКнинг 278-моддаси<br>
+  <input type="radio" name="3" value="b">ЖКнинг 279-моддаси<br>
+  <input type="radio" name="3" value="c">ЖКнинг 280-моддаси<br>
+  <input type="radio" name="3" value="d">ЖКнинг 281-моддаси
+</div>
+
+<!-- 4 -->
+<div class="question" id="q4">
+  <p>4. Ҳарбий хизматчига узида юқори турувчи бошлиқнинг талаб ва буйруқларини бажармаслиги Ўзбекистон Республикаси Жиноят кодексининг қайси моддаси билан малакаланади?</p>
+  <input type="radio" name="4" value="a">ЖКнинг 280-моддаси<br>
+  <input type="radio" name="4" value="b">ЖКнинг 279-моддаси<br>
+  <input type="radio" name="4" value="c">ЖКнинг 281-моддаси<br>
+  <input type="radio" name="4" value="d">ЖКнинг 278-моддаси
+</div>
+
+<!-- 5 -->
+<div class="question" id="q5">
+  <p>5. Ҳарбий хизматчига узидан юқори турувчи бошлиқнинг талаб ва буйруқларига бўйсунмаслиги Ўзбекистон Республикаси Жиноят кодексининг қайси моддаси билан малакаланади?</p>
+  <input type="radio" name="5" value="a">ЖКнинг 279-моддаси<br>
+  <input type="radio" name="5" value="b">ЖКнинг 280-моддаси<br>
+  <input type="radio" name="5" value="c">ЖКнинг 281-моддаси<br>
+  <input type="radio" name="5" value="d">ЖКнинг 282-моддаси
+</div>
+
+<!-- 6 -->
+<div class="question" id="q6">
+  <p>6. Институт ҳудудида фавқулодда ҳолат содир бўлган пайтда (ёнғин вақтида) курсантлардан тайинланган ўт ўчириш гурухига қайси курсдан нечта курсант жалб этилади?</p>
+  <input type="radio" name="6" value="a">Биринчи курсдан 30 та<br>
+  <input type="radio" name="6" value="b">Иккинчи курсдан 20 та<br>
+  <input type="radio" name="6" value="c">Учинчи курсдан 30 та<br>
+  <input type="radio" name="6" value="d">Тўртинчи курсдан 20 та
+</div>
+
+<!-- 7 -->
+<div class="question" id="q7">
+  <p>7. Курсантларнинг кун давомида овқатланиши орасидаги вақт неччи соатдан ошмаслиги керак? Тановулдан сўнг курсантлар неччи соат мобайнида жисмоний машғулотлар ёхуд оғир жисмоний хўжалик ишларига жалб қилинмаслиги лозим?</p>
+  <input type="radio" name="7" value="a">7 соат, ярим соат<br>
+  <input type="radio" name="7" value="b">6 соат, бир соат<br>
+  <input type="radio" name="7" value="c">8 соат, бир ярим соат<br>
+  <input type="radio" name="7" value="d">7 соат, бир соат
+</div>
+
+<!-- 8 -->
+<div class="question" id="q8">
+  <p>8. Қишда барча хоналар, шунингдек, тиббиёт хизмати хоналарида ҳаво ҳарорати неча градусдан паст бўлмаслиги лозим?</p>
+  <input type="radio" name="8" value="a">+18,+22<br>
+  <input type="radio" name="8" value="b">+17,+20<br>
+  <input type="radio" name="8" value="c">+18,+20<br>
+  <input type="radio" name="8" value="d">+20,+20
+</div>
+
+<!-- 9 -->
+<div class="question" id="q9">
+  <p>9. Ёнғин содир бўлганида биринчи навбатда кимга хабар бериш керак?</p>
+  <input type="radio" name="9" value="a">Навбатчилик қисмига<br>
+  <input type="radio" name="9" value="b">Ёнғин хавфсизлигига<br>
+  <input type="radio" name="9" value="c">Институт бошлиғига<br>
+  <input type="radio" name="9" value="d">Институт бошлиғи ўринбосарига
+</div>
+
+<!-- 10 -->
+<div class="question" id="q10">
+  <p>10. Энг камида қанча вақт оралиғида институтда ёнғинга қарши муҳофаза чоралари ташкил этилганлигини текшириш ва бир йилда неча маротаба «Ёнгин» хабари бўйича шахсий таркибнинг ҳаракатланиши буйича ўқув машғулотларини ўтказиш лозим?</p>
+  <input type="radio" name="10" value="a">2 ой, 1 марта<br>
+  <input type="radio" name="10" value="b">6 ой, 2 марта<br>
+  <input type="radio" name="10" value="c">3 ой, 2 марта<br>
+  <input type="radio" name="10" value="d">3 ой, 1 марта
+</div>
+
+
+<!-- 11 -->
+<div class="question" id="q11">
+  <p>11. ДБҚнинг 684-сонли буйруғига биноан Институт бўйича суткалик нарядга тайинланган масъул ходимларнинг хизматни ўташ муддати қайси жавобда тўғри белгиланган?</p>
+  <input type="radio" name="11" value="a">Соат 9:00 дан кейинги кун 9:00 гача<br>
+  <input type="radio" name="11" value="b">Соат 18:00 дан кейинги кун 18:00 гача<br>
+  <input type="radio" name="11" value="c">Соат 16:00 дан кейинги кун 16:00 гача<br>
+  <input type="radio" name="11" value="d">Соат 8:00 дан кейинги кун 8:00 гача
+</div>
+
+<!-- 12 -->
+<div class="question" id="q12">
+  <p>12. ДБҚнинг 684-сонли буйруғига биноан Институтда «ЙИҒИН» командасини ташкил этиш режаси кимлар томонидан ишлаб чиқилади?</p>
+  <input type="radio" name="12" value="a">Институт бошлиғи ва биринчи ўринбосари<br>
+  <input type="radio" name="12" value="b">Институт бошлиғи тарбиявий ишлар ва ҳарбий тайёргарлик бўйича ўринбосари ва кадрлар бўлими, жанговор хизмат тайёргарлик ва сафарбарлик ишлари гуруҳи<br>
+  <input type="radio" name="12" value="c">Кадрлар бўлими, жанговор хизмат тайёргарлик ва сафарбарлик ишлари гуруҳи катта инспектори<br>
+  <input type="radio" name="12" value="d">ДБҚ томонидан
+</div>
+
+<!-- 13 -->
+<div class="question" id="q13">
+  <p>13. Ўзбекистон Республикаси Қуролли Кучларининг Саф низоми қачон ва ким томонидан жорий этилган?</p>
+  <input type="radio" name="13" value="a">1996 йил 14 сентябрь, Мудофаа Вазири томонидан<br>
+  <input type="radio" name="13" value="b">1996 йил 14 октябрь, Ўзбекистон Республикаси Президенти томонидан<br>
+  <input type="radio" name="13" value="c">1996 йил 14 октябрь, Мудофаа Вазири томонидан<br>
+  <input type="radio" name="13" value="d">1996 йил 9 октябрь, Ўзбекистон Республикаси Президенти томонидан
+</div>
+
+<!-- 14 -->
+<div class="question" id="q14">
+  <p>14. Ҳарбий хизматчилар, кичик бўлинмалар ва қисмларнинг Низомга кўра пиёда ва машиналарда биргаликда ҳаракат қилиш учун жойлашуви ….. деб аталади.</p>
+  <input type="radio" name="14" value="a">Қатор<br>
+  <input type="radio" name="14" value="b">Колонна<br>
+  <input type="radio" name="14" value="c">Саф<br>
+  <input type="radio" name="14" value="d">Шеренга
+</div>
+
+<!-- 15 -->
+<div class="question" id="q15">
+  <p>15. Қадам ташлаш ҳаракати минутига нечта қадам бўлиши керак?</p>
+  <input type="radio" name="15" value="a">70-80<br>
+  <input type="radio" name="15" value="b">110-120<br>
+  <input type="radio" name="15" value="c">90-110<br>
+  <input type="radio" name="15" value="d">100-130
+</div>
+
+<!-- 16 -->
+<div class="question" id="q16">
+  <p>16. Ўзбекистон Республикаси Қуролли Кучларининг умумҳарбий Низомлари нечта низомни ўз ичига олади?</p>
+  <input type="radio" name="16" value="a">3 та<br>
+  <input type="radio" name="16" value="b">7 та<br>
+  <input type="radio" name="16" value="c">4 та<br>
+  <input type="radio" name="16" value="d">6 та
+</div>
+
+<!-- 17 -->
+<div class="question" id="q17">
+  <p>17. Ҳар бир ҳарбий хизматчининг саф усулларини бажариш кўникмаси ҳамда бўлинмаларнинг сафда туриш ва юриш малакасини аниқлаш учун нима ўтказилади?</p>
+  <input type="radio" name="17" value="a">Саф кўриги<br>
+  <input type="radio" name="17" value="b">Жанговор шайлик<br>
+  <input type="radio" name="17" value="c">Низом бўйича савол жавоб<br>
+  <input type="radio" name="17" value="d">Ички тартиб
+</div>
+
+<!-- 18 -->
+<div class="question" id="q18">
+  <p>18. Ўзбекистон Республикаси Қуролли Кучларининг умумҳарбий Низомлари қачон ва қайси фармонига асосан тасдиқланган?</p>
+  <input type="radio" name="18" value="a">09.10.1996, ПФ-1571<br>
+  <input type="radio" name="18" value="b">10.02.1995, ПФ-1096<br>
+  <input type="radio" name="18" value="c">11.06.1998, ПФ-657<br>
+  <input type="radio" name="18" value="d">01.10.1999, ПФ-7555
+</div>
+
+<!-- 19 -->
+<div class="question" id="q19">
+  <p>19. Қайси команда берилганда ҳарбий хизматчилар сафдаги жойидан жилмасдан кийим-кечак ва анжомларини тўғирлайди?</p>
+  <input type="radio" name="19" value="a">Ростлан<br>
+  <input type="radio" name="19" value="b">Тўғирилансин<br>
+  <input type="radio" name="19" value="c">Сафлан<br>
+  <input type="radio" name="19" value="d">Бош кийимлар кийилсин
+</div>
+
+<!-- 20 -->
+<div class="question" id="q20">
+  <p>20. Соғлиғи туфайли жисмоний машқларни бажара олмайдиган курсантлар эрталабги бадантарбия вақтида қандай машғулотларга жалб қилинади?</p>
+  <input type="radio" name="20" value="a">Эрталабки сайр<br>
+  <input type="radio" name="20" value="b">Ҳудудни тозалаш<br>
+  <input type="radio" name="20" value="c">Ҳеч қандай машғулотга жалб қилинмайди<br>
+  <input type="radio" name="20" value="d">а ва б жавоблар тўғри
+</div>
+
+
+<!-- 21 -->
+<div class="question" id="q21">
+  <p>21. Дала-ҳарбий ўқув йиғини раҳбари этиб ким тайинланади?</p>
+  <input type="radio" name="21" value="a">Институт бошлиғининг хўжалик ишлари бўйича ўринбосари<br>
+  <input type="radio" name="21" value="b">Институт бошлиғининг тарбиявий ишлар ва ҳарбий тайёргарлик бўйича ўринбосари<br>
+  <input type="radio" name="21" value="c">Ўқув батальони бошлиғи<br>
+  <input type="radio" name="21" value="d">Институт бошлиғи
+</div>
+
+<!-- 22 -->
+<div class="question" id="q22">
+  <p>22. Дала-ҳарбий ўқув йиғини вақтида суткалик наряд ташкил этилиб, унга кимлар орасидан масъуллар белгиланади?</p>
+  <input type="radio" name="22" value="a">Институт раҳбарияти<br>
+  <input type="radio" name="22" value="b">Шаҳодатланган ходимлар<br>
+  <input type="radio" name="22" value="c">Навбатчилик қисми<br>
+  <input type="radio" name="22" value="d">Ҳарбий кафедра
+</div>
+
+<!-- 23 -->
+<div class="question" id="q23">
+  <p>23. Ўзбекистон Республикаси давлат божхона хизмати органларининг Интизомий устави қайси норматив-ҳуқуқий ҳужжат билан тасдиқланган?</p>
+  <input type="radio" name="23" value="a">Ўзбекистон Республикаси Президентининг ПҚ-5414 сонли Қарори<br>
+  <input type="radio" name="23" value="b">Ўзбекистон Республикаси Президентининг ПФ-6005 сонли Фармони<br>
+  <input type="radio" name="23" value="c">Ўзбекистон Республикаси Президентининг ПҚ-3665 сонли Қарори<br>
+  <input type="radio" name="23" value="d">Ўзбекистон Республикасининг ЎРҚ-502 сонли «Давлат божхона хизмати тўғрисида»ги Қонуни
+</div>
+
+<!-- 24 -->
+<div class="question" id="q24">
+  <p>24. Божхона органларининг катта офицерлик унвонларигача бўлган унвонлар, шу жумладан катта офицерлик унвонлари ҳам, ...................... билан берилади.</p>
+  <input type="radio" name="24" value="a">Ҳудудий божхона бошқарма бошлиғи буйруғи билан<br>
+  <input type="radio" name="24" value="b">Ўзбекистон Республикаси Президентининг фармойиши билан<br>
+  <input type="radio" name="24" value="c">ДБҚ Раиси буйруғи билан<br>
+  <input type="radio" name="24" value="d">Тўғри жавоб йўқ
+</div>
+
+<!-- 25 -->
+<div class="question" id="q25">
+  <p>25. Генераллар таркибининг махсус унвонлари ким томонидан берилади?</p>
+  <input type="radio" name="25" value="a">Ўзбекистон Республикаси Президенти Админстрацияси томонидан<br>
+  <input type="radio" name="25" value="b">Ўзбекистон Республикаси Олий Мажлиси томонидан<br>
+  <input type="radio" name="25" value="c">Ўзбекистон Республикаси Бош вазири томонидан<br>
+  <input type="radio" name="25" value="d">Ўзбекистон Республикаси Президенти томонидан
+</div>
+
+<!-- 26 -->
+<div class="question" id="q26">
+  <p>26. Ўзбекистон Республикаси давлат мадҳияси ижро этилаётган пайтда ходимлар қай тартибда турадилар?</p>
+  <input type="radio" name="26" value="a">Давлат мадҳияси ижро этилаётган пайтда сафда турган ходимлар буйруқ берилмасдан қад ростлаган ҳолатга ўтадилар. Сафда турган ходимларнинг бошлиғи қўлини бош кийимига қадайди<br>
+  <input type="radio" name="26" value="b">Сафдан ташқари бўлган ходим Давлат мадҳияси ижро этилаётган пайтда сафона қадрост ҳолатига киради, агар бош кийимида бўлса, қўлини унга қадайди<br>
+  <input type="radio" name="26" value="c">Ўзбекистон Республикасининг Давлат мадҳияси кўпчилик ҳузурида ижро этилганда, ҳозир бўлган кишилар мадҳияни тик туриб ва ўнг қўл кафтини кўкракнинг чап томонига қўйиб, ҳарбий ёки давлатнинг бошқа хизматидаги махсус кийимдаги шахслар эса қўлини бош кийимига қўйиб тинглайди<br>
+  <input type="radio" name="26" value="d">Барча жавоблар тўғри
+</div>
+
+<!-- 27 -->
+<div class="question" id="q27">
+  <p>27. Божхона органлари ходимларига нисбатан қуйидаги рағбатлантириш чораларидан қайси бири қўлланилмайди ?</p>
+  <input type="radio" name="27" value="a">қимматбаҳо совға ёки пул мукофоти билан тақдирлаш<br>
+  <input type="radio" name="27" value="b">муддатидан олдин навбатдаги махсус унвон бериш<br>
+  <input type="radio" name="27" value="c">хизматдан таътил бериш<br>
+  <input type="radio" name="27" value="d">Фахрий ёрлиқ билан тақдирлаш
+</div>
+
+<!-- 28 -->
+<div class="question" id="q28">
+  <p>28. Божхона органлари ходимларини Ўзбекистон Республикасининг фахрий унвонларига ва давлат мукофотларига ким тақдим этади?</p>
+  <input type="radio" name="28" value="a">Ҳудудий божхона бошқармаси бошлиғи<br>
+  <input type="radio" name="28" value="b">ДБҚ Раиси<br>
+  <input type="radio" name="28" value="c">ДБҚ Раиси ўринбосарлари<br>
+  <input type="radio" name="28" value="d">Тўғри жавоб йўқ
+</div>
+
+<!-- 29 -->
+<div class="question" id="q29">
+  <p>29. Ходим интизомий жазо эълон қилинган кундан эътиборан қанча муддат ичида юқори турувчи бошлиққа шикоят билан мурожаат этиши мумкин?</p>
+  <input type="radio" name="29" value="a">Бир ой муддат ичида<br>
+  <input type="radio" name="29" value="b">15 кун муддат ичида<br>
+  <input type="radio" name="29" value="c">Икки ой муддат ичида<br>
+  <input type="radio" name="29" value="d">Тўғри жавоб йўқ
+</div>
+
+<!-- 30 -->
+<div class="question" id="q30">
+  <p>30. Ходим томонидан содир этилганлиги маъмурий жазо тайинлашга олиб келган хатти-ҳаракатлар учун интизомий жазо қўлланадими?</p>
+  <input type="radio" name="30" value="a">Ҳа, интизомий жазо қўлланилади<br>
+  <input type="radio" name="30" value="b">Ушбу ҳолатда интизомий жазо қўллашга йўл қўйилмайди<br>
+  <input type="radio" name="30" value="c">Маъмурий ва интизомий жазо бир вақтда қўлланилади<br>
+  <input type="radio" name="30" value="d">Тўғри жавоб йўқ
+</div>
+
+<!-- 31 -->
+<div class="question" id="q31">
+  <p>31. Давлат божхона қўмитасининг Божхона институтида суткалик нарядни ўташ тартиби қайси буйруқ билан тасдиқланган?</p>
+  <input type="radio" name="31" value="a">ДБҚнинг 315-сон буйруғи<br>
+  <input type="radio" name="31" value="b">ДБҚнинг 213-сон буйруғи<br>
+  <input type="radio" name="31" value="c">ДБҚнинг Божхона институти 42хфу-сон буйруғи<br>
+  <input type="radio" name="31" value="d">ДБҚнинг 684-сон буйруғи
+</div>
+
+<!-- 32 -->
+<div class="question" id="q32">
+  <p>32. Давлат божхона қўмитасининг Божхона институтида суткалик нарядни ўташ тартиби тўғрисидаги 42хфу-сонли буйруқ қачон тасдиқланган?</p>
+  <input type="radio" name="32" value="a">14.07.2020<br>
+  <input type="radio" name="32" value="b">26.09.2001<br>
+  <input type="radio" name="32" value="c">15.04.2021<br>
+  <input type="radio" name="32" value="d">26.01.2002
+</div>
+
+<!-- 33 -->
+<div class="question" id="q33">
+  <p>33. Институт бўйича навбатчи тушунчасига таъриф беринг?</p>
+  <input type="radio" name="33" value="a">Институт бўйича навбатчига кўмаклашиш мақсадида тайинланган курсант<br>
+  <input type="radio" name="33" value="b">Институт бўйича масъул раҳбар<br>
+  <input type="radio" name="33" value="c">Суткалик нарядни олиб борувчи Божхона институти Навбатчилик қисми навбатчилари<br>
+  <input type="radio" name="33" value="d">1-НЎЖ бўйича навбатчи
+</div>
+
+<!-- 34 -->
+<div class="question" id="q34">
+  <p>34. Курс бошлиғи ва ўринбосари тушунчасига таъриф беринг?</p>
+  <input type="radio" name="34" value="a">Институт бўйича навбатчига кўмаклашиш мақсадида тайинланган малакали ходим<br>
+  <input type="radio" name="34" value="b">Курсантларнинг институт ички тартиб – қоидаларига қатъий амал қилишларини назорат қилувчи ходим<br>
+  <input type="radio" name="34" value="c">Суткалик нарядни олиб борувчи Божхона институти Навбатчилик қисми навбатчилари<br>
+  <input type="radio" name="34" value="d">Ўқув баталъони бошлиғининг ёрдамчилари
+</div>
+
+<!-- 35 -->
+<div class="question" id="q35">
+  <p>35. Нарядга шахсий тайёргарлик кун тартибига биноан қачон ташкил этилади?</p>
+  <input type="radio" name="35" value="a">15:30-18:00<br>
+  <input type="radio" name="35" value="b">15:30-16:30<br>
+  <input type="radio" name="35" value="c">17:00-18:00<br>
+  <input type="radio" name="35" value="d">17:00-17:20
+</div>
+
+<!-- 36 -->
+<div class="question" id="q36">
+  <p>36. Курс бошлиғи нарядга киришишдан бир кун олдин эртанги кунга тушаётган нарядни рўйхатини кимга тақдим этиши лозим?</p>
+  <input type="radio" name="36" value="a">Институт раҳбарига<br>
+  <input type="radio" name="36" value="b">Навбатчилик қисмига<br>
+  <input type="radio" name="36" value="c">Ўз хавфсизлик бўлимига<br>
+  <input type="radio" name="36" value="d">Кадрлар бўлимига
+</div>
+
+<!-- 37 -->
+<div class="question" id="q37">
+  <p>37. Курс бўйича масъулларнинг вазифалари?</p>
+  <input type="radio" name="37" value="a">Ўз курси курсантлари қаерда ва нима билан бандлигини назорат қилиб бориш<br>
+  <input type="radio" name="37" value="b">Ўз курси курсантларининг ўқув машғулотларини текшириб бориш<br>
+  <input type="radio" name="37" value="c">Ўз курси курсантларининг соғлиғидан доимо хабардор бўлиш<br>
+  <input type="radio" name="37" value="d">Барча жавоблар тўғри
+</div>
+
+<!-- 38 -->
+<div class="question" id="q38">
+  <p>38. Суткалик нарядларнинг тарқатуви неча дақиқадан ошмаслиги лозим?</p>
+  <input type="radio" name="38" value="a">30 дақиқа<br>
+  <input type="radio" name="38" value="b">35 дақиқа<br>
+  <input type="radio" name="38" value="c">40 дақиқа<br>
+  <input type="radio" name="38" value="d">45 дақиқа
+</div>
+
+<!-- 39 -->
+<div class="question" id="q39">
+  <p>39. Ўзбекистон Республикаси Давлат божхона хизмати органларининг формали кийим-бош кийиб юриш қоидалари ДБҚнинг ______- сонли буйруғи билан белгиланган.</p>
+  <input type="radio" name="39" value="a">ДБҚнинг 312 – сон буйруғи<br>
+  <input type="radio" name="39" value="b">ДБҚнинг 213- сон буйруғи<br>
+  <input type="radio" name="39" value="c">ДБҚнинг 55 – сон буйруғи<br>
+  <input type="radio" name="39" value="d">ДБҚнинг 133 - сон буйруғи
+</div>
+
+<!-- 40 -->
+<div class="question" id="q40">
+  <p>40. Формали кийим-бош ҳар бири қайси турларга ажратилади?</p>
+  <input type="radio" name="40" value="a">қишки ва баҳорги<br>
+  <input type="radio" name="40" value="b">қишки ва кузги<br>
+  <input type="radio" name="40" value="c">қишки ва ёзги<br>
+  <input type="radio" name="40" value="d">қишки
+</div>
+
+
+<!-- 41 -->
+<div class="question" id="q41">
+  <p>41. Мавсумий формали кийим-бошни кийиб юриш тартибига ўтиш кимнинг буйруғи билан эълон қилинади?</p>
+  <input type="radio" name="41" value="a">Президент<br>
+  <input type="radio" name="41" value="b">Гарнизон бошлиғи<br>
+  <input type="radio" name="41" value="c">Раис<br>
+  <input type="radio" name="41" value="d">Институт бошлиғи
+</div>
+
+<!-- 42 -->
+<div class="question" id="q42">
+  <p>42. Давлат божхона қўмитасининг Божхона институти Устави қачон қабул қилинган?</p>
+  <input type="radio" name="42" value="a">29.11.2018<br>
+  <input type="radio" name="42" value="b">21.02.2015<br>
+  <input type="radio" name="42" value="c">03.04.2012<br>
+  <input type="radio" name="42" value="d">21.12.2019
+</div>
+
+<!-- 43 -->
+<div class="question" id="q43">
+  <p>43. Давлат божхона қўмитасининг Божхона институти Устави қабул қилиниши билан 2003 йил 2 июлдаги қайси қонун ҳужжати ўз кучини йўқотган деб ҳисобланади?</p>
+  <input type="radio" name="43" value="a">ДБҚнинг 315 – сон буйруғи<br>
+  <input type="radio" name="43" value="b">ДБҚнинг 195 – сон буйруғи<br>
+  <input type="radio" name="43" value="c">ДБҚнинг 684 – сон буйруғи<br>
+  <input type="radio" name="43" value="d">ДБҚнинг 146 – сон буйруғи
+</div>
+
+<!-- 44 -->
+<div class="question" id="q44">
+  <p>44. Давлат божхона қўмитасининг Божхона институти Уставига асосан институт шахсий таркибини доимий … шахсий таркиби ташкил этади?</p>
+  <input type="radio" name="44" value="a">Курсантлар<br>
+  <input type="radio" name="44" value="b">Офицерлар<br>
+  <input type="radio" name="44" value="c">Офицер ва сержантлар<br>
+  <input type="radio" name="44" value="d">Сержантлар
+</div>
+
+<!-- 45 -->
+<div class="question" id="q45">
+  <p>45. Давлат божхона қўмитасининг Божхона институти Уставига асосан кучайтирилган режим иш вақтидан ташқари неча соатдан ошмаслиги лозим?</p>
+  <input type="radio" name="45" value="a">4 соат<br>
+  <input type="radio" name="45" value="b">8 соат<br>
+  <input type="radio" name="45" value="c">24 соат<br>
+  <input type="radio" name="45" value="d">6 соат
+</div>
+
+<!-- 46 -->
+<div class="question" id="q46">
+  <p>46. Давлат божхона қўмитасининг Божхона институти Уставига асосан курсантлар ўқув муддатининг қайси босқичи тугаганидан сўнг ҳарбий хизматни ўтаган ҳисобланади?</p>
+  <input type="radio" name="46" value="a">2-босқич<br>
+  <input type="radio" name="46" value="b">4-босқич<br>
+  <input type="radio" name="46" value="c">1-босқич<br>
+  <input type="radio" name="46" value="d">3-босқич
+</div>
+
+<!-- 47 -->
+<div class="question" id="q47">
+  <p>47. Масъул раҳбар – бу...</p>
+  <input type="radio" name="47" value="a">Институт бошлиғи томонидан ҳар ойда тасдиқланадиган навбатчилик жадвали асосида, суткалик навбатчилик фаолиятини мувофиқлаштирувчи институт таркибий тузилмаларининг раҳбарлари ва шаходатланган таркибдаги тажрибали ходимлари<br>
+  <input type="radio" name="47" value="b">Навбатчилик жадвали асосида, суткалик навбатчилик фаолиятини мувофиқлаштирувчи институтнинг профессор ўқитувчилари ва шаходатланган таркибдаги бошқа ходимлари<br>
+  <input type="radio" name="47" value="c">Суткалик навбатчиликни олиб борувчи шаходатланган таркибдаги ходимлар<br>
+  <input type="radio" name="47" value="d">Институт бўйича навбатчига юклатилган вазифаларни бажаришга кўмаклашувчи ходим
+</div>
+
+<!-- 48 -->
+<div class="question" id="q48">
+  <p>48. Институт бўйича навбатчи навбатчиликни ўташ вақтида кимга бўйсунади?</p>
+  <input type="radio" name="48" value="a">ДБҚнинг масъул ва тезкор навбатчиларига<br>
+  <input type="radio" name="48" value="b">Институт раҳбариятига<br>
+  <input type="radio" name="48" value="c">Навбатчилик қисми бошлиғига ҳамда институт бўйича масъул раҳбар ва унинг ёрдамчисига<br>
+  <input type="radio" name="48" value="d">Барча жавоблар тўғри
+</div>
+
+<!-- 49 -->
+<div class="question" id="q49">
+  <p>49. Курс бўйича посбон кимларга «РОСТЛАН» командасини беради?</p>
+  <input type="radio" name="49" value="a">ДБҚ раҳбарияти, институт бошлиғи ва унинг ўринбосарлари, Ўқув батальон ва курс бошлиғи (ўринбосари) ва ундан юқори тўғридан-тўғри бошлиқлар, институт бўйича масъул раҳбар ва унинг ёрдамчиси ҳамда институт бўйича навбатчига<br>
+  <input type="radio" name="49" value="b">ДБҚ раҳбарияти, ДБҚ бўлим бошлиқлари ва ўринбосарлари, институт бошлиғи ва унинг ўринбосарлари, Ўқув батальон ва ўз курси бошлиғи (ўринбосари) ва ундан юқори тўғридан-тўғри бошлиқлар, институт бўйича масъул раҳбар ва унинг ёрдамчиси ҳамда институт бўйича навбатчига<br>
+  <input type="radio" name="49" value="c">ДБҚ раҳбарияти, ДБҚ бўлим бошлиқлари, институт бошлиғи, Ўқув батальон ва ўз курси бошлиғи ва ундан юқори тўғридан-тўғри бошлиқлар, институт бўйича масъул раҳбар ва институт бўйича навбатчига<br>
+  <input type="radio" name="49" value="d">ДБҚ раҳбарияти, институт бошлиғи ва унинг ўринбосарлари, Ўқув батальон ва курс бошлиғлари (ўринбосарлари) ва ундан юқори тўғридан-тўғри бошлиқлар, институт бўйича масъул раҳбар ва унинг ёрдамчиси ҳамда институт бўйича навбатчига
+</div>
+
+<!-- 50 -->
+<div class="question" id="q50">
+  <p>50. Ўзбекистон Республикаси Давлат божхона қўмитаси Божхона институтида суткалик нарядни ўташ тартиби қандай норматив ҳужжатларга асосан олиб борилади?</p>
+  <input type="radio" name="50" value="a">Ўзбекистон Республикаси қонун ҳужжатлари<br>
+  <input type="radio" name="50" value="b">Умумҳарбий низомлар<br>
+  <input type="radio" name="50" value="c">Ички идоравий ҳужжатлар<br>
+  <input type="radio" name="50" value="d">барча жавоблар тўғри
+</div>
+
+
+<!-- 51 -->
+<div class="question" id="q51">
+  <p>51. Командирлар (бошлиқлар)нинг ўз қўл остидаги аскар, матрос, сержант ва старшиналарга интизомий жазо бериш қайси норматив-ҳужжатда белгиланган?</p>
+  <input type="radio" name="51" value="a">Саф низоми<br>
+  <input type="radio" name="51" value="b">Гарнизон ва қоровуллик хизматлари низоми<br>
+  <input type="radio" name="51" value="c">Ички  хизмат низом<br>
+  <input type="radio" name="51" value="d">Саф низоми
+</div>
+
+<!-- 52 -->
+<div class="question" id="q52">
+  <p>52. Суткалик навбатчиликка жалб этилган ходимларга нималар таъқиқланади?</p>
+  <input type="radio" name="52" value="a">Масъул навбатчининг (тезкор навбатчининг) рухсатисиз  хизмат вазифаларини вақтинчалик ҳам бошқа ходимга бажариб туришни топшириш<br>
+  <input type="radio" name="52" value="b">Масъул навбатчининг (тезкор навбатчининг) рухсатисиз ўзбошимчалик билан хизмат жойини ташлаб кетиш<br>
+  <input type="radio" name="52" value="c">Хабарни тезкорлик билан етказилишини таъминлаш учун хизмат алоқа воситасини ортиқча банд қилмаслик<br>
+  <input type="radio" name="52" value="d">Барча жавоблар тўғри
+</div>
+
+<!-- 53 -->
+<div class="question" id="q53">
+  <p>53. Божхона институтига янги тушаётган суткалик наряд таркибидаги курсантларга нарядга шахсий таёргарлик кўриш учун қанча вақт берилади ?</p>
+  <input type="radio" name="53" value="a">1соат<br>
+  <input type="radio" name="53" value="b">2 соат<br>
+  <input type="radio" name="53" value="c">3 соат<br>
+  <input type="radio" name="53" value="d">4 соат
+</div>
+
+<!-- 54 -->
+<div class="question" id="q54">
+  <p>54. Ходимлар қайси ҳолларда қад ростлаб туради?</p>
+  <input type="radio" name="54" value="a">Ўзбекистон Республикаси Давлат мадҳияси янграганда<br>
+  <input type="radio" name="54" value="b">Буйруқ берилган ва олинганда<br>
+  <input type="radio" name="54" value="c">Билдирув берилган вақтда, ҳарбий салом-алик қилинган вақтда <br>
+  <input type="radio" name="54" value="d">Барча жавоблар тўғри
+</div>
+
+<!-- 55 -->
+<div class="question" id="q55">
+  <p>55. Божхона органи ходимининг дастлабки синов муддати неча ойни ташкил этади?</p>
+  <input type="radio" name="55" value="a">6 ой<br>
+  <input type="radio" name="55" value="b">4 ой<br>
+  <input type="radio" name="55" value="c">12 ой<br>
+  <input type="radio" name="55" value="d">3 ой
+</div>
+
+<!-- 56 -->
+<div class="question" id="q56">
+  <p>56. Божхона органлари ходимлари учун иш вақти давомийлиги ҳафтасига неча соатдан ошиши мумкин эмас?</p>
+  <input type="radio" name="56" value="a">35 соат<br>
+  <input type="radio" name="56" value="b">45 соат<br>
+  <input type="radio" name="56" value="c">40 соат<br>
+  <input type="radio" name="56" value="d">32 соат
+</div>
+
+<!-- 57 -->
+<div class="question" id="q57">
+  <p>57. Сафда ёнма-ён турган ҳарбий хизматчилар (машиналар), бўлинмалар ва қисмиёрлар ўртасидаги оралиқ масофа ……….деб аталади?</p>
+  <input type="radio" name="57" value="a">Дистанция<br>
+  <input type="radio" name="57" value="b">Интервал<br>
+  <input type="radio" name="57" value="c">Колонна<br>
+  <input type="radio" name="57" value="d">Қанот
+</div>
+
+<!-- 58 -->
+<div class="question" id="q58">
+  <p>58. Ҳарбий хизматчиларнинг белгиланган оралиқ масофани сақлаган ҳолда бир чизиққа ёнма-ён саф тортиши ……….деб аталади?</p>
+  <input type="radio" name="58" value="a">Саф<br>
+  <input type="radio" name="58" value="b">Қатор<br>
+  <input type="radio" name="58" value="c">Шеренга<br>
+  <input type="radio" name="58" value="d">Қанот
+</div>
+
+<!-- 59 -->
+<div class="question" id="q59">
+  <p>59. Икки ҳарбий хизматчининг икки шеренгада олдинма-кетин туриши……….деб аталади?</p>
+  <input type="radio" name="59" value="a">Саф<br>
+  <input type="radio" name="59" value="b">Қатор<br>
+  <input type="radio" name="59" value="c">Сҳеренга<br>
+  <input type="radio" name="59" value="d">Қанот
+</div>
+
+<!-- 60 -->
+<div class="question" id="q60">
+  <p>60. Сафда олдинма-кейин турган ҳарбий хизматчилар (машиналар), бўлинмалар ва қисмиёрлар ўртасидаги оралиқ масофа ……….деб аталади?</p>
+  <input type="radio" name="60" value="a">Дистанция<br>
+  <input type="radio" name="60" value="b">Интервал<br>
+  <input type="radio" name="60" value="c">Колонна<br>
+  <input type="radio" name="60" value="d">Қанот
+</div>
+
+
+
+
+
+
+  <div class="controls">
+    <button type="button" id="finishBtn" onclick="finishTest()">Tugatish</button>
+    <button type="button" id="saveBtn" onclick="saveResults()">Natijani Saqlash (.txt)</button>
+  </div>
+
+  <h2>Natijalar:</h2>
+  <div id="results"></div>
+</form>
+
+<script>
+
+const correctAnswers = {
+
+1: "a",
+2: "d",
+3: "a",
+4: "a",
+5: "a",
+6: "b",
+7: "a",
+8: "c",
+9: "a",
+10: "c",
+11: "a",
+12: "b",
+13: "c",
+14: "c",
+15: "a",
+16: "c",
+17: "a",
+18: "a",
+19: "b",
+20: "d",
+21: "b",
+22: "b",
+23: "c",
+24: "c",
+25: "d",
+26: "d",
+27: "c",
+28: "b",
+29: "a",
+30: "b",
+31: "c",
+32: "a",
+33: "c",
+34: "b",
+35: "b",
+36: "b",
+37: "d",
+38: "a",
+39: "b",
+40: "c",
+41: "b",
+42: "a",
+43: "b",
+44: "c",
+45: "a",
+46: "c",
+47: "a",
+48: "d",
+49: "d",
+50: "d",
+51: "a",
+52: "d",
+53: "a",
+54: "d",
+55: "d",
+56: "c",
+57: "b",
+58: "c",
+59: "b",
+60: "a",
+
+};
+
+let finished = false;      
+let timeLeft = 60 * 60;    // 60 min
+let timerInterval;
+
+// TIMER ISHLASHI
+function startTimer() {
+  timerInterval = setInterval(() => {
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      blockAll();
+      finishTest();
+      return;
+    }
+    timeLeft--;
+    updateTimerDisplay();
+  }, 1000);
+}
+
+function updateTimerDisplay() {
+  const m = String(Math.floor(timeLeft / 60)).padStart(2, '0');
+  const s = String(timeLeft % 60).padStart(2, '0');
+  document.getElementById("timer").innerText = `Vaqt: ${m}:${s}`;
+}
+
+startTimer();
+
+// Barcha inputlarni bloklash
+function blockAll() {
+  const all = document.querySelectorAll('input[type="radio"], input[type="text"]');
+  all.forEach(i => i.disabled = true);
+  document.getElementById("finishBtn").disabled = true;
+}
+
+function finishTest() {
+  if (finished) return; // qayta bosishga ruxsat yo‘q
+  finished = true;
+
+  clearInterval(timerInterval);
+  blockAll();
+
+  showResults();
+}
+
+//  BAHO QO'YISH
+function showResults() {
+  const resultsDiv = document.getElementById("results");
+  resultsDiv.innerHTML = "";
+
+  let totalCorrect = 0;
+
+  for (let q in correctAnswers) {
+    const options = document.getElementsByName(q);
+    let selected = null;
+    for (const opt of options) if (opt.checked) selected = opt.value;
+
+    const div = document.createElement("div");
+
+    if (!selected) {
+      div.innerHTML = `${q}: Javob tanlanmagan. To‘g‘ri javob: <span class="correct">${correctAnswers[q]}</span>`;
+      div.classList.add("wrong");
+    } else if (selected === correctAnswers[q]) {
+      div.innerHTML = `${q}: ✅`;
+      div.classList.add("correct");
+      totalCorrect++;
+    } else {
+      div.innerHTML = `${q}: ❌. To‘g‘ri javob: <span class="correct">${correctAnswers[q]}</span>`;
+      div.classList.add("wrong");
+    }
+
+    resultsDiv.appendChild(div);
+  }
+
+  // 5 ballik tizim bo‘yicha baholash
+  let baho = 2;
+  if (totalCorrect >= 51) baho = 5;
+  else if (totalCorrect >= 42) baho = 4;
+  else if (totalCorrect >= 33) baho = 3;
+
+  const summary = document.createElement("div");
+  summary.style.marginTop = "10px";
+  summary.innerHTML = `<strong>Jami to‘g‘ri: ${totalCorrect} / 60 — Baho: ${baho}</strong>`;
+  resultsDiv.appendChild(summary);
+}
+
+// TXT saqlash
+function saveResults() {
+  if (!finished) {
+    alert("Avval tugatish tugmasini bosing!");
+    return;
+  }
+
+  const fio = document.getElementById("fio").value.trim() || "NoName";
+  //const group = document.getElementById("group").value.trim() || "NoGroup";
+  const resultsDiv = document.getElementById("results");
+
+  const header = `Ism: ${fio}\n\n`;
+  const body = resultsDiv.innerText;
+  const textResult = header + body;
+
+  const blob = new Blob([textResult], { type: "text/plain" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = `${fio}_natija.txt`;
+  link.click();
+}
+</script>
+
+</body>
+</html>

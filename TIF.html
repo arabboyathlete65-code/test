@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<title>Test</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; }
+  .question { margin-bottom: 20px; }
+  .answer { margin-top: 5px; font-weight: bold; }
+  .correct { color: green; }
+  .wrong { color: red; }
+  #timer { font-size: 22px; font-weight: bold; color: green; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+
+<div id="timer">Vaqt: 100:00</div>
+
+<form id="testForm" onsubmit="return false;">
+  <h1><p style="text-align: center; font-weight: 1000;">ТИФ божхона пости ходимлари учун </p></h1>
+
+  <label>Ismingizni kiriting:</label><br>
+  <input type="text" id="fio" placeholder="FISH"><br><br>
+<!--
+  <label>Guruh</label><br>
+  <input type="text" id="group" placeholder="YUP/BI"><br><br>
+-->
+
+<div class="question">
+  <p><b>1. Электрон тижорат орқали экспорт қилинаётган товарлар неча АҚШ доллари миқдоригача БЮД тўлдирмасдан олиб чиқиб кетиш мумкин?</b></p>
+  <label><input type="radio" name="1" value="a">5 минг АҚШ доллари</label><br>
+  <label><input type="radio" name="1" value="b">3 минг АҚШ доллари</label><br>
+  <label><input type="radio" name="1" value="c">1 минг АҚШ доллари</label><br>
+  <label><input type="radio" name="1" value="d">8 минг АҚШ доллари</label>
+</div>
+
+
+<div class="question">
+  <p><b>2. Экспорт божхона режими шундай режимки ...</b></p>
+  <label><input type="radio" name="2" value="a">Ўзбекистон товари уни қайтариб олиб кириш мажбуриятисиз божхона ҳудудидан ташқарига олиб чиқилади</label><br>
+  <label><input type="radio" name="2" value="b">Бунда божхона ҳудудига илгари олиб кирилган товар ёхуд ...</label><br>
+  <label><input type="radio" name="2" value="c">Экспорт божхона режимига жойлаштирилган ...</label><br>
+  <label><input type="radio" name="2" value="d">А ва Б жавоблар тўғри</label>
+</div>
+
+<div class="question">
+  <p><b>3. Жисмоний шахслар томонидан қанча АҚШ доллари ...</b></p>
+  <label><input type="radio" name="3" value="a">5 минг АҚШ доллари</label><br>
+  <label><input type="radio" name="3" value="b">3 минг АҚШ доллари</label><br>
+  <label><input type="radio" name="3" value="c">2 минг АҚШ доллари</label><br>
+  <label><input type="radio" name="3" value="d">1 минг АҚШ доллари</label>
+</div>
+
+<div class="question">
+  <p><b>4. Транзит декларациясида ...</b></p>
+  <label><input type="radio" name="4" value="a">60</label><br>
+  <label><input type="radio" name="4" value="b">10</label><br>
+  <label><input type="radio" name="4" value="c">40</label><br>
+  <label><input type="radio" name="4" value="d">50</label>
+</div>
+
+<div class="question">
+  <p><b>5. «Божхона ва юк операциялари» тизимида ...</b></p>
+  <label><input type="radio" name="5" value="a">Божхона омборига етиб келган</label><br>
+  <label><input type="radio" name="5" value="b">Рухсат</label><br>
+  <label><input type="radio" name="5" value="c">Назорат</label><br>
+  <label><input type="radio" name="5" value="d">Қайтарилган</label>
+</div>
+
+<div class="question">
+  <p><b>6. Реэкспорт божхона режимига ...</b></p>
+  <label><input type="radio" name="6" value="a">Уч ойдан кечиктирмай</label><br>
+  <label><input type="radio" name="6" value="b">Бир ойдан кечиктирмай</label><br>
+  <label><input type="radio" name="6" value="c">Олти ойдан кечиктирмай</label><br>
+  <label><input type="radio" name="6" value="d">Икки ойдан кечиктирмай</label>
+</div>
+
+<div class="question">
+  <p><b>7. Реэкспорт божхона режимининг кодли белгиси ...</b></p>
+  <label><input type="radio" name="7" value="a">51</label><br>
+  <label><input type="radio" name="7" value="b">61</label><br>
+  <label><input type="radio" name="7" value="c">12</label><br>
+  <label><input type="radio" name="7" value="d">11</label>
+</div>
+
+<div class="question">
+  <p><b>8. Товар реэкспорт ...</b></p>
+  <label><input type="radio" name="8" value="a">Импорт, Божхона ҳудудида қайта ишлаш</label><br>
+  <label><input type="radio" name="8" value="b">Вақтинча сақлаш</label><br>
+  <label><input type="radio" name="8" value="c">Божхона омбори</label><br>
+  <label><input type="radio" name="8" value="d">Барча жавоблар тўғри</label>
+</div>
+
+<div class="question">
+  <p><b>9. Товарни вақтинча олиб чиқиш муддати ...</b></p>
+  <label><input type="radio" name="9" value="a">1 йил</label><br>
+  <label><input type="radio" name="9" value="b">2 йил</label><br>
+  <label><input type="radio" name="9" value="c">3 йил</label><br>
+  <label><input type="radio" name="9" value="d">5 йил</label>
+</div>
+
+<div class="question">
+  <p><b>10. Ваколатли иқтисодий операторларга ...</b></p>
+  <label><input type="radio" name="10" value="a">Яшил ва кўк йўлак</label><br>
+  <label><input type="radio" name="10" value="b">Фақат яшил йўлак</label><br>
+  <label><input type="radio" name="10" value="c">Яшил ва сарик йўлак</label><br>
+  <label><input type="radio" name="10" value="d">Фақат кўк йўлак</label>
+</div>
+
+<div class="question">
+  <p><b>11. Хавфни бошқариш тизимини ...</b></p>
+  <label><input type="radio" name="11" value="a">Ташқи иқтисодий фаолиятнинг ҳалол иштирокчиларини ...</label><br>
+  <label><input type="radio" name="11" value="b">ТИФ қатнашчиларига ...</label><br>
+  <label><input type="radio" name="11" value="c">А, Б</label><br>
+  <label><input type="radio" name="11" value="d">Тўғри жавоб мавжуд эмас</label>
+</div>
+
+<div class="question">
+  <p><b>12. Сариқ йўлакни ...</b></p>
+  <label><input type="radio" name="12" value="a">Бунда божхона декларацияси ...</label><br>
+  <label><input type="radio" name="12" value="b">Бунда хавф даражаси ...</label><br>
+  <label><input type="radio" name="12" value="c">Бунда божхона декларацияси ...</label><br>
+  <label><input type="radio" name="12" value="d">Бунда божхона декларацияси ...</label>
+</div>
+
+<div class="question">
+  <p><b>13. Қайси норматив ҳужжатга ...</b></p>
+  <label><input type="radio" name="13" value="a">Ўзбекистон Республикасининг 2018 йил ...</label><br>
+  <label><input type="radio" name="13" value="b">Ўзбекистон Республикаси Президентининг ...</label><br>
+  <label><input type="radio" name="13" value="c">Ўзбекистон Республикаси Президентининг ...</label><br>
+  <label><input type="radio" name="13" value="d">Ўзбекистон Республикаси Президентининг ...</label>
+</div>
+
+<div class="question">
+  <p><b>14. Хавфни бошқариш тизимининг ...</b></p>
+  <label><input type="radio" name="14" value="a">Мақсадли йўналиш принципи ...</label><br>
+  <label><input type="radio" name="14" value="b">Қонунийлик принципи ...</label><br>
+  <label><input type="radio" name="14" value="c">Хавфни бошқариш ...</label><br>
+  <label><input type="radio" name="14" value="d">А, Б</label>
+</div>
+
+<div class="question">
+  <p><b>15. Хавф нима?</b></p>
+  <label><input type="radio" name="15" value="a">Ўзбекистон Республикаси ...</label><br>
+  <label><input type="radio" name="15" value="b">Божхона органлари ...</label><br>
+  <label><input type="radio" name="15" value="c">Ўзбекистон Республикаси ...</label><br>
+  <label><input type="radio" name="15" value="d">Тўғри жавоб мавжуд эмас</label>
+</div>
+
+<div class="question">
+  <p><b>16. Хавфни бошқариш тизимининг ...</b></p>
+  <label><input type="radio" name="16" value="a">Ўзбекистон Республикаси ...</label><br>
+  <label><input type="radio" name="16" value="b">Ўзбекистон Республикаси ...</label><br>
+  <label><input type="radio" name="16" value="c">Киото Конвенцияси ...</label><br>
+  <label><input type="radio" name="16" value="d">Божхона қўмитасининг ...</label>
+</div>
+
+<div class="question">
+  <p><b>17. Товарни эркин муомалага ...</b></p>
+  <label><input type="radio" name="17" value="a">Божхона тўловлари ...</label><br>
+  <label><input type="radio" name="17" value="b">Товарни эркин муомалага ...</label><br>
+  <label><input type="radio" name="17" value="c">Устав фондида ...</label><br>
+  <label><input type="radio" name="17" value="d">А ва Б жавоблар ...</label>
+</div>
+
+<div class="question">
+  <p><b>18. Импорт божхона режимида ...</b></p>
+  <label><input type="radio" name="18" value="a">Солиқ Кодекси ...</label><br>
+  <label><input type="radio" name="18" value="b">Божхона Кодекси</label><br>
+  <label><input type="radio" name="18" value="c">Ўзбекистон Республикаси ...</label><br>
+  <label><input type="radio" name="18" value="d">Тўғри жавоб йўқ</label>
+</div>
+
+<div class="question">
+  <p><b>19. Божхона ҳудудидан ...</b></p>
+  <label><input type="radio" name="19" value="a">51</label><br>
+  <label><input type="radio" name="19" value="b">71</label><br>
+  <label><input type="radio" name="19" value="c">61</label><br>
+  <label><input type="radio" name="19" value="d">80</label>
+</div>
+
+<div class="question">
+  <p><b>20. Тез бузиладиган товар ...</b></p>
+  <label><input type="radio" name="20" value="a">5 календарь кун</label><br>
+  <label><input type="radio" name="20" value="b">3 календарь кун</label><br>
+  <label><input type="radio" name="20" value="c">10 календарь кун</label><br>
+  <label><input type="radio" name="20" value="d">30 календарь кун</label>
+</div>
+
+
+<div class="question">
+  <p><b>21. Вақтинча сақлаш божхона режимида бошқа режимга олингандан товарларни неча кун ичида олиб чиқиб кетиши керак?</b></p>
+  <label><input type="radio" name="21" value="a">3 иш куни</label><br>
+  <label><input type="radio" name="21" value="b">5 иш куни</label><br>
+  <label><input type="radio" name="21" value="c">2 иш куни</label><br>
+  <label><input type="radio" name="21" value="d">Исталган вақтда</label>
+</div>
+
+<div class="question">
+  <p><b>22. Божхона омбори тузилишига кўра неча хил бўлади?</b></p>
+  <label><input type="radio" name="22" value="a">Очиқ турдаги божхона омбори ва махсус турдаги божхона омбори</label><br>
+  <label><input type="radio" name="22" value="b">Ёпиқ турдаги божхона омбори ва белгиланган турдаги божхона омбори</label><br>
+  <label><input type="radio" name="22" value="c">Очиқ турдаги божхона омбори ва ёпиқ турдаги божхона омбори</label><br>
+  <label><input type="radio" name="22" value="d">А ва Б жавоблар нотўғри</label>
+</div>
+
+<div class="question">
+  <p><b>23. Божхона омбори очиш учун лицензия қанча муддатга берилади?</b></p>
+  <label><input type="radio" name="23" value="a">5 йил</label><br>
+  <label><input type="radio" name="23" value="b">7 йил</label><br>
+  <label><input type="radio" name="23" value="c">10 йил</label><br>
+  <label><input type="radio" name="23" value="d">Чекланмаган муддатга</label>
+</div>
+
+<div class="question">
+  <p><b>24. Товарнинг божхона омбори божхона режимида туриш муддати қанча белгиланган?</b></p>
+  <label><input type="radio" name="24" value="a">3 йил</label><br>
+  <label><input type="radio" name="24" value="b">2 йил</label><br>
+  <label><input type="radio" name="24" value="c">5 йил</label><br>
+  <label><input type="radio" name="24" value="d">Белгиланмаган</label>
+</div>
+
+<div class="question">
+  <p><b>25. Божхона транзити божхона режимининг энг кўп муддати ҳаво транспорти учун қанча?</b></p>
+  <label><input type="radio" name="25" value="a">Уч календарь кун</label><br>
+  <label><input type="radio" name="25" value="b">Уч ҳафта</label><br>
+  <label><input type="radio" name="25" value="c">Беш календарь кун</label><br>
+  <label><input type="radio" name="25" value="d">Бир ҳафта</label>
+</div>
+
+<div class="question">
+  <p><b>26. Божхона транзити божхона режимининг энг кўп муддати сув транспорти учун қанча?</b></p>
+  <label><input type="radio" name="26" value="a">Беш календарь кун</label><br>
+  <label><input type="radio" name="26" value="b">Ўн календарь кун</label><br>
+  <label><input type="radio" name="26" value="c">Ўн беш календарь кун</label><br>
+  <label><input type="radio" name="26" value="d">1 ой</label>
+</div>
+
+<div class="question">
+  <p><b>27. Қандай товарларни божхона транзити божхона режимига жойлаштириш мумкин эмас?</b></p>
+  <label><input type="radio" name="27" value="a">Қонун хужжатларида таъқиқланган товарларни</label><br>
+  <label><input type="radio" name="27" value="b">Электр-энергияси, сув, қувурлар орқали етказиб бериладиган товарлар (нефть, газ), шунингдек ёқилғи</label><br>
+  <label><input type="radio" name="27" value="c">Фақат рухсатнома асосида олиб кириладиган товарлар, рухсатномаси бўлган холатда</label><br>
+  <label><input type="radio" name="27" value="d">Тўғри жавоб йўқ</label>
+</div>
+
+<div class="question">
+  <p><b>28. Божхона чегараси орқали олиб ўтиладиган товарлар ва транспорт воситаларининг божхона назоратини таъминлаш учун божхона органлари мансабдор шахслари томонидан амалга ошириладиган божхона операциялари бу…</b></p>
+  <label><input type="radio" name="28" value="a">Божхона назорати</label><br>
+  <label><input type="radio" name="28" value="b">Транспорт воситасини божхона назоратидан ўтказиш</label><br>
+  <label><input type="radio" name="28" value="c">Божхона расмийлаштируви</label><br>
+  <label><input type="radio" name="28" value="d">Тўғри жавоб йўқ</label>
+</div>
+
+<div class="question">
+  <p><b>29. ... ўсимликларни текширишда қайси назорат тури амалга оширилади?</b></p>
+  <label><input type="radio" name="29" value="a">Ветеринария назорати</label><br>
+  <label><input type="radio" name="29" value="b">Фитосанитария назорати</label><br>
+  <label><input type="radio" name="29" value="c">Санитария-карантин назорати</label><br>
+  <label><input type="radio" name="29" value="d">Божхона расмийлаштируви</label>
+</div>
+
+<div class="question">
+  <p><b>30. «Е-транзит» ... йўлакларни ўзгартириш тартиби:</b></p>
+  <label><input type="radio" name="30" value="a">Пост ходимининг мурожаати бўйича пост бошлиғи қарори асосида амалга оширилади</label><br>
+  <label><input type="radio" name="30" value="b">Пост бошлиғининг қарори асосида амалга оширилади</label><br>
+  <label><input type="radio" name="30" value="c">Пост ходимининг қарори асосида амалга оширилади</label><br>
+  <label><input type="radio" name="30" value="d">... хавфларни мониторинг қилиш бошқармаси қарори асосида амалга оширилади</label>
+</div>
+
+<div class="question">
+  <p><b>31. Импортда ходим томонидан ... йиғим қанча?</b></p>
+  <label><input type="radio" name="31" value="a">кундузги вақтда ... БҲМнинг 25%</label><br>
+  <label><input type="radio" name="31" value="b">кундузги вақтда ... БҲМнинг 50%</label><br>
+  <label><input type="radio" name="31" value="c">кундузги вақтда ... БҲМнинг 25%, ташқари вақтда 0.25 баравари</label><br>
+  <label><input type="radio" name="31" value="d">Тўғри жавоб йўқ</label>
+</div>
+
+<div class="question">
+  <p><b>32. Маъюм шахслар шахсий кўрикдан ўтказилганда кимлар ҳозир бўлади?</b></p>
+  <label><input type="radio" name="32" value="a">1, 3, 4, 5</label><br>
+  <label><input type="radio" name="32" value="b">1, 4, 3, 7</label><br>
+  <label><input type="radio" name="32" value="c">1, 2, 3, 4</label><br>
+  <label><input type="radio" name="32" value="d">1, 4, 5, 7</label>
+</div>
+
+<div class="question">
+  <p><b>33. Божхона назорати шакллари нечта?</b></p>
+  <label><input type="radio" name="33" value="a">11</label><br>
+  <label><input type="radio" name="33" value="b">12</label><br>
+  <label><input type="radio" name="33" value="c">13</label><br>
+  <label><input type="radio" name="33" value="d">14</label>
+</div>
+
+<div class="question">
+  <p><b>34. Шахсий кўрикдан кимлар озод этилган?</b></p>
+  <label><input type="radio" name="34" value="a">Президент, Сенаторлар</label><br>
+  <label><input type="radio" name="34" value="b">Депутатлар, Вазирлар Маҳкамаси</label><br>
+  <label><input type="radio" name="34" value="c">Олий Мажлиснинг ... вакили, дипломатик паспорт эгалари</label><br>
+  <label><input type="radio" name="34" value="d">Барча жавоблар тўғри</label>
+</div>
+
+<div class="question">
+  <p><b>35. Шахсий кўрикда кимлар қатнашиши шарт?</b></p>
+  <label><input type="radio" name="35" value="a">1, 6, 3</label><br>
+  <label><input type="radio" name="35" value="b">1, 4, 3</label><br>
+  <label><input type="radio" name="35" value="c">1, 2, 4</label><br>
+  <label><input type="radio" name="35" value="d">1, 2, 4, 6</label>
+</div>
+
+<div class="question">
+  <p><b>36. Шахсий кўрик назорати кимларга қўлланилади?</b></p>
+  <label><input type="radio" name="36" value="a">Фақат жисмоний шахсларга</label><br>
+  <label><input type="radio" name="36" value="b">Жисмоний ва юридик шахсларга</label><br>
+  <label><input type="radio" name="36" value="c">Жисмоний шахсларга ва баъзи ҳолларда транспорт воситаларига</label><br>
+  <label><input type="radio" name="36" value="d">А ва Б тўғри</label>
+</div>
+
+<div class="question">
+  <p><b>37. ... имзо қўйишни рад этса?</b></p>
+  <label><input type="radio" name="37" value="a">Кўрик мажбуран ўтказилади</label><br>
+  <label><input type="radio" name="37" value="b">Қўйиб юборилади</label><br>
+  <label><input type="radio" name="37" value="c">Бу ҳақда мансабдор шахс баённомада қайд қилади</label><br>
+  <label><input type="radio" name="37" value="d">Тўғри жавоб йўқ</label>
+</div>
+
+<div class="question">
+  <p><b>38. Шахсий кўрик ўтказиш ҳақида қарор ким қабул қилади?</b></p>
+  <label><input type="radio" name="38" value="a">Пост бошлиғи</label><br>
+  <label><input type="radio" name="38" value="b">Пост инспектори</label><br>
+  <label><input type="radio" name="38" value="c">Маъмурий ишлар судьяси</label><br>
+  <label><input type="radio" name="38" value="d">Ҳудудий бошқарма бошлиғи</label>
+</div>
+
+<div class="question">
+  <p><b>39. ... ҳужжатлар рўйхати қайси моддада?</b></p>
+  <label><input type="radio" name="39" value="a">17-модда</label><br>
+  <label><input type="radio" name="39" value="b">18-модда</label><br>
+  <label><input type="radio" name="39" value="c">19-модда</label><br>
+  <label><input type="radio" name="39" value="d">20-модда</label>
+</div>
+
+<div class="question">
+  <p><b>40. Мажбуриятнома расмийлаштириш учун нима керак?</b></p>
+  <label><input type="radio" name="40" value="a">Ҳайдовчи ҳужжати</label><br>
+  <label><input type="radio" name="40" value="b">Транспорт гувоҳномаси</label><br>
+  <label><input type="radio" name="40" value="c">Ҳайдовчининг оғзаки маълумотлари</label><br>
+  <label><input type="radio" name="40" value="d">А, Б, С</label>
+</div>
+
+
+
+<div class="question">
+  <p><b>41. Чет эл автотранспорт воситалари божхона божлари ва солиқларни тўламасдан 1 йил давомида Ўзбекистон Республикасида бўлиш муддати қанча?</b></p>
+  <label><input type="radio" name="41" value="a">60 кун</label><br>
+  <label><input type="radio" name="41" value="b">90 кун</label><br>
+  <label><input type="radio" name="41" value="c">120 кун</label><br>
+  <label><input type="radio" name="41" value="d">180 кун</label>
+</div>
+
+<div class="question">
+  <p><b>42. Қайси турдаги товарларга нисбатан божхона омбори ҳудудида ўтказиладиган юк операцияларида божхона органи мансабдор шахси иштирок этиши шарт?</b></p>
+  <label><input type="radio" name="42" value="a">Транзит тарзда олиб ўтиладиган товарлар</label><br>
+  <label><input type="radio" name="42" value="b">Божхона омбори божхона режимида жойлаштирилиши кўзда тутилган товарлар</label><br>
+  <label><input type="radio" name="42" value="c">Илгари бошқа режимига расмийлаштирилган товарлар</label><br>
+  <label><input type="radio" name="42" value="d">Тўғри жавоб йўқ</label>
+</div>
+
+<div class="question">
+  <p><b>43. БЮДнинг қайси графасида «Етказиб бериш шартлари» кўрсатилади?</b></p>
+  <label><input type="radio" name="43" value="a">16-графасида</label><br>
+  <label><input type="radio" name="43" value="b">20-графасида</label><br>
+  <label><input type="radio" name="43" value="c">22-графасида</label><br>
+  <label><input type="radio" name="43" value="d">24-графасида</label>
+</div>
+
+<div class="question">
+  <p><b>44. “CIP Самарқанд” тижорат шарти бўйича сотиб олинган товарнинг божхона қиймати қандай ҳисобланади?</b></p>
+  <label><input type="radio" name="44" value="a">Фактура қийматидан Ўзбекистон Республикаси чегарасидан белгиланган жойгача транспорт харажатлари айириб ташланади</label><br>
+  <label><input type="radio" name="44" value="b">Фактура қийматига, сотиб олинган жойдан белгиланган жойгача транспорт ва суғурта харажатлари қўшилади</label><br>
+  <label><input type="radio" name="44" value="c">Фактура қийматига Ўзбекистон Республикаси чегарасигача бўлган траспорт ва суғурта харажатлари қўшилади</label><br>
+  <label><input type="radio" name="44" value="d">Фактура қийматига суғурта харажатлари қўшилади, сотиб олинган жойдан белгиланган жойгача транспорт харажатлари айириб ташланади</label>
+</div>
+
+<div class="question">
+  <p><b>45. Божхона декларацияси ҳамда божхона назоратини ўтказиш учун зарур бўлган бошқа ҳужжатларни сақлаш муддатлари қанча?</b></p>
+  <label><input type="radio" name="45" value="a">Экспорт божхона режими учун ўн йил, бошқа божхона режимлари учун беш йил</label><br>
+  <label><input type="radio" name="45" value="b">Экспорт божхона режими учун ўн йил, импорт божхона режими учун беш йил, назоратдаги божхона режимлари учун ушбу божхона режимларининг амал қилиш муддатига қадар</label><br>
+  <label><input type="radio" name="45" value="c">Товарлар божхона назорати остида турган товар мақомини йўқотган йилдан кейинги йилдан эътиборан уч йил</label><br>
+  <label><input type="radio" name="45" value="d">Божхона юк декларацияси расмийлаштирилган санадан эътиборан уч йил</label>
+</div>
+
+<div class="question">
+  <p><b>46. Божхона ҳудудига кириб келган товарлар учун божхона юк декларациясини тақдим қилиш муддати қанча?</b></p>
+  <label><input type="radio" name="46" value="a">Товарлар божхона чегарасини кесиб ўтган санадан бошлаб ўн беш иш кунидан кечиктирмай</label><br>
+  <label><input type="radio" name="46" value="b">Товарлар божхона чегарасини кесиб ўтган санадан бошлаб ўн беш календарь кунидан кечиктирмай</label><br>
+  <label><input type="radio" name="46" value="c">Товар келиб тушадиган божхона органига товарлар тақдим этилган кундан эътиборан ўн беш календарь кундан кечиктирмай</label><br>
+  <label><input type="radio" name="46" value="d">Товар келиб тушадиган божхона органига товарлар тақдим этилган кундан эътиборан ўн беш соатдан кечиктирмай</label>
+</div>
+
+<div class="question">
+  <p><b>47. Қандай товарлар божхона омбори божхона режимига жойлаштирилмайди?</b></p>
+  <label><input type="radio" name="47" value="a">Божхона ҳудудига олиб кирилиши таъқиқланган товар, божхона ҳудудидан олиб чиқилиши таъқиқланган Ўзбекистон товари</label><br>
+  <label><input type="radio" name="47" value="b">Қонун ҳужжатларига мувофиқ божхона ҳудуди орқали транзит қилиниши таъқиқланган товар</label><br>
+  <label><input type="radio" name="47" value="c">Божхона омбори божхона режимига жойлаштириш учун маълум қилинган кундаги яроқлилик муддати божхона Кодексининг 94-моддасига мувофиқ маълум қилинадиган муддатдан кам бўлган дори воситалари ва озиқ-овқат маҳсулотлари</label><br>
+  <label><input type="radio" name="47" value="d">Барча жавоблар тўғри</label>
+</div>
+
+<div class="question">
+  <p><b>48. Қандай товарлар божхона омбори божхона режимига жойлаштирилмайди?</b></p>
+  <label><input type="radio" name="48" value="a">Божхона ҳудудига олиб кирилиши таъқиқланган товар, божхона ҳудудидан олиб чиқилиши таъқиқланган Ўзбекистон товары</label><br>
+  <label><input type="radio" name="48" value="b">Қонун ҳужжатларига мувофиқ божхона ҳудуди орқали транзит қилиниши таъқиқланган товар</label><br>
+  <label><input type="radio" name="48" value="c">Божхона омбори божхона режимига жойлаштириш учун маълум қилинган кундаги яроқлилик муддати божхона Кодексининг 94-моддасига мувофиқ маълум қилинадиган муддатдан кам бўлган дори воситалари ва озиқ-овқат маҳсулотлари</label><br>
+  <label><input type="radio" name="48" value="d">Барча жавоблар тўғри</label>
+</div>
+
+<div class="question">
+  <p><b>49. Товарнинг божхона омбори божхона режимида туриш муддати:</b></p>
+  <label><input type="radio" name="49" value="a">2 ойни ташкил этади</label><br>
+  <label><input type="radio" name="49" value="b">Бир йилни ташкил этади</label><br>
+  <label><input type="radio" name="49" value="c">Икки йилни ташкил этади</label><br>
+  <label><input type="radio" name="49" value="d">Уч йилни ташкил этади</label>
+</div>
+
+<div class="question">
+  <p><b>50. Божхона назорати зонасига етказилиб неча соат ичида чиқариб юборилган товарларни божхона омбори ҳудудига етказиш талаб этилмайди?</b></p>
+  <label><input type="radio" name="50" value="a">24</label><br>
+  <label><input type="radio" name="50" value="b">48</label><br>
+  <label><input type="radio" name="50" value="c">72</label><br>
+  <label><input type="radio" name="50" value="d">12 соат</label>
+</div>
+
+<div class="question">
+  <p><b>51. Божхона назорати остида ташиладиган товарлар божхона омбори эгаси ёки ваколатли шахс томонидан қабул қилиб олингунга қадар товарларнинг тўлиқ сақланишига ким жавобгар ҳисобланади?</b></p>
+  <label><input type="radio" name="51" value="a">Ташувчи</label><br>
+  <label><input type="radio" name="51" value="b">Божхона омбори эгаси</label><br>
+  <label><input type="radio" name="51" value="c">Божхона назорати зонасига жавобгар шахс</label><br>
+  <label><input type="radio" name="51" value="d">Божхона органи ходими</label>
+</div>
+
+<div class="question">
+  <p><b>52. Божхона назорати остида ташиладиган товарлар божхона омбори эгаси ёки ваколатли шахс томонидан қабул қилиб олингунга қадар товарларнинг тўлиқ сақланишига ким жавобгар ҳисобланади?</b></p>
+  <label><input type="radio" name="52" value="a">Ташувчи</label><br>
+  <label><input type="radio" name="52" value="b">Божхона омбори эгаси</label><br>
+  <label><input type="radio" name="52" value="c">Божхона назорати зонасига жавобгар шахс</label><br>
+  <label><input type="radio" name="52" value="d">Божхона органи ходими</label>
+</div>
+
+<div class="question">
+  <p><b>53. … кодининг нечта белгили даражаси ўзгармаслиги лозим?</b></p>
+  <label><input type="radio" name="53" value="a">10</label><br>
+  <label><input type="radio" name="53" value="b">8</label><br>
+  <label><input type="radio" name="53" value="c">6</label><br>
+  <label><input type="radio" name="53" value="d">4</label>
+</div>
+
+<div class="question">
+  <p><b>54. Божхона омборлари ким томонидан таъсис этилиши мумкин?</b></p>
+  <label><input type="radio" name="54" value="a">Божхона органи, юридик шахслар томонидан таъсис этилади</label><br>
+  <label><input type="radio" name="54" value="b">Адлия вазирлиги томонидан таъсис этилади</label><br>
+  <label><input type="radio" name="54" value="c">Юридик шахслар томонидан таъсис этилади</label><br>
+  <label><input type="radio" name="54" value="d">Жисмоний ва юридик шахслар томонидан</label>
+</div>
+
+<div class="question">
+  <p><b>55. Қандай усул билан божхона тўловлари тўланишини таъминлаш мумкин?</b></p>
+  <label><input type="radio" name="55" value="a">Товар ва транспорт воситаларини гарови билан</label><br>
+  <label><input type="radio" name="55" value="b">Учинчи шахснинг тегишли суммани божхона органининг ҳисоб рақамига ўтказиш билан</label><br>
+  <label><input type="radio" name="55" value="c">Банк тўлов кафолати билан</label><br>
+  <label><input type="radio" name="55" value="d">Барча жавоблар тўғри</label>
+</div>
+
+<div class="question">
+  <p><b>56. Юк операцияларини амалга ошириш учун қўйилган божхона идентификациялаш воситалари ким томонидан ўзгартирилади?</b></p>
+  <label><input type="radio" name="56" value="a">Божхона омбори эгасига</label><br>
+  <label><input type="radio" name="56" value="b">Божхона органи ходими</label><br>
+  <label><input type="radio" name="56" value="c">Товар эгасига</label><br>
+  <label><input type="radio" name="56" value="d">Барча жавоблар тўғри</label>
+</div>
+
+<div class="question">
+  <p><b>57. Божхона омборига жойлаштирилган товарлар … нечи иш куни ичида олиб чиқилиши лозим?</b></p>
+  <label><input type="radio" name="57" value="a">1</label><br>
+  <label><input type="radio" name="57" value="b">3</label><br>
+  <label><input type="radio" name="57" value="c">2</label><br>
+  <label><input type="radio" name="57" value="d">4</label>
+</div>
+
+<div class="question">
+  <p><b>58. Божхона расмийлаштируви...</b></p>
+  <label><input type="radio" name="58" value="a">… чора-тадбирлар мажмуи</label><br>
+  <label><input type="radio" name="58" value="b">… операциялар мажмуи</label><br>
+  <label><input type="radio" name="58" value="c">… қоидалар мажмуи</label><br>
+  <label><input type="radio" name="58" value="d">… амалга ошириладиган операциялар мажмуи</label>
+</div>
+
+<div class="question">
+  <p><b>59. … умумий муддати қанча?</b></p>
+  <label><input type="radio" name="59" value="a">3 кун</label><br>
+  <label><input type="radio" name="59" value="b">30 кун</label><br>
+  <label><input type="radio" name="59" value="c">10 кун</label><br>
+  <label><input type="radio" name="59" value="d">90 кун</label>
+</div>
+
+<div class="question">
+  <p><b>60. Товарларни тегишли божхона режимига жойлаштирилишида божхона кўриги қачон амалга оширилади?</b></p>
+  <label><input type="radio" name="60" value="a">Божхона юк декларацияси тақдим қилинганидан сўнг</label><br>
+  <label><input type="radio" name="60" value="b">Божхона юк декларацияси расмийлаштирилганидан сўнг</label><br>
+  <label><input type="radio" name="60" value="c">Товар етиб келганидан сўнг</label><br>
+  <label><input type="radio" name="60" value="d">Барча жавоблар тўғри</label>
+</div>
+
+
+<div class="question">
+  <p><b>61. Айнан бир хил товарлар дейилганда қайси жиҳатларига кўра бир хил бўлган товарлар тушинилади?</b></p>
+  <label><input type="radio" name="61" value="a">Ишлаб чиқарилган мамлакати, ишлаб чиқарувчиси, сифати ва бозордаги қадри, физик хусусиятлари.</label><br>
+  <label><input type="radio" name="61" value="b">Ишлаб чиқарилган мамлакати, ишлаб чиқарувчиси, миқдори ва бозордаги нархи, товар белгиси</label><br>
+  <label><input type="radio" name="61" value="c">Ташқи кўриниши, ўлчамлари, вазни ва ишлаб чиқарувчиси</label><br>
+  <label><input type="radio" name="61" value="d">Ишлаб чиқарилган мамлакати, ишлаб чиқарилган йили, вазни ва бозордаги қадри, товар белгиси</label>
+</div>
+
+<div class="question">
+  <p><b>62. Қайси ҳолда товарнинг божхона қийматини аниқлаш учун олиб кирилаётган товар юзасидан тузилган битим қийматига қараб божхона баҳосини чиқариш усулидан фойдаланиш мумкин эмас?</b></p>
+  <label><input type="radio" name="62" value="a">Божхона қийматини эълон қилиш вақтида декларант фойдаланган маълумотлар ҳужжатлар билан тасдиқланмаган бўлса ёки улар тўғри бўлмаса.</label><br>
+  <label><input type="radio" name="62" value="b">Товарни сотиш ва битим қиймати таъсирини ҳисобга олиш мумкин бўлмаган шартларга риоя этилишига боғлиқ бўлмаса</label><br>
+  <label><input type="radio" name="62" value="c">Битим қатнашчилари бир-бирига боғлиқ шахслар бўлмаса</label><br>
+  <label><input type="radio" name="62" value="d">Харидорнинг баҳоланаётган товарга бўлган ҳуқуқлари чекланган бўлмаса</label>
+</div>
+
+<div class="question">
+  <p><b>63. Ўзбекистон Республикаси ҳудудига олиб кирилган товарларга тўлдирилган божхона қиймати декларацияси БҚД-1 шаклининг Б ва В бўлимида қўрсатилган харажатлар қайси валютада ифодаланади?</b></p>
+  <label><input type="radio" name="63" value="a">Ўзбекистон Республикаси миллий валютаси — "сўм"да.</label><br>
+  <label><input type="radio" name="63" value="b">Шартнома валютасида</label><br>
+  <label><input type="radio" name="63" value="c">АҚШ долларида</label><br>
+  <label><input type="radio" name="63" value="d">Еврода</label>
+</div>
+
+<div class="question">
+  <p><b>64. Жумлани тўлдоринг. ... товар ишлаб чиқарилган мамлакат ҳисобланади.</b></p>
+  <label><input type="radio" name="64" value="a">Товар тўлиқ ишлаб чиқарилган ёки етарли даражада қайта ишланган мамлакат.</label><br>
+  <label><input type="radio" name="64" value="b">Товарларни сотишга ва транспортда ташишга тайёрлаган мамлакат</label><br>
+  <label><input type="radio" name="64" value="c">Товарларни сотиб олган ва эгалик қиладиган мамлакат</label><br>
+  <label><input type="radio" name="64" value="d">Товарларнинг оддий йиғув операцияларидан фойдаланган мамлакат</label>
+</div>
+
+<div class="question">
+  <p><b>65. Божхона тўловларини тўлаш бўйича мажбурият бажарилмаган ҳар бир календарь куни учун уни тўлаш бўйича қарздорлик суммасининг қанча фоизи миқдорида пеня ҳисобланади?</b></p>
+  <label><input type="radio" name="65" value="a">0,033 фоизи миқдорида.</label><br>
+  <label><input type="radio" name="65" value="b">0,05 фоизи миқдорида</label><br>
+  <label><input type="radio" name="65" value="c">0,50 фоизи миқдорида</label><br>
+  <label><input type="radio" name="65" value="d">0,03 фоизи миқдорида</label>
+</div>
+
+<div class="question">
+  <p><b>66. Бож ставкаси турлари қандай турлари мавжуд?</b></p>
+  <label><input type="radio" name="66" value="a">Адвалор, хос, аралаш.</label><br>
+  <label><input type="radio" name="66" value="b">Адвалор, махсус, демпинга қарши</label><br>
+  <label><input type="radio" name="66" value="c">Юқори, ўртача ва паст</label><br>
+  <label><input type="radio" name="66" value="d">Юқори, паст ва аралаш</label>
+</div>
+
+<div class="question">
+  <p><b>67. Реэкспорт божхона режими шартида божхона ҳудудидан олиб чиқилаётган товарлар учун тўланмаган суммалар қайд қилинади?</b></p>
+  <label><input type="radio" name="67" value="a">божхона божлари ва солиқлар/ божхона тўловлари</label><br>
+  <label><input type="radio" name="67" value="b">божхона божлари ва солиқлар/ божхона божлари ва солиқлар.</label><br>
+  <label><input type="radio" name="67" value="c">божхона тўловлари / божхона божлари ва солиқлар</label><br>
+  <label><input type="radio" name="67" value="d">божхона тўловлари / божхона тўловлари </label>
+</div>
+
+<div class="question">
+  <p><b>68. Экспорт қилишда лицензияга тушадиган товарлар рўйхатини топинг.</b></p>
+  <label><input type="radio" name="68" value="a">Қурол-яроғ ва ҳарбий техника, ... радиоактив моддаларининг чиқиндилари</label><br>
+  <label><input type="radio" name="68" value="b">Қурол-яроғ ва ҳарбий техника, ... радиоактив моддалар</label><br>
+  <label><input type="radio" name="68" value="c">Радиоактив моддалардан фойдаланилган приборлар ва асбоб-ускуналар...</label><br>
+  <label><input type="radio" name="68" value="d">А, Б ва C жавоблар тўғри.</label>
+</div>
+
+<div class="question">
+  <p><b>69. Товар ёки уни қайта ишлаш маҳсулоти божхона органи қандай ҳолатда реэкспорт қилиши мумкин?</b></p>
+  <label><input type="radio" name="69" value="a">Идентификация қила оладиган.</label><br>
+  <label><input type="radio" name="69" value="b">Божхона тўловлари тўланиши таъминланган</label><br>
+  <label><input type="radio" name="69" value="c">А ва Б жавоблар тўғри</label><br>
+  <label><input type="radio" name="69" value="d">божхона тўловлари тўланган </label>
+</div>
+
+<div class="question">
+  <p><b>70. Илгари эркин муомалага чиқариш (импорт) божхона режимига жойлаштирилган товарни реэкспорт божхона режимига жойлаштиришга қачон йўл қўйилади?</b></p>
+  <label><input type="radio" name="70" value="a">Контракт бажарилмаган бўлса</label><br>
+  <label><input type="radio" name="70" value="b">Товар божхона ҳудудида ишлатилмаган ... ҳоллар мустасно</label><br>
+  <label><input type="radio" name="70" value="c">Товар ўзгармаган ҳолатда турган бўлса</label><br>
+  <label><input type="radio" name="70" value="d">Юқоридаги барча жавоблар тўғри.</label>
+</div>
+
+<div class="question">
+  <p><b>71. Вақтинча олиб чиқиш режимга расмийлаштирилмайдиган товарлар рўйхатини топинг.</b></p>
+  <label><input type="radio" name="71" value="a">Ўзбекистон Республикасидан олиб чиқилиши таъқиқланган товарлар</label><br>
+  <label><input type="radio" name="71" value="b">Чиқиндилар, электр-энергияси, сув, ... ёқилғи</label><br>
+  <label><input type="radio" name="71" value="c">Олиб чиқилиши квоталанадиган товарлар ...</label><br>
+  <label><input type="radio" name="71" value="d">Барча жавоблар нотўғри.</label>
+</div>
+
+<div class="question">
+  <p><b>72. Вақтинча олиб чиқиш божхона режимини муддатини узайтириш учун ваколатли органни аниқланг.</b></p>
+  <label><input type="radio" name="72" value="a">Божхона органлари.</label><br>
+  <label><input type="radio" name="72" value="b">Ташқи ишлар вазирлиги</label><br>
+  <label><input type="radio" name="72" value="c">Ўзбекистон Республикаси Вазирлар Маҳкамаси</label><br>
+  <label><input type="radio" name="72" value="d">Ўзбекистон Республикаси Президенти</label>
+</div>
+
+<div class="question">
+  <p><b>73. Божхона ҳудудидан ташқарида қайта ишлаш режимининг муддати қанча?</b></p>
+  <label><input type="radio" name="73" value="a">3 йил</label><br>
+  <label><input type="radio" name="73" value="b">2 йил.</label><br>
+  <label><input type="radio" name="73" value="c">6 ой</label><br>
+  <label><input type="radio" name="73" value="d">1 йил</label>
+</div>
+
+<div class="question">
+  <p><b>74. Вақтинча сақлаш божхона режимида бошқа режимга олингандан товарларни неча кун ичида олиб чиқиб кетиши керак?</b></p>
+  <label><input type="radio" name="74" value="a">3 иш куни.</label><br>
+  <label><input type="radio" name="74" value="b">5 иш куни</label><br>
+  <label><input type="radio" name="74" value="c">2 иш куни</label><br>
+  <label><input type="radio" name="74" value="d">Исталган вақтда</label>
+</div>
+
+<div class="question">
+  <p><b>75. Эркин божхона ҳудудида жойлашган ЭИЗда ишлаб чиқарилган товарлар ички бозорга чиқарилганда қайси божхона режимига жойлаштирилади?</b></p>
+  <label><input type="radio" name="75" value="a">Эркин муомалага чиқариш.</label><br>
+  <label><input type="radio" name="75" value="b">Реэкспорт</label><br>
+  <label><input type="radio" name="75" value="c">Эркин божхона зонаси</label><br>
+  <label><input type="radio" name="75" value="d">Ҳеч қандай режимга жойлаштирилмайди.</label>
+</div>
+
+<div class="question">
+  <p><b>76. Бож олинмайдиган савдо божхона режими шундай режимки?</b></p>
+  <label><input type="radio" name="76" value="a">Бунда товар муайян жойлар ва ҳудудларда ...</label><br>
+  <label><input type="radio" name="76" value="b">Тўғри жавоб йўқ</label><br>
+  <label><input type="radio" name="76" value="c">Бунда товарлар ... реализация қилинади.</label>
+</div>
+
+<div class="question">
+  <p><b>77. Бож олинмайдиган савдо дўконларига ким жавобгар ҳисобланади?</b></p>
+  <label><input type="radio" name="77" value="a">Лицензияга эга бўлган шахс томонидан.</label><br>
+  <label><input type="radio" name="77" value="b">Лицензияга эга бўлган шахс томонидан ишончнома тақдим қилинган шахсларга</label><br>
+  <label><input type="radio" name="77" value="c">Божхона органлари</label><br>
+  <label><input type="radio" name="77" value="d">Ҳеч ким</label>
+</div>
+
+<div class="question">
+  <p><b>78. Божхона транзити божхона режими қайси код билан таснифланади?</b></p>
+  <label><input type="radio" name="78" value="a">80.</label><br>
+  <label><input type="radio" name="78" value="b">75</label><br>
+  <label><input type="radio" name="78" value="c">81</label><br>
+  <label><input type="radio" name="78" value="d">70</label>
+</div>
+
+<div class="question">
+  <p><b>79. Валюта муносабатлари объектларига нималар киради?</b></p>
+  <label><input type="radio" name="79" value="a">Ўзбекистон Республикаси миллий пул бирлиги ...</label><br>
+  <label><input type="radio" name="79" value="b">Марказий Банк</label><br>
+  <label><input type="radio" name="79" value="c">Ваколатли банклар</label><br>
+  <label><input type="radio" name="79" value="d">Хусусий банклар</label>
+</div>
+
+<div class="question">
+  <p><b>80. ТСО ЯЭАТ дастурида «дебиторлик ва кредиторлик қарзларини ҳисобдан чиқариш» банди қайси орган томонидан киритилади?</b></p>
+  <label><input type="radio" name="80" value="a">ХЮС</label><br>
+  <label><input type="radio" name="80" value="b">Божхона органлари.</label><br>
+  <label><input type="radio" name="80" value="c">Ваколатли банклар</label><br>
+  <label><input type="radio" name="80" value="d">Марказий банк</label>
+</div>
+
+<div class="question">
+  <p><b>81. БЮДнинг қайси графасида товар ишлаб чиқарилган давлатнинг коди кўрсатилади?</b></p>
+  <label><input type="radio" name="81" value="a">34-графа.</label><br>
+  <label><input type="radio" name="81" value="b">17-графа</label><br>
+  <label><input type="radio" name="81" value="c">33-графа</label><br>
+  <label><input type="radio" name="81" value="d">11-графа</label>
+</div>
+
+<div class="question">
+  <p><b>82. Ташқи иқтисодий фаолият қатнашчилари божхонада расмийлаштириш амалга оширилганидан кейин қанча муддатда келиб чиқиш сертификатини тақдим этиши мумкин?</b></p>
+  <label><input type="radio" name="82" value="a">1 йил.</label><br>
+  <label><input type="radio" name="82" value="b">6 ой</label><br>
+  <label><input type="radio" name="82" value="c">2 йил</label><br>
+  <label><input type="radio" name="82" value="d">3 йил</label>
+</div>
+
+<div class="question">
+  <p><b>83. Ўзбекистон Республикаси билан шартномалар тузган давлатларга қандай шаклдаги сертификат тақдим этади?</b></p>
+  <label><input type="radio" name="83" value="a">Барча жавоблар тўғри.</label><br>
+  <label><input type="radio" name="83" value="b">Шартномаларда белгиланган шаклларда</label><br>
+  <label><input type="radio" name="83" value="c">Б-шаклида (умумий форма)</label><br>
+  <label><input type="radio" name="83" value="d">А шаклида</label><br>
+  <label><input type="radio" name="83" value="e">СТ-1 шаклида</label>
+</div>
+
+<div class="question">
+  <p><b>84. Товар чиқишга руҳсат берилганидан сўнг қанча муддатгача қўшимча божхона тўловлари ундирилиши мумкин?</b></p>
+  <label><input type="radio" name="84" value="a">Товарлар чиқишига рухсат берилган пайтдан эътиборан бир йил мобайнида.</label><br>
+  <label><input type="radio" name="84" value="b">Тўланмаганлик факти 10 йил давомида аниқланганда ундирилиши лозим</label><br>
+  <label><input type="radio" name="84" value="c">Тўланмаганлик факти 15 йил давомида аниқланганда ундирилиши лозим</label><br>
+  <label><input type="radio" name="84" value="d">Тўланмаганлик факти қачон аниқланганлигидан қатъий назар ундирилиши лозим</label>
+</div>
+
+<div class="question">
+  <p><b>85. Божхона тўловлари тўланишини таъминлаш усуллари қайсилар?</b></p>
+  <label><input type="radio" name="85" value="a">Маблағларини божхона органининг шахсий ғазна ҳисобварағига киритиш</label><br>
+  <label><input type="radio" name="85" value="b">Товарларни гаровга қўйиш</label><br>
+  <label><input type="radio" name="85" value="c">Банк кафолатини тақдим этиш</label><br>
+  <label><input type="radio" name="85" value="d">Барча жавоблар тўғри.</label>
+</div>
+
+<div class="question">
+  <p><b>86. Божхона кодексининг қайси моддасида божхона божи бўйича имтиёзлар берилган?</b></p>
+  <label><input type="radio" name="86" value="a">289-моддасида</label><br>
+  <label><input type="radio" name="86" value="b">Тўғри жавоб йўқ</label><br>
+  <label><input type="radio" name="86" value="c">293-моддасида</label><br>
+  <label><input type="radio" name="86" value="d">297-моддасида.</label>
+</div>
+
+<div class="question">
+  <p><b>87. Акциз маркаларини ишлаб чиқариш учун буюртманома нечта нусхада тузилади?</b></p>
+  <label><input type="radio" name="87" value="a">4 та нусхада</label><br>
+  <label><input type="radio" name="87" value="b">3 та нусхада.</label><br>
+  <label><input type="radio" name="87" value="c">1 та нусхада</label><br>
+  <label><input type="radio" name="87" value="d">2 та нусхада</label>
+</div>
+
+<div class="question">
+  <p><b>88. Импорт қилинаётган товарларга нисбатан Акциз солиғини божхона расмийлаштирувидан ўтказилган санадан бошлаб қанча муддатда кечиктириб ёки бўлиб-бўлиб тўланиши мумкин?</b></p>
+  <label><input type="radio" name="88" value="a">60 календарь кун муддатда.</label><br>
+  <label><input type="radio" name="88" value="b">90 календарь кун муддатда</label><br>
+  <label><input type="radio" name="88" value="c">3 ой муддатда</label><br>
+  <label><input type="radio" name="88" value="d">2 ой муддатда</label>
+</div>
+
+<div class="question">
+  <p><b>89. Қуйидаги ҳолатлардан қайси бирида акциз маркалар билан тамғаланади?</b></p>
+  <label><input type="radio" name="89" value="a">Бож олинмайдиган савдо дўконлари учун Ўзбекистон ҳудудига олиб кириладиган</label><br>
+  <label><input type="radio" name="89" value="b">Халқаро транзит мақсадлари учун мўлжалланган</label><br>
+  <label><input type="radio" name="89" value="c">Барча жавоблар тўғри.</label><br>
+  <label><input type="radio" name="89" value="d">Республикадан ташқарига экспорт қилинаётган</label>
+</div>
+
+<div class="question">
+  <p><b>90. Автотранспорт воситаларига нисбатан импорт божхона божининг қандай ставкалари қўлланилади?</b></p>
+  <label><input type="radio" name="90" value="a">Хос ставка</label><br>
+  <label><input type="radio" name="90" value="b">Альтернатив ставка</label><br>
+  <label><input type="radio" name="90" value="c">Комбинацион ставка</label><br>
+  <label><input type="radio" name="90" value="d">Барча жавоблар тўғри.</label>
+</div>
+
+<div class="question">
+  <p><b>91. Импорт қилинаётган товар Россияда ишлаб чиқарилган ва Қозоғистондан импорт бўлмоқда, ушбу ҳолатда божхона божи ставкаси неча баробар қўлланилади?</b></p>
+  <label><input type="radio" name="91" value="a">Ноль баравар.</label><br>
+  <label><input type="radio" name="91" value="b">Бир баравар</label><br>
+  <label><input type="radio" name="91" value="c">Икки баравар</label><br>
+  <label><input type="radio" name="91" value="d">Алохида ставка бўлиши мумкин</label>
+</div>
+
+<div class="question">
+  <p><b>92. Импорт божхона божини ҳисоблашда тариф преференцияларининг қўлланилишида бир баравар миқдоридаги ставкани қўллаш шарти қандай?</b></p>
+  <label><input type="radio" name="92" value="a">Савдо-иқтисодий муносабатларда энг кўп қулайлик бериш режими назарда тутилмаган мамлакатларда ишлаб чиқарилган товарларга ва шу мамлакатлар резидентлари томонидан экспорт қилинганда</label><br>
+  <label><input type="radio" name="92" value="b">Ўзбекистон Республикаси эркин савдо зонасини ташкил этиш тўғрисида халқаро шартнома тузган давлатларда ишлаб чиқарилган товарларга ва шу мамлакатлар резидентлари томонидан экспорт қилинганда</label><br>
+  <label><input type="radio" name="92" value="c">Ўзбекистон Республикаси билан эркин савдо зонасини ташкил этувчи ёки Ўзбекистон Республикаси эркин савдо режимини белгилаган давлатларда ишлаб чиқарилган ва ушбу давлатлардан божхона ҳудудига олиб кириладиган товарларга.</label><br>
+  <label><input type="radio" name="92" value="d">Ўзбекистон Республикаси савдо-иқтисодий муносабатларда энг кўп қулайлик бериш режимини қўллаётган мамлакатларда ишлаб чиқарилган товарларга нисбатан, товарни жўнатувчи ва экспорт қилувчи мамлакатдан қатъи назар</label>
+</div>
+
+<div class="question">
+  <p><b>93. «Божхона ва юк операциялари» тизимида транспортнинг тарозидаги оғирлиги тўғрисидаги маълумотни Тизимнинг қайси бўлими орқали билиш мумкин?</b></p>
+  <label><input type="radio" name="93" value="a">Мониторинг</label><br>
+  <label><input type="radio" name="93" value="b">Юклар ҳаракати</label><br>
+  <label><input type="radio" name="93" value="c">Мурожаатлар</label><br>
+  <label><input type="radio" name="93" value="d">Барча жавоблар тўғри.</label>
+</div>
+
+<div class="question">
+  <p><b>94. «Божхона ва юк операциялари» тизимида «Транспорт тўғрисидаги маълумотлар» қисмида «Юксиз вазни» майдонида қандай маълумот кўрсатилади?</b></p>
+  <label><input type="radio" name="94" value="a">Майдонда автотранспорт воситасининг юксиз вазни килограммда кўрсатилади.</label><br>
+  <label><input type="radio" name="94" value="b">Майдонда автотранспорт воситасининг юксиз вазни тоннада кўрсатилади</label><br>
+  <label><input type="radio" name="94" value="c">Майдонда автотранспорт воситасининг тиркама билан биргаликдаги юксиз вазни тоннада кўрсатилади</label><br>
+  <label><input type="radio" name="94" value="d">Майдонда автотранспорт воситасининг тиркама билан биргаликдаги юксиз вазни килограммда кўрсатилади</label>
+</div>
+
+<div class="question">
+  <p><b>95. Транзит декларациясини тўлдиришда «Транспорт тўғрисидаги маълумотлар» қисмида товарлар олиб ўтилаётган ёки товар сифатида ўзи ҳаракатланувчи транспорт воситасининг «Давлат рақами» майдонида транспорт воситасининг рўйхатдан ўтказиш давлат рақами белгиси мавжуд бўлмаган ҳолларда қандай тўлдирилади?</b></p>
+  <label><input type="radio" name="95" value="a">«999999» ёзуви қайд этилади.</label><br>
+  <label><input type="radio" name="95" value="b">«000000» ёзуви қайд этилади.</label><br>
+  <label><input type="radio" name="95" value="c">Транспорт воситасининг VIN рақами қайд этилади.</label><br>
+  <label><input type="radio" name="95" value="d">«999991» ёзуви қайд этилади</label>
+</div>
+
+<div class="question">
+  <p><b>96. «Божхона назорати остидаги товарларга нисбатан юк операцияларини амалга ошириш тартиби тўғрисида НИЗОМ» Вазирлар Маҳкамасининг қайси Қарори билан тасдиқланган?</b></p>
+  <label><input type="radio" name="96" value="a">210-сон 09.04.2020</label><br>
+  <label><input type="radio" name="96" value="b">531-сон 20.08.2021.</label><br>
+  <label><input type="radio" name="96" value="c">500-сон 24.08.2020</label><br>
+  <label><input type="radio" name="96" value="d">737-сон 31.12.2022</label>
+</div>
+
+<div class="question">
+  <p><b>97. БЮДнинг қайси графасида кўрсатилган божхона қиймати божхона расмийлаштируви учун йиғимни ҳисоблаш учун керак?</b></p>
+  <label><input type="radio" name="97" value="a">гр.46</label><br>
+  <label><input type="radio" name="97" value="b">гр.45.</label><br>
+  <label><input type="radio" name="97" value="c">гр.12</label><br>
+  <label><input type="radio" name="97" value="d">гр.42</label>
+</div>
+
+<div class="question">
+  <p><b>98. БҚД-1нинг «В» бўлимида қайси маълумотлар келтирилади?</b></p>
+  <label><input type="radio" name="98" value="a">Суғурта харажатлари</label><br>
+  <label><input type="radio" name="98" value="b">Айриладиган харажатлар.</label><br>
+  <label><input type="radio" name="98" value="c">Қўшиладиган харажатлар</label><br>
+  <label><input type="radio" name="98" value="d">Фактура қиймати</label>
+</div>
+
+<div class="question">
+  <p><b>99. Инкотермс қоидалари биринчи марта қайси ташкилот томонидан ишлаб чиқилган?</b></p>
+  <label><input type="radio" name="99" value="a">БМТ томонидан</label><br>
+  <label><input type="radio" name="99" value="b">Жаҳон Савдо Ташкилоти</label><br>
+  <label><input type="radio" name="99" value="c">Жаҳон Божхона Ташкилоти</label><br>
+  <label><input type="radio" name="99" value="d">Халқаро Савдо Палатаси.</label>
+</div>
+
+<div class="question">
+  <p><b>100. Божхона қиймати фактура қиймати асосида аниқланса, бу қайси усул бўлади?</b></p>
+  <label><input type="radio" name="100" value="a">6.1, 3- усул</label><br>
+  <label><input type="radio" name="100" value="b">6.1, 3, 1- усул</label><br>
+  <label><input type="radio" name="100" value="c">1, 6.1- усул.</label><br>
+  <label><input type="radio" name="100" value="d">6.1, 3,4,5-усул</label>
+</div>
+
+
+
+
+
+
+  <div class="controls">
+    <button type="button" id="finishBtn" onclick="finishTest()">Tugatish</button>
+    <button type="button" id="saveBtn" onclick="saveResults()">Natijani Saqlash (.txt)</button>
+  </div>
+
+  <h2>Natijalar:</h2>
+  <div id="results"></div>
+</form>
+
+<script>
+
+const correctAnswers = {
+  1: "a",
+  2: "d",
+  3: "a",
+  4: "c",
+  5: "a",
+  6: "c",
+  7: "d",
+  8: "d",
+  9: "b",
+  10: "c",
+  11: "c",
+  12: "c",
+  13: "a",
+  14: "d",
+  15: "a",
+  16: "a",
+  17: "d",
+  18: "a",
+  19: "c",
+  20: "c",
+  21: "a",
+  22: "c",
+  23: "d",
+  24: "a",
+  25: "a",
+  26: "c",
+  27: "a",
+  28: "c",
+  29: "b",
+  30: "a",
+  31: "a",
+  32: "b",
+  33: "b",
+  34: "d",
+  35: "c",
+  36: "a",
+  37: "c",
+  38: "a",
+  39: "b",
+  40: "d",
+  41: "b",
+  42: "a",
+  43: "b",
+  44: "a",
+  45: "c",
+  46: "c",
+  47: "d",
+  48: "d",
+  49: "d",
+  50: "a",
+  51: "a",
+  52: "a",
+  53: "a",
+  54: "a",
+  55: "d",
+  56: "b",
+  57: "b",
+  58: "b",
+  59: "d",
+  60: "a",
+  61: "a",
+  62: "a",
+  63: "a",
+  64: "a",
+  65: "a",
+  66: "a",
+  67: "b",
+  68: "d",
+  69: "a",
+  70: "d",
+  71: "d",
+  72: "a",
+  73: "b",
+  74: "a",
+  75: "a",
+  76: "d",
+  77: "a",
+  78: "a",
+  79: "a",
+  80: "b",
+  81: "a",
+  82: "a",
+  83: "a",
+  84: "a",
+  85: "d",
+  86: "c",
+  87: "b",
+  88: "a",
+  89: "c",
+  90: "d",
+  91: "a",
+  92: "c",
+  93: "d",
+  94: "a",
+  95: "b",
+  96: "b",
+  97: "b",
+  98: "b",
+  99: "d",
+  100: "c",
+};
+
+let finished = false;      
+let timeLeft = 100 * 60;    // 100 min
+let timerInterval;
+
+// TIMER ISHLASHI
+function startTimer() {
+  timerInterval = setInterval(() => {
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      blockAll();
+      finishTest();
+      return;
+    }
+    timeLeft--;
+    updateTimerDisplay();
+  }, 1000);
+}
+
+function updateTimerDisplay() {
+  const m = String(Math.floor(timeLeft / 60)).padStart(2, '0');
+  const s = String(timeLeft % 60).padStart(2, '0');
+  document.getElementById("timer").innerText = `Vaqt: ${m}:${s}`;
+}
+
+startTimer();
+
+// Barcha inputlarni bloklash
+function blockAll() {
+  const all = document.querySelectorAll('input[type="radio"], input[type="text"]');
+  all.forEach(i => i.disabled = true);
+  document.getElementById("finishBtn").disabled = true;
+}
+
+function finishTest() {
+  if (finished) return; // qayta bosishga ruxsat yo‘q
+  finished = true;
+
+  clearInterval(timerInterval);
+  blockAll();
+
+  showResults();
+}
+
+//  BAHO QO'YISH
+function showResults() {
+  const resultsDiv = document.getElementById("results");
+  resultsDiv.innerHTML = "";
+
+  let totalCorrect = 0;
+
+  for (let q in correctAnswers) {
+    const options = document.getElementsByName(q);
+    let selected = null;
+    for (const opt of options) if (opt.checked) selected = opt.value;
+
+    const div = document.createElement("div");
+
+    if (!selected) {
+      div.innerHTML = `${q}: Javob tanlanmagan. To‘g‘ri javob: <span class="correct">${correctAnswers[q]}</span>`;
+      div.classList.add("wrong");
+    } else if (selected === correctAnswers[q]) {
+      div.innerHTML = `${q}: ✅`;
+      div.classList.add("correct");
+      totalCorrect++;
+    } else {
+      div.innerHTML = `${q}: ❌. To‘g‘ri javob: <span class="correct">${correctAnswers[q]}</span>`;
+      div.classList.add("wrong");
+    }
+
+    resultsDiv.appendChild(div);
+  }
+
+  // 5 ballik tizim bo‘yicha baholash
+  let baho = 2;
+  if (totalCorrect >= 86) baho = 5;
+  else if (totalCorrect >= 70) baho = 4;
+  else if (totalCorrect >= 56) baho = 3;
+
+  const summary = document.createElement("div");
+  summary.style.marginTop = "10px";
+  summary.innerHTML = `<strong>Jami to‘g‘ri: ${totalCorrect} / 100 — Baho: ${baho}</strong>`;
+  resultsDiv.appendChild(summary);
+}
+
+// TXT saqlash
+function saveResults() {
+  if (!finished) {
+    alert("Avval tugatish tugmasini bosing!");
+    return;
+  }
+
+  const fio = document.getElementById("fio").value.trim() || "NoName";
+ // const group = document.getElementById("group").value.trim() || "NoGroup";
+  const resultsDiv = document.getElementById("results");
+
+  const header = `Ism: ${fio}\n\n`;
+  const body = resultsDiv.innerText;
+  const textResult = header + body;
+
+  const blob = new Blob([textResult], { type: "text/plain" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = `${fio}_natija.txt`;
+  link.click();
+}
+</script>
+
+</body>
+</html>

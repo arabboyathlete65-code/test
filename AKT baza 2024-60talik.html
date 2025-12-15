@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<title>Test</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; }
+  .question { margin-bottom: 20px; }
+  .answer { margin-top: 5px; font-weight: bold; }
+  .correct { color: green; }
+  .wrong { color: red; }
+  #timer { font-size: 22px; font-weight: bold; color: green; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+
+<div id="timer">Vaqt: 60:00</div>
+
+<form id="testForm" onsubmit="return false;">
+  <h1><p style="text-align: center; font-weight: 1000;">Ахборот технологиялари йўналиши бўйича савол-жавоблар</p></h1>
+
+  <label>Ismingizni kiriting:</label><br>
+  <input type="text" id="fio" placeholder="FISH"><br><br>
+<!--
+  <label>Guruh</label><br>
+  <input type="text" id="group" placeholder="YUP/BI"><br><br>
+-->
+
+
+  <!-- 1 -->
+<div class="question" id="q1">
+  <p>1. БҚ ЯААТ ягона ойнаси бош саҳифасида қайси интернет саҳифаларига (сайтлар) интеграция қилинган?</p>
+  <input type="radio" name="1" value="a" > Lex.uz, data.gov.uz, my.gov.uz, sw2.customs.uz<br>
+  <input type="radio" name="1" value="b"> Gov.uz, lex.uz, president.uz, uzbi.zu<br>
+  <input type="radio" name="1" value="c"> Сustoms.uz, soliq.uz, lex.uz<br>
+  <input type="radio" name="1" value="d"> Божхона органлари билан ўзаро алоқадор бўлган давлат органлари расмий сайти билан интеграция қилинган<br>
+</div>
+
+<!-- 2 -->
+<div class="question" id="q2">
+  <p>2. БҚ ЯААТ ягона ойнаси бош саҳифасидан ягона интерактив хизматлар порталига ўтиш мумкинми?</p>
+  <input type="radio" name="2" value="a"> Йўқ, ўтиб бўлмайди, фақат my.gov.uz адресини веб барузерга териш орқали ўтилади<br>
+  <input type="radio" name="2" value="b"> Ихтиёрий браузер адрес манзилига my.gov.uz портали манзилини териб ўтиш мумкин<br>
+  <input type="radio" name="2" value="c"> Тўғридан-тўғри интеграция қилинганлиги сабабли, порталга ўтиш мумкин<br>
+  <input type="radio" name="2" value="d"> Божхона органлари билан ўзаро алоқадор бўлган давлат органлари расмий сайти билан интеграция қилинган<br>
+</div>
+
+<!-- 3 -->
+<div class="question" id="q3">
+  <p>3. Божхона ходими БҚ ЯААТ ягона ойнаси бош саҳифасидан қандай муҳим маълумотларни олиши мумкин?</p>
+  <input type="radio" name="3" value="a"> Одоб-аҳлоқ қоидалари<br>
+  <input type="radio" name="3" value="b"> Ахборот тизимлари<br>
+  <input type="radio" name="3" value="c"> Манфаатлар тўқнашуви<br>
+  <input type="radio" name="3" value="d"> Барча жавоблар тўғри<br>
+</div>
+
+<!-- 4 -->
+<div class="question" id="q4">
+  <p>4. Қайси қаторда БҚ ЯААТ таркибидаги ахборот тизимлари номи тўғри келтирилган?</p>
+  <input type="radio" name="4" value="a"> Божхона омбори ААТ, Пост ахборотномаси ААТ, “ЭБР” ААТ<br>
+  <input type="radio" name="4" value="b"> Божхона омбори ААТ, Е-назорат ААТ, Пост ахборотномаси ААТ ва office пакет дастурлари, операцион тизимлар<br>
+  <input type="radio" name="4" value="c"> Microsoft office пакет дастурлари<br>
+  <input type="radio" name="4" value="d"> Ms Word, Ms Excel, Ms PowerPoint<br>
+</div>
+
+<!-- 5 -->
+<div class="question" id="q5">
+  <p>5. Божхона органлари томонидан берилган электрон калит ва унинг рақамли имзоси ёрдамида Ягона интерактив давлат хизматлари порталига мурожаат қилишимиз мумкинми?</p>
+  <input type="radio" name="5" value="a">Йўқ<br>
+  <input type="radio" name="5" value="b"> Ҳа<br>
+  <input type="radio" name="5" value="c"> Фойдаланувчи учун рухсати билан амалга оширилади<br>
+  <input type="radio" name="5" value="d"> Дастлаб божхона органлари ахборот тизимига улангандан сўнг, мурожаат қилишимиз мумкин<br>
+</div>
+
+<!-- 6 -->
+<div class="question" id="q6">
+  <p>6. My.gov.uz ягона интерактив давлат хизматлари порталидан фойдаланишга мўлжалланган электрон рақамли имзо калити қайси орган томонидан берилади?</p>
+  <input type="radio" name="6" value="a"> Солиқ қўмитаси<br>
+  <input type="radio" name="6" value="b"> Божхона қўмитаси<br>
+  <input type="radio" name="6" value="c"> Ўзбекистон Республикаси инвестициялар ва ташқи савдо Вазирлиги<br>
+  <input type="radio" name="6" value="d"> Барча давлат органлари томонидан юридик ва жисмоний шахслар учун берилади<br>
+</div>
+
+<!-- 7 -->
+<div class="question" id="q7">
+  <p>7. Солиқ қўмитаси томонидан бериладиган электрон рақамли имзодан тўғридан-тўғри “Ягона дарча” божхона ахборот тизимига қўлласа ёки фойдаланса бўладими?</p>
+  <input type="radio" name="7" value="a"> Ҳа<br>
+  <input type="radio" name="7" value="b"> Йўқ<br>
+  <input type="radio" name="7" value="c"> Махсус дастурларни яратиш орқали қўллаш мумкин<br>
+  <input type="radio" name="7" value="d"> Барча жавоблар нотўғри<br>
+</div>
+
+<!-- 8 -->
+<div class="question" id="q8">
+  <p>8. Қабул қилиш хоҳиши бўлмаган шахсларга тижорат, сиёсий ва реклама кўринишидаги хабарларни (ахборотларни) оммавий тарқатилиши қандай номланади?</p>
+  <input type="radio" name="8" value="a"> Спам<br>
+  <input type="radio" name="8" value="b"> Антиреклама<br>
+  <input type="radio" name="8" value="c"> Реклама<br>
+  <input type="radio" name="8" value="d"> Макрос<br>
+</div>
+
+<!-- 9 -->
+<div class="question" id="q9">
+  <p>9. www.uz бу -</p>
+  <input type="radio" name="9" value="a"> Миллий қидирув тизими<br>
+  <input type="radio" name="9" value="b"> Интернет-магазин<br>
+  <input type="radio" name="9" value="c"> Интернет провайдер – компанияси номи<br>
+  <input type="radio" name="9" value="d"> Савдо майдончаси<br>
+</div>
+
+<!-- 10 -->
+<div class="question" id="q10">
+  <p>10. gov.uz нима?</p>
+  <input type="radio" name="10" value="a"> Ўзбекистон Республикаси Давлат солиқ қўмитасининг расмий веб-саҳифаси<br>
+  <input type="radio" name="10" value="b"> Компьютерлаштириш ва ахборот-коммуникация технологияларини ривожлантириш бўйича мувофиқлаштирувчи Кенгашнинг веб-саҳифаси<br>
+  <input type="radio" name="10" value="c"> Ўзбекистон Республикаси Президентининг матбуот-хизмати веб-саҳифаси<br>
+  <input type="radio" name="10" value="d"> Ўзбекистон Республикаси ҳукумат портали<br>
+</div>
+<!-- 11 -->
+<div class="question" id="q11">
+  <p>11. Компютер вируси – бу ....</p>
+  <input type="radio" name="11" value="a"> Компьютер фойдаланувчиларига зиён етказиш мақсадида махсус ёзилган дастур<br>
+  <input type="radio" name="11" value="b"> Компюьтернинг аппарат воситаларидаги бузилишларни юзага келтиради<br>
+  <input type="radio" name="11" value="c"> Дастурий маҳсулотларнинг ишлашига салбий таъсир кўрсатади<br>
+  <input type="radio" name="11" value="d"> Барча жавоблар тўғри<br>
+</div>
+
+<!-- 12 -->
+<div class="question" id="q12">
+  <p>12. Е-government тизими ишлаш тартиби</p>
+  <input type="radio" name="12" value="a"> 20 соат<br>
+  <input type="radio" name="12" value="b"> 10 соат<br>
+  <input type="radio" name="12" value="c"> 12 соат<br>
+  <input type="radio" name="12" value="d"> 24 соат<br>
+</div>
+
+<!-- 13 -->
+<div class="question" id="q13">
+  <p>13. e-government тизимида G2C ўзаро алоқасининг кенгайтмаси қандай аталади?</p>
+  <input type="radio" name="13" value="a"> Давлат ва фуқаро алоқаси (Government-to-Citizen)<br>
+  <input type="radio" name="13" value="b"> Давлат ва бизнес алоқаси (Government-to-Business)<br>
+  <input type="radio" name="13" value="c"> Давлат бошқарувининг турли тармоқларининг алоқаси (Government-to-connection of different networks)<br>
+  <input type="radio" name="13" value="d"> Давлат ва давлат ходимларининг алоқаси (Government-to-Employees)<br>
+</div>
+
+<!-- 14 -->
+<div class="question" id="q14">
+  <p>14. e-government тизимида G2Е ўзаро алоқасининг кенгайтмаси қандай аталади?</p>
+  <input type="radio" name="14" value="a"> Government-to-Employees - давлат ва ходимлар алоқаси<br>
+  <input type="radio" name="14" value="b"> Government-to-Business - давлат ва бизнес алоқаси<br>
+  <input type="radio" name="14" value="c"> Government-to-Government - давлат ва давлат алоқаси<br>
+  <input type="radio" name="14" value="d"> Government-to-Citizen - давлат ва фуқаро алоқаси<br>
+</div>
+
+<!-- 15 -->
+<div class="question" id="q15">
+  <p>15. Давлат бошқаруви органлари ва тадбиркорлик ўртасида самарали ҳамкорликни шакллантирувчи “электрон ҳукумат” тизими компоненти қанақа номланади?</p>
+  <input type="radio" name="15" value="a"> G2B – (Давлат - Тадбиркорлик)<br>
+  <input type="radio" name="15" value="b"> G2G – (Давлат - Давлат)<br>
+  <input type="radio" name="15" value="c"> G2С – (Давлат - фуқаро)<br>
+  <input type="radio" name="15" value="d"> G2Е – (Давлат - ходимларга)<br>
+</div>
+
+<!-- 16 -->
+<div class="question" id="q16">
+  <p>16. Электрон ҳукуматнинг асосий принциплари қуйидагилардан иборат:</p>
+  <input type="radio" name="16" value="a"> Давлат органлари фаолиятининг очиқлиги ва шаффофлиги<br>
+  <input type="radio" name="16" value="b"> Давлат органларини ахборот технологиялари соҳасидаги билимларини текшириш<br>
+  <input type="radio" name="16" value="c"> Давлат органларида ахборот-коммуникациялари технологиялари билан ишлаш механизми ортиб бориши<br>
+  <input type="radio" name="16" value="d"> Интеграцияланган ғояларни ягона ойнада қайта ишлаб чиқиш механизми<br>
+</div>
+
+<!-- 17 -->
+<div class="question" id="q17">
+  <p>17. Веб браузерлар тўғри келтирилган жавобни кўрсатинг?</p>
+  <input type="radio" name="17" value="a"> MangoDB, MySQL, Opera<br>
+  <input type="radio" name="17" value="b"> Apache, Tomcat, Romen<br>
+  <input type="radio" name="17" value="c"> Opera, Tomcat, Xmail<br>
+  <input type="radio" name="17" value="d"> Opera, Google Chrome<br>
+</div>
+
+<!-- 18 -->
+<div class="question" id="q18">
+  <p>18. info@customs.uz электрон почта манзилидаги «info» сўзи нимани англатади?</p>
+  <input type="radio" name="18" value="a"> Фойдаланувчи номи<br>
+  <input type="radio" name="18" value="b"> Электрон почта серверининг номи<br>
+  <input type="radio" name="18" value="c"> Файл серверининг номи<br>
+  <input type="radio" name="18" value="d"> Электрон почта ва файл серверларининг номи<br>
+</div>
+
+<!-- 19 -->
+<div class="question" id="q19">
+  <p>19. Сайт – бу …</p>
+  <input type="radio" name="19" value="a"> Интернет тармоғидан фойдаланувчилар мурожаат қилишлари мумкин бўлган ҳужжат<br>
+  <input type="radio" name="19" value="b"> Интернет тармоғида ўзаро маълумот алмашинувини таъминловчи дастур<br>
+  <input type="radio" name="19" value="c"> Тармоқнинг мантиқий тугалланган элементи бўлиб, бирон-бир корхонага ёки бирор шахсга тегишли ва аниқ бир мавзу асосида ишлаб чиқилади<br>
+  <input type="radio" name="19" value="d"> Тартибланган файллар ва папкаларнинг тўпламидан иборат каталог<br>
+</div>
+
+<!-- 20 -->
+<div class="question" id="q20">
+  <p>20. Электрон ҳужжатнинг юридик кучи ....</p>
+  <input type="radio" name="20" value="a"> Фақат ҳудудий бошқарма ва ташкилотлараро электрон ахборот воситалари ёрдамида амалга ошириладиган ҳужжатлар юридик кучга эга<br>
+  <input type="radio" name="20" value="b"> Электрон ҳужжат қоғоз ҳужжатга тенглаштирилади ва у билан бир хил юридик кучга эга бўлади<br>
+  <input type="radio" name="20" value="c"> Электрон ҳужжатнинг юридик кучи фақат Ўзбекистон Республикасининг Бош прокуратураси томонидан белгилаб берилади<br>
+  <input type="radio" name="20" value="d"> Тўғри жавоб келтирилмаган<br>
+</div>
+
+<!-- 21 -->
+<div class="question" id="q21">
+  <p>21. Электрон рақамли имзо кимларга берилади?</p>
+  <input type="radio" name="21" value="a"> Фақат ташкилот раҳбарларига берилади<br>
+  <input type="radio" name="21" value="b"> Фақат ўқув муассасалари ва ташкилот учун<br>
+  <input type="radio" name="21" value="c"> Фақат жисмоний шахсларга<br>
+  <input type="radio" name="21" value="d">Жисмоний ва юридик шахсларга.<br>
+</div>
+
+<!-- 22 -->
+<div class="question" id="q22">
+  <p>22. Ўзбекистонда ҳимояланган миллий электрон почта тизими адреси қайси қаторда тўғри келтирилган?</p>
+  <input type="radio" name="22" value="a"> www.mail.uz<br>
+  <input type="radio" name="22" value="b">www.umail.uz.<br>
+  <input type="radio" name="22" value="c"> www.uz<br>
+  <input type="radio" name="22" value="d"> www.gov.uz<br>
+</div>
+
+<!-- 23 -->
+<div class="question" id="q23">
+  <p>23. Microsoft Word дастурининг *.doc ва *.docx форматларини бир-биридан фарқ қилувчи жиҳатлари қайси қаторда тўғри келтирилган?</p>
+  <input type="radio" name="23" value="a"> Файлни сақлаш ҳажмида, файл форматларини Word дастурининг бошқа версияларида очилиши ва чекланиши<br>
+  <input type="radio" name="23" value="b"> Файлни ташқи кўриниши билан<br>
+  <input type="radio" name="23" value="c"> Файл юкланиши ойнаси билан<br>
+  <input type="radio" name="23" value="d">Барча жавоблар тўғри.<br>
+</div>
+
+<!-- 24 -->
+<div class="question" id="q24">
+  <p>24. Қуйида кўрсатилган усуллардан қайси бири ёрдамида маълумотни бир компьютердан бошқасига ўтказиб бўлмайди?</p>
+  <input type="radio" name="24" value="a">Электр таъминоти сими орқали.<br>
+  <input type="radio" name="24" value="b"> Компьютер тармоқ кабели<br>
+  <input type="radio" name="24" value="c"> Флеш хотира<br>
+  <input type="radio" name="24" value="d"> Оптик диск<br>
+</div>
+
+<!-- 25 -->
+<div class="question" id="q25">
+  <p>25. Ахборот ресурсларида сақланаётган ва ишлов берилган, электрон рақамли имзо билан тасдиқланган ҳужжат қандай аталади?</p>
+  <input type="radio" name="25" value="a"> Электрон файл<br>
+  <input type="radio" name="25" value="b"> Электрон имзо<br>
+  <input type="radio" name="25" value="c"> Электрон маълумот<br>
+  <input type="radio" name="25" value="d">Электрон ҳужжат.<br>
+</div>
+
+<!-- 26 -->
+<div class="question" id="q26">
+  <p>26. Қайси жавобда ахборотнинг турлари тўғри келтирилган?</p>
+  <input type="radio" name="26" value="a">Матн, тасвир, анимация, аудио ва видео.<br>
+  <input type="radio" name="26" value="b"> Матн, китоб, аудио ва видео<br>
+  <input type="radio" name="26" value="c"> Китоб, ўйин, мультфильм ва овоз<br>
+  <input type="radio" name="26" value="d"> Компьютер, диск, монитор тасвири, анимация<br>
+</div>
+
+<!-- 27 -->
+<div class="question" id="q27">
+  <p>27. Word дастурида имловий хатоликларни текшириш (Правописание) функцияси файси меню бўлимида жойлашган?</p>
+  <input type="radio" name="27" value="a"> Главная<br>
+  <input type="radio" name="27" value="b"> Вставка<br>
+  <input type="radio" name="27" value="c">Рецензирование.<br>
+  <input type="radio" name="27" value="d"> Макет<br>
+</div>
+
+<!-- 28 -->
+<div class="question" id="q28">
+  <p>28. Қуйида келтирилган қийматларнинг қайси бири Excel дастурида вақт форматида қабул қилади?</p>
+  <input type="radio" name="28" value="a"> 25:52<br>
+  <input type="radio" name="28" value="b"> 15-62<br>
+  <input type="radio" name="28" value="c">15:52.<br>
+  <input type="radio" name="28" value="d"> 15/62<br>
+</div>
+<!-- 29 -->
+<div class="question" id="q29">
+  <p>29. Zoom дастури ойнасида конференцияга киришнинг неча хил усули мавжуд?</p>
+  <input type="radio" name="29" value="a"> фақат идентификатор орқали<br>
+  <input type="radio" name="29" value="b"> 3 хил: 1. Идентификатор; 2. Логин ва пароль; 3. Махсус техник қурилмалар орқали<br>
+  <input type="radio" name="29" value="c"> Фақат логин ва пароль<br>
+  <input type="radio" name="29" value="d">2 хил: 1. Идентификатор; 2. Логин ва пароль.<br>
+</div>
+
+<!-- 30 -->
+<div class="question" id="q30">
+  <p>30. Data.gov.uz расмий сайти бу -</p>
+  <input type="radio" name="30" value="a"> Ўзбекистон Республикасининг архив маълумотлар портали<br>
+  <input type="radio" name="30" value="b"> Ўзбекистон Республикасининг жисмоний ва юридик шахсларнинг маълумотлар портали<br>
+  <input type="radio" name="30" value="c"> Барча жавоблар тўғри<br>
+  <input type="radio" name="30" value="d">Ўзбекистон Республикасининг очиқ маълумотлар портали.<br>
+</div>
+
+<!-- 31 -->
+<div class="question" id="q31">
+  <p>31. WinRAR дастури ёрдамида катта ҳажмдаги файлларни бўлакларга бўлиб архивлаш мумкинми?</p>
+  <input type="radio" name="31" value="a">Ҳа.<br>
+  <input type="radio" name="31" value="b"> Йўқ<br>
+  <input type="radio" name="31" value="c"> Архивланган файлни Win Zip дастурига юклаш орқали бўлакларга бўлиш мумкин<br>
+  <input type="radio" name="31" value="d"> Тўғри жавоб келтирилмаган<br>
+</div>
+
+<!-- 32 -->
+<div class="question" id="q32">
+  <p>32. WinRAR дастури ёрдамида файл ёки папкаларни архивлаш жараёнида уларга парол қўйиш мумкинми?</p>
+  <input type="radio" name="32" value="a"> Йўқ<br>
+  <input type="radio" name="32" value="b">Ҳа.<br>
+  <input type="radio" name="32" value="c"> WinRAR дастурида бундай амал мавжуд эмас<br>
+  <input type="radio" name="32" value="d"> Объектларни архивлаш вақтида уларга парол ўрнатиш мумкин эмас<br>
+</div>
+
+<!-- 33 -->
+<div class="question" id="q33">
+  <p>33. Тизимга киришда фойдаланувчининг логини ва пароли нотўғри киритилса қандай жараён содир бўлади?</p>
+  <input type="radio" name="33" value="a"> Логинни киритиш қайтадан сўралади<br>
+  <input type="radio" name="33" value="b"> Паролни киритиш қайтадан сўралади<br>
+  <input type="radio" name="33" value="c"> Тизим қайта юкланади<br>
+  <input type="radio" name="33" value="d">Логин ва паролни қайтадан киритиш сўралади.<br>
+</div>
+
+<!-- 34 -->
+<div class="question" id="q34">
+  <p>34. Бир гуруҳ файллар ва папкаларни кетма-кет белгилаш учун клавиатуранинг қайси тугмасидан фойдаланилади?</p>
+  <input type="radio" name="34" value="a"> Alt ёки Home<br>
+  <input type="radio" name="34" value="b"> Insert ёки End<br>
+  <input type="radio" name="34" value="c"> Enter<br>
+  <input type="radio" name="34" value="d">Shift ёки ctrl.<br>
+</div>
+
+<!-- 35 -->
+<div class="question" id="q35">
+  <p>35. Word дастурида алмашиш буферида нечтагача объектни жойлаштириш мумкин?</p>
+  <input type="radio" name="35" value="a">Оператив хотира тўлгунча.<br>
+  <input type="radio" name="35" value="b"> Фақат 1 та<br>
+  <input type="radio" name="35" value="c"> 10<br>
+  <input type="radio" name="35" value="d"> Word дастури алмашиш буфери мавжуд эмас<br>
+</div>
+
+<!-- 36 -->
+<div class="question" id="q36">
+  <p>36. Windows операцион тизимида алмашиш буферида нечтагача объектни жойлаштириш мумкин?</p>
+  <input type="radio" name="36" value="a"> Оператив хотира тўлгунча<br>
+  <input type="radio" name="36" value="b">Фақат 1 та.<br>
+  <input type="radio" name="36" value="c"> 10<br>
+  <input type="radio" name="36" value="d"> Windows операцион тизимида алмашиш буфери мавжуд эмас<br>
+</div>
+
+<!-- 37 -->
+<div class="question" id="q37">
+  <p>37. Одатда саватдан (корзинадан) объектларни тиклаш жараёнида улар қаерга тикланади?</p>
+  <input type="radio" name="37" value="a"> «Мои документы» папкасига<br>
+  <input type="radio" name="37" value="b"> «Мой компьютер» папкасига<br>
+  <input type="radio" name="37" value="c">Ўчирилган вақтдаги асл жойига.<br>
+  <input type="radio" name="37" value="d"> Фойдаланувчи томонидан кўрсатилган жойга<br>
+</div>
+
+<!-- 38 -->
+<div class="question" id="q38">
+  <p>38. Ўзбекистон Республикасида қуйидаги қонунлар қабул қилинган:</p>
+  <input type="radio" name="38" value="a">«Ахборотлаштириш тўғрисида», «Электрон тижорат тўғрисида», «Электрон ҳужжат айланиши тўғрисида», «Электрон рақамли имзо тўғрисида», «Электрон ҳукумат тўғрисида» ва бошқалар.<br>
+  <input type="radio" name="38" value="b"> «Ахборотлаштириш тўғрисида», «Электрон тижорат тўғрисида», «Электрон ҳужжат айланиши тўғрисида», «Ахборот хавфсизлиги тўғрисида» ва бошқалар<br>
+  <input type="radio" name="38" value="c"> «Ахборот эркинлиги тўғрисида», «Электрон тижорат тўғрисида», «Электрон ҳужжат айланиши тўғрисида», «Электрон ҳукумат тўғрисида», «Интернет тўғрисида» ва бошқалар<br>
+  <input type="radio" name="38" value="d"> «Интернет тўғрисида», «Ахборот хавфсизлиги тўғрисида», «Балоғат ёшига етмаганларни маънавий ва жисмоний саломатликларига зарар етказувчи ахборотлардан муҳофаза қилиш тўғрисида» ва бошқалар<br>
+</div>
+
+<!-- 39 -->
+<div class="question" id="q39">
+  <p>39. ID.GOV.UZ бу -</p>
+  <input type="radio" name="39" value="a">Электрон ҳукумати фойдаланувчиларнинг ягона идентификация тизими.<br>
+  <input type="radio" name="39" value="b"> Электрон ҳукумат порталини яратувчи марказ<br>
+  <input type="radio" name="39" value="c"> Ягона интерактив хизматлар порталини яратиш маркази<br>
+  <input type="radio" name="39" value="d"> Жисмоний ва юридик шахсларни аутентификация қилиш маркази<br>
+</div>
+
+<!-- 40 -->
+<div class="question" id="q40">
+  <p>40. My.gov.uz сайтидаги электрон хизматлардан тўғридан-тўғри фойдаланиш учун -</p>
+  <input type="radio" name="40" value="a">Электрон рақамли имзо ва OneID керак.<br>
+  <input type="radio" name="40" value="b"> Божхона қўмитасидан рухсат олиш керак<br>
+  <input type="radio" name="40" value="c"> Хизматга масъул бўлган бошқармадан рухсат олиш керак<br>
+  <input type="radio" name="40" value="d"> Барча жавоблар тўғри<br>
+</div>
+
+<!-- 41 -->
+<div class="question" id="q41">
+  <p>41. Microsoft Excel дастурида Ориентация функцияси орқали ...</p>
+  <input type="radio" name="41" value="a">Ячейкадаги маълумотларни турли бурчак остида жойлаштириш мумкин.<br>
+  <input type="radio" name="41" value="b"> Ячейкадаги маълумотларни чап томонга нисбатан текислаш<br>
+  <input type="radio" name="41" value="c"> Ячейкадаги маълумотларни ўнг томонга нисбатан текислаш<br>
+  <input type="radio" name="41" value="d"> Ячейкадаги маълумотларни бирлаштириш<br>
+</div>
+
+<!-- 42 -->
+<div class="question" id="q42">
+  <p>42. Олий ва ўрта махсус таълим вазирлиги сайти қайси қаторда тўғри келтирилган?</p>
+  <input type="radio" name="42" value="a">edu.uz.<br>
+  <input type="radio" name="42" value="b"> uzedu.uz<br>
+  <input type="radio" name="42" value="c"> oliytalim.uz<br>
+  <input type="radio" name="42" value="d"> uztalim.uz<br>
+</div>
+
+<!-- 43 -->
+<div class="question" id="q43">
+  <p>43. Интернет муҳитида online ишлайдиган электрон матн муҳарририни кўрсатинг</p>
+  <input type="radio" name="43" value="a">Google docs.<br>
+  <input type="radio" name="43" value="b"> Googlepad<br>
+  <input type="radio" name="43" value="c"> Gmail.com<br>
+  <input type="radio" name="43" value="d"> wordpad<br>
+</div>
+
+<!-- 44 -->
+<div class="question" id="q44">
+  <p>44. Word дастурида Перейти функциясининг вазифасини нимадан иборат?</p>
+  <input type="radio" name="44" value="a">Фойдаланувчи ишчи ҳужжатда танлаган вараққа ўтишини таъминлайди.<br>
+  <input type="radio" name="44" value="b"> Жорий ҳужжатнинг варақлар сонини санайди<br>
+  <input type="radio" name="44" value="c"> Word дастуридан туриб электрон почтага ўтишни таъминлайди<br>
+  <input type="radio" name="44" value="d"> Барча жавоблар тўғри<br>
+</div>
+
+<!-- 45 -->
+<div class="question" id="q45">
+  <p>45. Microsoft Word дастурида янги ҳужжат яратилганда, одатда автоматик равишда дастур томонидан унга қандай ном берилади?</p>
+  <input type="radio" name="45" value="a"> “Книга 1”<br>
+  <input type="radio" name="45" value="b">“Документ 1.”<br>
+  <input type="radio" name="45" value="c"> “Листы 1”<br>
+  <input type="radio" name="45" value="d"> “Презентация 1”<br>
+</div>
+
+<!-- 46 -->
+<div class="question" id="q46">
+  <p>46. Дата-центрлар қандай вазифани бажаради?</p>
+  <input type="radio" name="46" value="a">Маълумотларга ишлов бериш, саклаш ва тақсимлаш вазифасини бажаради.<br>
+  <input type="radio" name="46" value="b"> Web-саҳифалар яратади<br>
+  <input type="radio" name="46" value="c"> Маълумотлар базасини ташкиллаштиради<br>
+  <input type="radio" name="46" value="d"> Web серверни бетўхтов ишлашини таъминлайди<br>
+</div>
+
+<!-- 47 -->
+<div class="question" id="q47">
+  <p>47. Microsoft Word dasturida kursordan chapdagi belgilarni o’chirish uchun qaysi tugmadan foydalaniladi:</p>
+  <input type="radio" name="47" value="a">Backspace.<br>
+  <input type="radio" name="47" value="b"> Delete<br>
+  <input type="radio" name="47" value="c"> Insert<br>
+  <input type="radio" name="47" value="d"> F8<br>
+</div>
+
+<!-- 48 -->
+<div class="question" id="q48">
+  <p>48. Google диск нима?</p>
+  <input type="radio" name="48" value="a"> DVD RW лазерли дискининг номи<br>
+  <input type="radio" name="48" value="b"> Шахсий компьютер диски<br>
+  <input type="radio" name="48" value="c">Бу шахсий ҳужжатларингизни сақлаш имкониятини берувчи виртуал диск ҳисобланади.<br>
+  <input type="radio" name="48" value="d"> Шахсий сайт (блог)лар яратиш имкониятини берувчи интернет ахборот тизими<br>
+</div>
+
+<!-- 49 -->
+<div class="question" id="q49">
+  <p>49. Google иловаларидан қайси бири вақтингизни режалаштиришда, мажлис в.ҳ. ларни эслатиб туриш учун имконият яратади?</p>
+  <input type="radio" name="49" value="a">Google тақвим (календар).<br>
+  <input type="radio" name="49" value="b"> Google Форма<br>
+  <input type="radio" name="49" value="c"> Google тақдимот<br>
+  <input type="radio" name="49" value="d"> Google ҳужжат<br>
+</div>
+
+<!-- 50 -->
+<div class="question" id="q50">
+  <p>50. .edu домени қандай фаолият соҳасига таълуқли?</p>
+  <input type="radio" name="50" value="a"> Тармоқ ташкилотлари<br>
+  <input type="radio" name="50" value="b">Таълим ташкилотлари<br>
+  <input type="radio" name="50" value="c"> Тижорат ташкилотлари<br>
+  <input type="radio" name="50" value="d"> Давлат ташкилотлари<br>
+</div>
+
+<!-- 51 -->
+<div class="question" id="q51">
+  <p>51. Ягона стандарт асосида фаолият кўрсатувчи, бутун жаҳон компьютер тармоқлари мажмуидан иборат глобал компьютер тармоғи қандай аталади?</p>
+  <input type="radio" name="51" value="a"> Интарнет<br>
+  <input type="radio" name="51" value="b"> Мантиқий тармоқ<br>
+  <input type="radio" name="51" value="c"> Корпоратив тармоқ<br>
+  <input type="radio" name="51" value="d">Интернет.<br>
+</div>
+
+<!-- 52 -->
+<div class="question" id="q52">
+  <p>52. Ахборотнинг энг кичик ўлчов бирлиги нима?</p>
+  <input type="radio" name="52" value="a"> Байт<br>
+  <input type="radio" name="52" value="b">Бит.<br>
+  <input type="radio" name="52" value="c"> Килобайт<br>
+  <input type="radio" name="52" value="d"> Гигобайт<br>
+</div>
+
+<!-- 53 -->
+<div class="question" id="q53">
+  <p>53. Тизимга киришда фойдаланувчининг логини ва пароли нотўғри киритилса қандай жараён содир бўлади?</p>
+  <input type="radio" name="53" value="a">Логин ва паролни киритиш қайтадан сўралади.<br>
+  <input type="radio" name="53" value="b"> Tизим қайта юкланади<br>
+  <input type="radio" name="53" value="c"> Паролни киритиш қайтадан сўралади<br>
+  <input type="radio" name="53" value="d"> Логинни киритиш қайтадан сўралади<br>
+</div>
+
+<!-- 54 -->
+<div class="question" id="q54">
+  <p>54. Тизимга кириш учун ҳар бир фойдаланувчидан қандай маълумотлар киритиш талаб қилинади?</p>
+  <input type="radio" name="54" value="a"> Фақат паролни<br>
+  <input type="radio" name="54" value="b"> Фақат Логинни<br>
+  <input type="radio" name="54" value="c"> Исм ва шарифни<br>
+  <input type="radio" name="54" value="d">Логин ва паролни.<br>
+</div>
+
+<!-- 55 -->
+<div class="question" id="q55">
+  <p>55. Электрон почта манзилларида қуйидаги белгиларнинг қайси бири ишлатилади?</p>
+  <input type="radio" name="55" value="a"> ?<br>
+  <input type="radio" name="55" value="b">@.<br>
+  <input type="radio" name="55" value="c"> &<br>
+  <input type="radio" name="55" value="d"> %<br>
+</div>
+
+<!-- 56 -->
+<div class="question" id="q56">
+  <p>56. Microsoft Excel дастурида янги ҳужжат яратилганда, одатда автоматик равишда дастур томонидан унга қандай ном берилади:</p>
+  <input type="radio" name="56" value="a"> Документ<br>
+  <input type="radio" name="56" value="b"> Лист<br>
+  <input type="radio" name="56" value="c">Книга.<br>
+  <input type="radio" name="56" value="d"> Презентация<br>
+</div>
+
+<!-- 57 -->
+<div class="question" id="q57">
+  <p>57. Microsoft Word дастурида янги ҳужжат яратилганда, одатда автоматик равишда дастур томонидан унга қандай ном берилади:</p>
+  <input type="radio" name="57" value="a">Документ.<br>
+  <input type="radio" name="57" value="b"> Лист<br>
+  <input type="radio" name="57" value="c"> Книга<br>
+  <input type="radio" name="57" value="d"> Презентация<br>
+</div>
+
+<!-- 58 -->
+<div class="question" id="q58">
+  <p>58. Google Chrome браузерида F5 тугмаси нима вазифани бажаради?</p>
+  <input type="radio" name="58" value="a">Жорий веб-саҳифани янгилайди.><br>
+  <input type="radio" name="58" value="b"> Веб-саҳифани юклашни тўхтатади<br>
+  <input type="radio" name="58" value="c"> Олдин кўрилган веб сахифани қайта юклайди<br>
+  <input type="radio" name="58" value="d"> Уй (домашний) веб саҳифасига ўтишни амалга оширади<br>
+</div>
+
+<!-- 59 -->
+<div class="question" id="q59">
+  <p>59. Компьютерларни ўзаро боғланиши нима?</p>
+  <input type="radio" name="59" value="a">Тармоқ.<br>
+  <input type="radio" name="59" value="b"> Ахборот<br>
+  <input type="radio" name="59" value="c"> Ахборот технологияси<br>
+  <input type="radio" name="59" value="d"> Маълумот алмашиниш<br>
+</div>
+
+<!-- 60 -->
+<div class="question" id="q60">
+  <p>60. Интернет тармоғининг имкониятлари тўғри кўрсатилган қаторни кўрсатинг.</p>
+  <input type="radio" name="60" value="a"> Ахборотни ўқиш ва тарқатиш, хат алмашиш<br>
+  <input type="radio" name="60" value="b"> Телеконференцияларда иштирок этиш<br>
+  <input type="radio" name="60" value="c"> Музокаралар олиб бориш, мулоқат қилиш<br>
+  <input type="radio" name="60" value="d">Барчаси тўғри.<br>
+</div>
+
+
+
+  <div class="controls">
+    <button type="button" id="finishBtn" onclick="finishTest()">Tugatish</button>
+    <button type="button" id="saveBtn" onclick="saveResults()">Natijani Saqlash (.txt)</button>
+  </div>
+
+  <h2>Natijalar:</h2>
+  <div id="results"></div>
+</form>
+
+<script>
+
+const correctAnswers = {
+1: "a",
+2: "c",
+3: "d",
+4: "b",
+5: "a",
+6: "a",
+7: "a",
+8: "a",
+9: "a",
+10: "d",
+11: "d",
+12: "d",
+13: "a",
+14: "a",
+15: "a",
+16: "a",
+17: "d",
+18: "a",
+19: "c",
+20: "b",
+21: "d",
+22: "b",
+23: "d",
+24: "a",
+25: "d",
+26: "a",
+27: "c",
+28: "c",
+29: "a",
+30: "a",
+31: "a",
+32: "b",
+33: "d",
+34: "d",
+35: "a",
+36: "b",
+37: "c",
+38: "a",
+39: "a",
+40: "a",
+41: "a",
+42: "a",
+43: "a",
+44: "a",
+45: "b",
+46: "a",
+47: "a",
+48: "c",
+49: "a",
+50: "b",
+51: "d",
+52: "b",
+53: "a",
+54: "d",
+55: "b",
+56: "c",
+57: "a",
+58: "a",
+59: "a",
+60: "d",
+
+ 
+};
+
+let finished = false;      
+let timeLeft = 60 * 60;    // 60 min
+let timerInterval;
+
+// TIMER ISHLASHI
+function startTimer() {
+  timerInterval = setInterval(() => {
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      blockAll();
+      finishTest();
+      return;
+    }
+    timeLeft--;
+    updateTimerDisplay();
+  }, 1000);
+}
+
+function updateTimerDisplay() {
+  const m = String(Math.floor(timeLeft / 60)).padStart(2, '0');
+  const s = String(timeLeft % 60).padStart(2, '0');
+  document.getElementById("timer").innerText = `Vaqt: ${m}:${s}`;
+}
+
+startTimer();
+
+// Barcha inputlarni bloklash
+function blockAll() {
+  const all = document.querySelectorAll('input[type="radio"], input[type="text"]');
+  all.forEach(i => i.disabled = true);
+  document.getElementById("finishBtn").disabled = true;
+}
+
+function finishTest() {
+  if (finished) return; // qayta bosishga ruxsat yo‘q
+  finished = true;
+
+  clearInterval(timerInterval);
+  blockAll();
+
+  showResults();
+}
+
+//  BAHO QO'YISH
+function showResults() {
+  const resultsDiv = document.getElementById("results");
+  resultsDiv.innerHTML = "";
+
+  let totalCorrect = 0;
+
+  for (let q in correctAnswers) {
+    const options = document.getElementsByName(q);
+    let selected = null;
+    for (const opt of options) if (opt.checked) selected = opt.value;
+
+    const div = document.createElement("div");
+
+    if (!selected) {
+      div.innerHTML = `${q}: Javob tanlanmagan. To‘g‘ri javob: <span class="correct">${correctAnswers[q]}</span>`;
+      div.classList.add("wrong");
+    } else if (selected === correctAnswers[q]) {
+      div.innerHTML = `${q}: ✅`;
+      div.classList.add("correct");
+      totalCorrect++;
+    } else {
+      div.innerHTML = `${q}: ❌. To‘g‘ri javob: <span class="correct">${correctAnswers[q]}</span>`;
+      div.classList.add("wrong");
+    }
+
+    resultsDiv.appendChild(div);
+  }
+
+  // 5 ballik tizim bo‘yicha baholash
+  let baho = 2;
+  if (totalCorrect >= 51) baho = 5;
+  else if (totalCorrect >= 42) baho = 4;
+  else if (totalCorrect >= 33) baho = 3;
+
+  const summary = document.createElement("div");
+  summary.style.marginTop = "10px";
+  summary.innerHTML = `<strong>Jami to‘g‘ri: ${totalCorrect} / 60 — Baho: ${baho}</strong>`;
+  resultsDiv.appendChild(summary);
+}
+
+// TXT saqlash
+function saveResults() {
+  if (!finished) {
+    alert("Avval tugatish tugmasini bosing!");
+    return;
+  }
+
+  const fio = document.getElementById("fio").value.trim() || "NoName";
+  //const group = document.getElementById("group").value.trim() || "NoGroup";
+  const resultsDiv = document.getElementById("results");
+
+  const header = `Ism: ${fio}\n\n`;
+  const body = resultsDiv.innerText;
+  const textResult = header + body;
+
+  const blob = new Blob([textResult], { type: "text/plain" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = `${fio}_natija.txt`;
+  link.click();
+}
+</script>
+
+</body>
+</html>

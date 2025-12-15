@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<title>Test</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; }
+  .question { margin-bottom: 20px; }
+  .answer { margin-top: 5px; font-weight: bold; }
+  .correct { color: green; }
+  .wrong { color: red; }
+  #timer { font-size: 22px; font-weight: bold; color: green; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+
+<div id="timer">Vaqt: 20:00</div>
+
+<form id="testForm" onsubmit="return false;">
+  <h1><p style="text-align: center; font-weight: 1000;">“ МEД божхона постларининг Божхона назорати ва кўриги гуруҳи ходимлари учун”</p></h1>
+
+  <label>Ismingizni kiriting:</label><br>
+  <input type="text" id="fio" placeholder="FISH"><br><br>
+   <!--  <label>Guruh</label><br>
+  <input type="text" id="group" placeholder="YUP/BI"><br><br>
+  -->
+
+
+
+  <div class="question" id="q1">
+    <p>1.1.	“Хавф” нима?</p>
+    <input type="radio" name="1" value="a"> Божхона тўғрисидаги қонунчиликка риоя этилмаслиги эҳтимолининг даражаси<br>
+    <input type="radio" name="1" value="b"> Божхона тўғрисидаги қонунчиликни бузиш содир этилганлигидан ва божхона органлари ушбу ҳолат тўғрисида маълумотга эга эканлигидан далолат берувчи факт<br>
+    <input type="radio" name="1" value="c"> Яширин товарлар сифатида декларацияланиши эҳтимоли етарли даражада бўлган товарлар<br>
+    <input type="radio" name="1" value="d">Тўғри жавоб йўқ<br>
+  </div>
+
+  <div class="question" id="q2">
+    <p>2. 2.	“Хавф индикатори” атамасини таърифловчи қаторни аниқланг?</p>
+    <input type="radio" name="2" value="a">Божхона тўғрисидаги қонунчиликни бузиш содир этилганлигидан ва божхона органлари ушбу ҳолат тўғрисида маълумотга эга эканлигидан далолат берувчи факт<br>
+    <input type="radio" name="2" value="b"> Олдиндан белгиланган кўрсаткичларга эга муайян мезонлар бўлиб, улардан оғиш ёки уларга мос келиш назорат объектини танлашни амалга ошириш имконини беради<br>
+    <input type="radio" name="2" value="c"> Хавф таҳлилининг айрим гуруҳларга бўлинган объектлари бўлиб, уларга нисбатан божхона назоратининг алоҳида шакллари ёки мажмуи қўлланилиши<br>
+    <input type="radio" name="2" value="d"> Тўғри жавоб йўқ<br>
+  </div>
+
+  <div class="question" id="q3">
+        <p>3. 3.	“Хавф соҳаси” атамасининг тарифи тўғри келтирилган қаторни аниқланг?</p>
+        <input type="radio" name="3" value="a"> Хавфнинг юзага келиши эҳтимолини ва у юзага келганда божхона тўғрисидаги қонунчиликнинг бузилиши оқибатларини мунтазам равишда аниқлаб бориш<br>
+        <input type="radio" name="3" value="b">Хавф таҳлилининг айрим гуруҳларга бўлинган объектлари бўлиб, уларга нисбатан божхона назоратининг алоҳида шакллари ёки мажмуи қўлланилиши, шунингдек уларнинг самарадорлигини ошириш талаб этилади<br>
+        <input type="radio" name="3" value="c"> Божхона органларида мавжуд бўлган ахборотдан хавфнинг юзага келиши ҳолатлари ва шарт-шароитларини аниқлаш, уларни идентификациялаш ва божхона тўғрисидаги қонунчиликка риоя этилмаслигининг эҳтимол тутилган оқибатларини баҳолаш мақсадида мунтазам равишда фойдаланиш<br>
+        <input type="radio" name="3" value="d"> Тўғри жавоб келтирилмаган<br>
+      </div>
+
+      <div class="question" id="q4">
+        <p>4.4.	“Яширувчи товарлар” бу - ...?</p>
+        <input type="radio" name="4" value="a"> Аниқланмаган, лекин унинг юзага келиши учун шароитлар мавжуд бўлган хавф<br>
+        <input type="radio" name="4" value="b"> Хавф аниқланган ёки потенциал хавф мавжуд бўлган божхона чегараси орқали олиб ўтилаётган товарлар<br>
+        <input type="radio" name="4" value="c"> Хавф товарлари ўрнига декларацияланиши эҳтимоли етарли даражада бўлган товарлар<br>
+        <input type="radio" name="4" value="d"> Барча жавоб тўғри<br>
+      </div>
+
+      <div class="question" id="q5">
+        <p>5.5.	“Аниқланган хавф” атамасига тўғри таъриф келтирилган қаторни аниқланг?</p>
+        <input type="radio" name="5" value="a"> Божхона тўғрисидаги қонунчиликни бузиш содир этилганлигидан ва божхона органлари ушбу ҳолат тўғрисида маълумотга эга эканлигидан далолат берувчи факт<br>
+        <input type="radio" name="5" value="b">Юзага келиши учун етарли шароитлар мавжуд бўлган хавф<br>
+        <input type="radio" name="5" value="c">Божхона тўғрисидаги қонунчиликни бузиш содир этилганлигидан ва божхона органлари ушбу ҳолат тўғрисида маълумотга эга эканлигидан далолат берувчи факт ҳамда юзага келиши учун етарли шароитлар мавжуд бўлган хавф<br>
+        <input type="radio" name="5" value="d">Тўғри жавоб йўқ<br>
+      </div>
+
+      <div class="question" id="q6">
+        <p>6.6.	“Хавф таҳлили объекти” тўғри келтирилган қаторни аниқланг?</p>
+        <input type="radio" name="6" value="a"> Олди-сотди ёки айирбошлашга доир ташқи иқтисодиёт контрактларида (шартномаларида, келишувларида), товарларга эгалик қилиш, улардан фойдаланиш ва (ёки) уларни тасарруф этиш ҳуқуқига оид битимларда ёхуд бошқа ҳужжатларда кўрсатилган маълумотлар<br>
+        <input type="radio" name="6" value="b"> Товарнинг кузатув ҳужжатларида ва бошқа ҳужжатларда кўрсатилган маълумотлар, божхона назорати остида турган товарларга нисбатан ваколатга эга бўлган шахсларнинг фаолияти ҳамда божхона назорати шакллари қўлланилишининг натижалари<br>
+        <input type="radio" name="6" value="c"> Божхона назорати остида бўлган ёхуд эркин муомалага чиқариш (импорт) божхона режимига жойлаштирилган товарлар ва тижорат учун фойдаланиладиган транспорт воситалари<br>
+        <input type="radio" name="6" value="d"> Барча жавоблар тўғри<br>
+      </div>
+
+      <div class="question" id="q7">
+        <p>7. 7.	Хавфни бошқариш тизимининг қўлланилиш стратегияси ва тактикасини, ахборот йиғиш ва уни қайта ишлаш, хавфни таҳлил қилиш ва баҳолаш, хавфни бошқаришга доир чора-тадбирлар ишлаб чиқиш ва уларни амалга ошириш тартиби ким томонидан белгиланади?</p>
+        <input type="radio" name="7" value="a">Давлат Божхона Қўмитаси<br>
+        <input type="radio" name="7" value="b"> Худудий божхона бошқармаси<br>
+        <input type="radio" name="7" value="c"> Пост бошлиқлари ёки уларнинг ўринбосарлари<br>
+        <input type="radio" name="7" value="d">Хавфларни мониторинг қилиш ва баҳолаш  бошқармаси<br>
+      </div>
+
+      <div class="question" id="q8">
+        <p>8. 8.	Энг кам ёки энг кўп хавф тоифасига киритиш, шунингдек божхона тартиб-таомиллари айрим турларининг ҳамда божхона назорати айрим шаклларининг қўлланилиш тартиби ким томонидан белгиланади?</p>
+        <input type="radio" name="8" value="a"> Вазирлар Махкамаси томонидан<br>
+        <input type="radio" name="8" value="b"> Давлат божхона қўмитаси томонидан манфаатдор давлат органлари ва бошқа ташкилотлар билан биргаликда<br>
+        <input type="radio" name="8" value="c"> Худудий божхона бошқармалари бошлиқлари томонидан<br>
+        <input type="radio" name="8" value="d">Тўғри жавоб йўқ<br>
+      </div>
+
+      <div class="question" id="q9">
+        <p>9. 9.	Хавфни бошқариш тизимини қўллаш орқали божхона назорати ва расмийлаштирувида божхона органлари ходимларининг ҳаракатлари кетма-кетлигини белгилайдиган қонун хужжат қайси?</p>
+        <input type="radio" name="9" value="a">ДБҚнинг 2021 йил 30 июндаги  150-сон буйруғи<br>
+        <input type="radio" name="9" value="b"> ДБҚнинг 2019 йил 22 февралдаги  59-сон буйруғи<br>
+        <input type="radio" name="9" value="c"> ДБҚнинг 2019 йил 22 февралдаги  58-сон буйруғи<br>
+        <input type="radio" name="9" value="d"> ДБҚнинг 2019 йил 28 февралдаги  66-сон буйруғи<br>
+      </div>
+
+      <div class="question" id="q10">
+        <p>10.	... бунда, хавф даражаси ўрта кўрсаткичга эга ёки тасодифий танлов асосида аниқланган товарларга нисбатан божхона назорати шакллари улар чиқариб юборилгандан сўнг амалга оширилади. Нуқталар ўрнига тўғри атамани танланг?</p>
+        <input type="radio" name="10" value="a"> “Кўк йўлак”<br>
+        <input type="radio" name="10" value="b">  “Сариқ йўлак”<br>
+        <input type="radio" name="10" value="c"> “Қизил йўлак”<br>
+        <input type="radio" name="10" value="d"> “Яшил йўлак”<br>
+      </div>
+
+      <div class="question" id="q11">
+        <p>11.	... бунда, хавф даражаси паст бўлган товар ва транспорт воситаларини чиқариб юбориш тўғрисидаги қарор қабул қилинганда, божхона назорати шакллари уларга нисбатан амалга оширилмайди. Нуқталар ўрнига тўғри атамани танланг?</p>
+        <input type="radio" name="11" value="a">“Сариқ йўлак”<br>
+        <input type="radio" name="11" value="b"> “Яшил йўлак”<br>
+        <input type="radio" name="11" value="c"> “Қизил йўлак”<br>
+        <input type="radio" name="11" value="d"> “Кўк йўлак”<br>
+      </div>
+
+      <div class="question" id="q12">
+        <p>12.	... бунда, божжхон декларацияси, хужжатлар ва маълумотларни текшириш бўйича божхона назорати шакллари хавф даражаси ўрта кўрсаткичга эга ёки тасодифий танловда аниқланган товар ва транспорт воситаларига нисбатан амалга оширилади. Нуқталар ўрнига тўғри атамани танланг?</p>
+        <input type="radio" name="12" value="a"> “Яшил йўлак”<br>
+        <input type="radio" name="12" value="b"> “Сариқ йўлак”<br>
+        <input type="radio" name="12" value="c">“Қизил йўлак”<br>
+        <input type="radio" name="12" value="d">“Кўк йўлак”<br>
+      </div>
+
+      <div class="question" id="q13">
+        <p>13.	... бунда, божжхон  назорати шакллари хавф даражаси юқори кўрсаткичга эга ёки тасодифий танловда аниқланган товар ва транпспорт воситаларига нисбатан амалга оширилади. Нуқталар ўрнига тўғри атамани танланг?</p>
+        <input type="radio" name="13" value="a">“Қизил йўлак”<br>
+        <input type="radio" name="13" value="b"> “Сариқ йўлак”<br>
+        <input type="radio" name="13" value="c">  “Яшил йўлак”<br>
+        <input type="radio" name="13" value="d">  “Кўк йўлак”<br>
+      </div>
+
+      <div class="question" id="q14">
+        <p>14.	Хавфни бошқариш тизими божхона кодексининг қайси бобида келтирилган?</p>
+        <input type="radio" name="14" value="a">27-боб<br>
+        <input type="radio" name="14" value="b">28-боб<br>
+        <input type="radio" name="14" value="c">29-боб<br>
+        <input type="radio" name="14" value="d">42-боб<br>
+      </div>
+
+      <div class="question" id="q15">
+        <p>15.	Хавфни бошқариш тизими доирасида ташқи иқтисодий фаолият иштирокчиларини автоматлаштирилган равишда хавф даражаси бўйича тоифларини белгилаш тартиби қайси қонун хужжат билан белгиланган?</p>
+        <input type="radio" name="15" value="a"> ДБҚнинг 2021 йил 30 июндаги  150-сон буйруғи<br>
+        <input type="radio" name="15" value="b">ДБҚнинг 2019 йил 22 февралдаги  59-сон буйруғи<br>
+        <input type="radio" name="15" value="c">ДБҚнинг 2019 йил 22 февралдаги  58-сон буйруғи<br>
+        <input type="radio" name="15" value="d">ДБҚнинг 2019 йил 28 февралдаги  66-сон буйруғи<br>
+      </div>
+
+      <div class="question" id="q16">
+        <p>16.	ТИФ иштирокчиларининг хавф даражалари бўйича тоифаларини белгилаш қанча муддатда амалга оширилади?</p>
+        <input type="radio" name="16" value="a"> Ҳар 3 ойда бир марттаa<br>
+        <input type="radio" name="16" value="b">Ҳар 6 ойда бир мартта<br>
+        <input type="radio" name="16" value="c">Ҳар ойда бир мартта<br>
+        <input type="radio" name="16" value="d">Ҳар йилда бир мартта<br>
+      </div>
+
+      <div class="question" id="q17">
+        <p>17.	Божхона органларида хавфни бошқариш тизимини тадбиқ этиш дастлаб қаерда белгиланган?</p>
+        <input type="radio" name="17" value="a"> Ўзбекистон Республикаси Президентининг 2018 йил 12-апрелдаги ПФ-5414- сон Фармони<br>
+        <input type="radio" name="17" value="b">Ўзбекистон Республикаси Президентининг 2018 йил 12-апрелдаги ПҚ-3665- сон Қарори<br>
+        <input type="radio" name="17" value="c">Ўзбекистон Республикаси Президентининг 2018 йил 24-ноябрдаги ПФ-5582- сон Фармони<br>
+        <input type="radio" name="17" value="d">Ўзбекистон Республикаси Президентининг 2017 йил 22 декабрдаги Олий Мажлисга Мурожаатномасида<br>
+      </div>
+
+      <div class="question" id="q18">
+        <p>18.	Хавф профиллари амал қилиш муддатига кура қандай турларга бўлинади?</p>
+        <input type="radio" name="18" value="a"> Қисқа, ўрта, узоқ, доимий<br>
+        <input type="radio" name="18" value="b"> Қисқа, ўрта, доимий<br>
+        <input type="radio" name="18" value="c"> Мунтазам, қисқа, доимий<br>
+        <input type="radio" name="18" value="d"> Қисқа, узоқ, доимий<br>
+      </div>
+
+      <div class="question" id="q19">
+        <p>19.	Хавф профиллари амал қилиш ҳудудига кўра қайси турларга бўлинади?</p>
+        <input type="radio" name="19" value="a"> Мақсадли ва ҳудудий<br>
+        <input type="radio" name="19" value="b"> Умумий ва махсус<br>
+        <input type="radio" name="19" value="c"> Ҳудудий ва махсус<br>
+        <input type="radio" name="19" value="d"> Ҳудудий ва умумий<br>
+      </div>
+
+      <div class="question" id="q20">
+        <p>20.	Хавф профиллари қўллаш тури бўйича қайси турларга бўлинади?</p>
+        <input type="radio" name="20" value="a"> Мақсадли, Махсус ва Мухим<br>
+        <input type="radio" name="20" value="b"> Мақсадли, бошқа профилларга боғлиқ бўлмаган ва энг мухим<br>
+        <input type="radio" name="20" value="c"> Мақсадли, Махсус, Бошқа профилларга боғлиқ бўлган ва Энг мухим<br>
+        <input type="radio" name="20" value="d"> Тўғри жавоб йўқ<br>
+      </div>
+
+
+
+
+  <div class="controls">
+    <button type="button" id="finishBtn" onclick="finishTest()">Tugatish</button>
+    <button type="button" id="saveBtn" onclick="saveResults()">Natijani Saqlash (.txt)</button>
+  </div>
+
+  <h2>Natijalar:</h2>
+  <div id="results"></div>
+</form>
+
+<script>
+
+const correctAnswers = {
+  1: "a", 
+  2: "b", 
+  3: "b",
+  4: "c", 
+  5: "a",
+  6: "d", 
+  7: "a", 
+  8: "b", 
+  9: "c", 
+  10: "a",
+  11: "b",
+  12: "b",
+  13: "a",
+  14: "c",
+  15: "b",
+  16: "c",
+  17: "d",
+  18: "a",
+  19: "d",
+  20: "c",
+
+  
+};
+
+let finished = false;      
+let timeLeft = 20 * 60;    // 20 min
+let timerInterval;
+
+// TIMER ISHLASHI
+function startTimer() {
+  timerInterval = setInterval(() => {
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      blockAll();
+      finishTest();
+      return;
+    }
+    timeLeft--;
+    updateTimerDisplay();
+  }, 1000);
+}
+
+function updateTimerDisplay() {
+  const m = String(Math.floor(timeLeft / 60)).padStart(2, '0');
+  const s = String(timeLeft % 60).padStart(2, '0');
+  document.getElementById("timer").innerText = `Vaqt: ${m}:${s}`;
+}
+
+startTimer();
+
+// Barcha inputlarni bloklash
+function blockAll() {
+  const all = document.querySelectorAll('input[type="radio"], input[type="text"]');
+  all.forEach(i => i.disabled = true);
+  document.getElementById("finishBtn").disabled = true;
+}
+
+function finishTest() {
+  if (finished) return; // qayta bosishga ruxsat yo‘q
+  finished = true;
+
+  clearInterval(timerInterval);
+  blockAll();
+
+  showResults();
+}
+
+//  BAHO QO'YISH
+function showResults() {
+  const resultsDiv = document.getElementById("results");
+  resultsDiv.innerHTML = "";
+
+  let totalCorrect = 0;
+
+  for (let q in correctAnswers) {
+    const options = document.getElementsByName(q);
+    let selected = null;
+    for (const opt of options) if (opt.checked) selected = opt.value;
+
+    const div = document.createElement("div");
+
+    if (!selected) {
+      div.innerHTML = `${q}: Javob tanlanmagan. To‘g‘ri javob: <span class="correct">${correctAnswers[q]}</span>`;
+      div.classList.add("wrong");
+    } else if (selected === correctAnswers[q]) {
+      div.innerHTML = `${q}: ✅`;
+      div.classList.add("correct");
+      totalCorrect++;
+    } else {
+      div.innerHTML = `${q}: ❌. To‘g‘ri javob: <span class="correct">${correctAnswers[q]}</span>`;
+      div.classList.add("wrong");
+    }
+
+    resultsDiv.appendChild(div);
+  }
+
+  // 5 ballik tizim bo‘yicha baholash
+  let baho = 2;
+  if (totalCorrect >= 18) baho = 5;
+  else if (totalCorrect >= 14) baho = 4;
+  else if (totalCorrect >= 11) baho = 3;
+
+  const summary = document.createElement("div");
+  summary.style.marginTop = "10px";
+  summary.innerHTML = `<strong>Jami to‘g‘ri: ${totalCorrect} / 20 — Baho: ${baho}</strong>`;
+  resultsDiv.appendChild(summary);
+}
+
+// TXT saqlash
+function saveResults() {
+  if (!finished) {
+    alert("Avval tugatish tugmasini bosing!");
+    return;
+  }
+
+  const fio = document.getElementById("fio").value.trim() || "NoName";
+ // const group = document.getElementById("group").value.trim() || "NoGroup";
+  const resultsDiv = document.getElementById("results");
+
+  const header = `Ism: ${fio}\nGuruh: ${group}\n\n`;
+  const body = resultsDiv.innerText;
+  const textResult = header + body;
+
+  const blob = new Blob([textResult], { type: "text/plain" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = `${fio}_natija.txt`;
+  link.click();
+}
+</script>
+
+</body>
+</html>
